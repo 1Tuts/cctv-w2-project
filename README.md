@@ -34,7 +34,7 @@ Please note that ??????.??? is a curated site and that we reserve the right to r
 
 The [??????.???](http://??????.???) code and website is released under a MIT License.
 
-Our sample for designing is this site : http://????????.???/
+Our sample for designing is this site : http://www.acer.fi/ac/fi/FI/content/home
 
 
 Produced by 1schools students network (summer 2012)
