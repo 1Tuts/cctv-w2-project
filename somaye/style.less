@@ -1,0 +1,145 @@
+/* Guide
+-------------------------- */
+body {
+	background-image: url('product-images/product.png');
+	//background: url('product-images/background_general_top.jpg') no-repeat center center;
+
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+body > * {
+	outline: 1px dashed blue;
+}
+
+body > * > * {
+	outline: 1px dotted red !important;
+}
+
+body > * > * * {
+	outline: 1px dashed green !important;
+}
+
+/* min-height 
+-------------------------- */
+header > * * {
+	min-height: 65px;
+}
+
+
+
+div.container section.product {
+	min-height: 423px;
+}
+
+div.container section.box-banner > * {
+	min-height: 105px;
+
+}
+
+footer > * {
+	min-height: 20px;
+}
+
+footer > * * {
+	min-height: 20px;
+}
+/* main styles
+-------------------------- */
+
+/* header 
+-------------------------- */
+header{
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	z-index: 5;
+	position: relative;
+
+	div.logo	{
+			position :fixed;
+			right    :0;
+			bottom   :50px;
+			width    :290px;
+			height   :165px;
+			overflow :hidden;
+			background-image :url(product-images/acer_logo_green.png) no-repeat center center;
+		h1{
+			text-indent      :1000px;
+			white-space      :nowrap;
+		}
+	}
+
+	div.menu-box	{
+		background:url(product-images/menu_background.png) no-repeat center center;
+		background-color:red;
+		height:100px;
+	}
+}
+
+
+/* product 
+-------------------------- */
+section.product{
+
+}
+
+/* box-banner
+-------------------------- */
+section.box-banner{
+
+	div.banner{
+		height: 105px;
+		background:url(product-images/mini-banner-productPage-consumer_clearfi.png) no-repeat center center;
+	}
+}
+
+
+/* footer 
+-------------------------- */
+footer{
+	section.footer-box {
+			background:url(product-images/green_bar_repeatx.png) repeat-x;
+			border-radius: 4px;
+		div.left-pic {
+			background:url(product-images/green_bar_sx.png) no-repeat 0 0 !important;
+			width: 5px;
+		}
+
+		div.language {
+			background:url(product-images/language_button_repeatx.png) repeat-x 0 0;
+			border-radius: 5px;
+
+			span.language-icon {
+				background:url(product-images/language_button_sx.png) no-repeat 0 0;
+				width: 25px;
+			}
+
+			span.next-icon{
+				background:url(product-images/language_button_dx.png) no-repeat 0 0;
+				width: 25px;
+			}
+
+			a{
+
+			}
+		}
+
+		div.right-pic {
+			background:url(product-images/green_bar_dx.png) no-repeat 0 0 !important; 
+			width: 5px;
+		}	
+
+		div.facebook {
+			background:url(product-images/Facebook_icon.png) no-repeat center center;
+			width: 16px;
+		}
+
+	}
+
+	section.copyright{
+
+	}
+}
+
