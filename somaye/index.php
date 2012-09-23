@@ -59,7 +59,7 @@
 						<li><a href='#'>option</a></li>
 					</ul>
 				</div>
-				<iframe class="" id='view-product' name='view-product' src="product-images/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe>
+				<iframe class="" id='view-product' name='view-product' src="images/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe>
 			</div>
 
 
