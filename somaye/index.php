@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
-	<link rel="stylesheet" type="text/css" href="style.less" />
+	<link rel="stylesheet/less" type="text/css" href="style.less" />
 
-	<script src="script/less.js" type="text/javascript"></script>
+	<script src="scripts/less.js" type="text/javascript"></script>
 	<!--[if IE]>
-		<script type="text/javascript" src="script/html5.js"></script>
+		<script type="text/javascript" src="scripts/html5.js"></script>
 	<![endif]-->
 
 </head>
