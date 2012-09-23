@@ -1,8 +1,8 @@
 /* Guide
 -------------------------- */
 body {
-	background-image: url('product-images/product.png');
-	//background: url('product-images/background_general_top.jpg') no-repeat center center;
+	//background-image: url('product-images/product.png');
+	background: url('product-images/background_general_top.jpg') no-repeat top right;
 
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -17,9 +17,9 @@ body > * > * {
 	outline: 1px dotted red !important;
 }
 
-body > * > * * {
-	outline: 1px dashed green !important;
-}
+//body > * > * * {
+//	outline: 1px dashed green !important;
+//}
 
 /* min-height 
 -------------------------- */
@@ -29,7 +29,7 @@ header > * * {
 
 
 
-div.container section.product {
+div.container section.product-box {
 	min-height: 423px;
 }
 
@@ -38,13 +38,7 @@ div.container section.box-banner > * {
 
 }
 
-footer > * {
-	min-height: 20px;
-}
 
-footer > * * {
-	min-height: 20px;
-}
 /* main styles
 -------------------------- */
 
@@ -58,13 +52,8 @@ header{
 	position: relative;
 
 	div.logo	{
-			position :fixed;
-			right    :0;
-			bottom   :50px;
-			width    :290px;
-			height   :165px;
 			overflow :hidden;
-			background-image :url(product-images/acer_logo_green.png) no-repeat center center;
+			background :url(product-images/acer_logo_green.png) no-repeat center center;
 		h1{
 			text-indent      :1000px;
 			white-space      :nowrap;
@@ -73,16 +62,52 @@ header{
 
 	div.menu-box	{
 		background:url(product-images/menu_background.png) no-repeat center center;
-		background-color:red;
-		height:100px;
+		
 	}
 }
 
 
 /* product 
 -------------------------- */
-section.product{
+section.product-box {
+	div.commerical {
+		height:37px;
 
+			span {
+				height:37px;
+				background:url(product-images/commerical-back.png);
+
+			}
+
+			a {
+				font-size:14px;
+				color:#343434;
+				text-decoration:none;
+				font-weight:bold;
+				line-height:37px;
+				width:170px;
+				display:block;
+				height:37px;
+				background-color:#fff;
+				border-radius: 5px 0 0 0;
+			}	
+	}
+
+	div.product {
+		div.list-product{
+			height:386px;
+			width:180px;
+			
+		}
+
+		iframe {
+			height:386px;
+			width:770px;
+			outline:1px dashed #ff0 !important;
+			
+
+		}
+	}
 }
 
 /* box-banner
@@ -99,47 +124,92 @@ section.box-banner{
 /* footer 
 -------------------------- */
 footer{
+
 	section.footer-box {
 			background:url(product-images/green_bar_repeatx.png) repeat-x;
 			border-radius: 4px;
+			height:20px;
 		div.left-pic {
 			background:url(product-images/green_bar_sx.png) no-repeat 0 0 !important;
 			width: 5px;
+			height:20px;
 		}
 
 		div.language {
 			background:url(product-images/language_button_repeatx.png) repeat-x 0 0;
 			border-radius: 5px;
+			height:20px;
+			width:100px;
 
 			span.language-icon {
 				background:url(product-images/language_button_sx.png) no-repeat 0 0;
 				width: 25px;
+				height:20px;
 			}
 
 			span.next-icon{
 				background:url(product-images/language_button_dx.png) no-repeat 0 0;
-				width: 25px;
+				height:20px;
 			}
 
-			a{
-
+			a {
+				display:block;
+				color:#fff;
+				height:20px;
+				line-height:20px;
+				text-align:center;
+				font-size:12px;
+				text-decoration:none;
 			}
 		}
 
 		div.right-pic {
 			background:url(product-images/green_bar_dx.png) no-repeat 0 0 !important; 
 			width: 5px;
+			height:20px;
 		}	
 
 		div.facebook {
 			background:url(product-images/Facebook_icon.png) no-repeat center center;
 			width: 16px;
+			height:20px;
 		}
 
+		nav.footer-menu {
+			ul {
+					list-style-type: none;
+					direction:ltr;
+					height:20px;
+				li {
+					float:left;
+					background: url(product-images/menu_separetor.png) no-repeat;
+
+					a {
+						display:block;
+						font-size:11px;
+						color:#fff;
+						text-decoration:none;
+						padding:0px 12px;
+						text-align:center;
+						line-height:20px;
+						text-transform:capitalize;
+					}
+				}
+			}
+		}
 	}
 
-	section.copyright{
+	div.copyright{
 
+		a {
+			display: block;
+			color:#fff;
+			font-size:12px;
+			text-decoration: none;
+			text-align: center;
+			height:20px;
+			line-height:20px;
+		}
 	}
 }
 

@@ -16,15 +16,29 @@
 	<div class="container">
 		<!-- start Header -->
 		<header class="cover">
-			<div class="logo left w5">LOGO</div>
+			<div class="logo left w5">
+				<h1>LOGO</h1>
+			</div>
 			<div class="menu-box ml5 w19">
 				<div class="search w4 last right"></div>
 				<nav class="menu"></nav>
 			</div>
 		</header>
 		<!-- start div product -->
-		<section class="product w24 cover mt3">
-			<!-- div product -->	
+		<section class="product-box w24 cover mt3">
+			<div class="commerical-box">
+				<div class="commerical cover">
+					<a class="right" href="#">GO TO COMMERICAL</a>
+					<span class="right last w15"></span>	
+				</div>
+			</div>
+			<div class="product">
+				<div class="list-product left"></div>
+				<iframe class="" id='view-product' name='view-product' src="" frameborder="1" scrolling="no"></iframe>
+			</div>
+
+
+
 		</section>
 		<section class="box-banner w24 cover mt4">
 			<div class="banner left w6">
@@ -33,16 +47,28 @@
 		<footer class="mt3 cover">
 			<section class="footer-box w22 mlra">
 				<div class="left-pic left"></div>
-				<div class="language w2 left">
+				<div class="language left">
 					<span class="language-icon left"></span>
 					<span class="next-icon right w1 last"></span>
-					<a class="mlra" href="#">?</a>	
+					<a class="mlra" href="#">Suomi</a>	
 				</div>
 				<div class="right-pic right"></div>
 				<div class="facebook right last"></div>
-				<div class="footer-menu mlra w11"></div>
+				<nav class="footer-menu mlra w11">
+					<ul>
+						<li><a href='#'>about</a></li>
+						<li><a href='#'>legal</a></li>
+						<li><a href='#'>privacy</a></li>
+						<li><a href='#'>group</a></li>
+						<li><a href='#'>register</a></li>
+						<li><a href='#'>press</a></li>
+						<li><a href='#'>software</a></li>
+					</ul>
+				</nav>
 			</section>
-			<div class="copyright w3 mlra"></div>
+			<div class="copyright w3 mlra cover">
+				<a href="#">copyright 2012</a>
+			</div>
 		</footer>
 
 
