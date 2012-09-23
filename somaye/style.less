@@ -17,9 +17,9 @@ body > * > * {
 	outline: 1px dotted red !important;
 }
 
-//body > * > * * {
-//	outline: 1px dashed green !important;
-//}
+body > * > * * {
+	outline: 1px dashed green !important;
+}
 
 /* min-height 
 -------------------------- */
@@ -53,6 +53,7 @@ header{
 
 	div.logo	{
 			overflow :hidden;
+			width:180px;
 			background :url(product-images/acer_logo_green.png) no-repeat center center;
 		h1{
 			text-indent      :1000px;
@@ -60,10 +61,40 @@ header{
 		}
 	}
 
-	div.menu-box	{
+	nav {
+		margin-left:180px;
 		background:url(product-images/menu_background.png) no-repeat center center;
-		
+
+		ul {
+			list-style-type: none;
+
+			li {
+				margin-top:15px;
+				float:left;
+
+				a {
+					//background: url(product-images/menu_separetor.png) no-repeat;
+					border-right:2px solid #505050;
+					border-radius:2px;
+					height: 65px;
+					font-size:12px;
+					color:#fff;
+					text-decoration:none;
+					padding:0px 15px 0px 40px;
+					line-height:65px;
+					text-align:center;
+					font-weight:bold;
+					text-transform:capitalize;
+				}
+
+				a:hover{
+					color:#6DC01C;
+				}
+			}
+
+		}
 	}
+	
 }
 
 

@@ -16,13 +16,16 @@
 	<div class="container">
 		<!-- start Header -->
 		<header class="cover">
-			<div class="logo left w5">
+			<div class="logo left">
 				<h1>LOGO</h1>
 			</div>
-			<div class="menu-box ml5 w19">
-				<div class="search w4 last right"></div>
-				<nav class="menu"></nav>
-			</div>
+			<nav class="">
+				<ul>
+					<li><a href="#">products</a></li>
+					<li><a href="#">shopping info</a></li>
+					<li><a href="#">support</a></li>
+				</ul>
+			</nav>
 		</header>
 		<!-- start div product -->
 		<section class="product-box w24 cover mt3">
