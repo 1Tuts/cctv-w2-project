@@ -71,6 +71,7 @@ header{
 			li {
 				margin-top:15px;
 				float:left;
+				position:relative;
 
 				a {
 					//background: url(product-images/menu_separetor.png) no-repeat;
@@ -85,10 +86,46 @@ header{
 					text-align:center;
 					font-weight:bold;
 					text-transform:capitalize;
+					-webkit-transition:200ms;
 				}
 
 				a:hover{
 					color:#6DC01C;
+					-webkit-transition:200ms;
+				}
+
+				ul {
+					margin:0 !important;
+					display:none;
+					position:absolute;
+					top:65px;
+					left:0;	
+					padding: 10px 10px 0 0;
+					width: 165px !important;
+					background:url(product-images/submenu_repeaty.png)  repeat-y right 0;
+					
+
+					li{
+						margin-top:0px;
+						float:none;
+						text-align:center;
+						width: 140px;
+
+						a{
+							border-left:none;
+							border-right:none;
+							padding: 3px 0 2px 0;
+							z-index: 10;
+							display:block;
+							white-space: normal;
+						}
+					}
+
+					li:hover{
+						ul{
+							display:block;
+						}
+					}
 				}
 			}
 
@@ -144,11 +181,13 @@ section.product-box {
 						text-align:center;
 						font-weight:bold;
 						text-transform:capitalize;
+						-webkit-transition:300ms;
 					}
 
 					a:hover{
 						font-size:16px;
 						color:#6DC01C;
+						-webkit-transition:300ms;
 					}
 				}
 			}	
