@@ -37,7 +37,7 @@
 
 			<ul class="web-nav cover mt2"></ul>
 			<div class="web-info-top"></div>
-			<div class="web-info-middle">
+			<div class="web-info-middle cover">
 				<div class="info right last">
 					<p class="mt1">
 						Since its founding in 1976, Acer has achieved its goal of breaking barriers between people and technology. Globally, Acer ranks No. 2 for notebook PCs.1 A profitable and sustainable Channel Business Model is instrumental to the company's continuing growth, while its multi-brand approach integrates Acer, Gateway, Packard Bell, and eMachines brands in worldwide markets.
@@ -60,34 +60,6 @@
 
 		</section>
 
-		<!-- start footer -->
-		<footer class="mt3 cover">
-			<section class="footer-box w22 mlra">
-				<div class="right-pic right"></div>
-				<div class="language right">
-					<span class="language-icon right"></span>
-					<span class="next-icon left w1 last"></span>
-					<a class="mlra" href="#">Suomi</a>	
-				</div>
-				<div class="left-pic left"></div>
-				<div class="facebook left last"></div>
-				<nav class="footer-menu mlra w11">
-					<ul>
-						<li><a href='#'>درباره ما</a></li>
-						<li><a href='#'>حقوقی</a></li>
-						<li><a href='#'>امنیتی</a></li>
-						<li><a href='#'>گروه</a></li>
-						<li><a href='#'>ثبات</a></li>
-						<li><a href='#'>مطبوعات</a></li>
-						<li><a href='#'>نرم افزار</a></li>
-					</ul>
-				</nav>
-			</section>
-			<div class="copyright w3 mlra cover">
-				copyright 2012
-			</div>
-
-
-	</div>
-</body>
-</html>
+		<?php
+			include('inc/footer.php');
+		?>

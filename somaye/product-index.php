@@ -10,6 +10,9 @@
 	<!--[if IE]>
 		<script type="text/javascript" src="scripts/html5.js"></script>
 	<![endif]-->
+	<script type="text/javascript" src="scripts/zepto.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+
 
 </head>
 <body>
@@ -34,8 +37,8 @@
 		<section class="product-box w24 cover mt3">
 			<div class="commerical-box">
 				<div class="commerical cover">
-					<a class="right" href="#">بازرگانی</a>
-					<span class="right last w15"></span>	
+					<a class="left" href="#">بازرگانی</a>
+					<span class="left last w15"></span>	
 				</div>
 			</div>
 			<div class="product">
@@ -51,7 +54,24 @@
 						<li><a href='#'>انتخاب</a></li>
 					</ul>
 				</div>
-				<iframe class="" id='view-product' name='view-product' src="images/product/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe>
+				<div class="view">
+					<div class="preview">
+						<div class="train">
+							<?php
+								$path='images/product/view';
+								$scan=scandir($path);
+								foreach($scan as $img){
+									$exp=explode('.',$img);
+									$type=end($exp);
+									if($type=='jpg'){
+										echo "<div style=\"background-image:url('$path/$img');\"></div>";
+									}
+								}
+							?>
+						</div>
+					</div>
+				</div>		
+				<!-- <iframe class="" id='view-product' name='view-product' src="images/product/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe> -->
 			</div>
 
 
@@ -62,33 +82,6 @@
 				<div class="banner right w6"></div>
 			</a>
 		</section>
-		<!-- start footer -->
-		<footer class="mt3 cover">
-			<section class="footer-box w22 mlra">
-				<div class="right-pic right"></div>
-				<div class="language right">
-					<span class="language-icon right"></span>
-					<span class="next-icon left w1 last"></span>
-					<a class="mlra" href="#">Suomi</a>	
-				</div>
-				<div class="left-pic left"></div>
-				<div class="facebook left last"></div>
-				<nav class="footer-menu mlra w11">
-					<ul>
-						<li><a href='#'>درباره ما</a></li>
-						<li><a href='#'>حقوقی</a></li>
-						<li><a href='#'>امنیتی</a></li>
-						<li><a href='#'>گروه</a></li>
-						<li><a href='#'>ثبات</a></li>
-						<li><a href='#'>مطبوعات</a></li>
-						<li><a href='#'>نرم افزار</a></li>
-					</ul>
-				</nav>
-			</section>
-			<div class="copyright w3 mlra cover">
-				copyright 2012
-			</div>
-		</footer>	
-	</div>
-</body>
-</html>
+		<?php
+			include('inc/footer.php');
+		?>

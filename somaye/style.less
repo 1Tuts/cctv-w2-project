@@ -70,7 +70,7 @@ header{
 					border-left:2px solid #505050;
 					border-radius:2px;
 					height: 65px;
-					font-size:12px;
+					font-size:14px;
 					color:#fff;
 					text-decoration:none;
 					padding:0px 15px 0px 40px;
@@ -108,7 +108,8 @@ section.product-box {
 			}
 
 			a {
-				font-size:14px;
+				text-align:center;
+				font-size:16px;
 				color:#343434;
 				text-decoration:none;
 				font-weight:bold;
@@ -117,14 +118,14 @@ section.product-box {
 				display:block;
 				height:37px;
 				background-color:#fff;
-				border-radius: 5px 0 0 0;
+				border-radius:5px 0 0 0;
 			}	
 	}
 
 	div.product {
 		div.list-product{
 			height:386px;
-			width:180px;
+			width:170px;
 
 			ul {
 				list-style-type: none;
@@ -139,13 +140,13 @@ section.product-box {
 						color:#fff;
 						text-decoration:none;
 						padding:11px 20px;
-						text-align:center;
+						text-align:right;
 						font-weight:bold;
 						text-transform:capitalize;
 						-webkit-transition:300ms;
 					}
 
-					a:hover{
+					a:hover,.active{
 						font-size:18px;
 						color:#6DC01C;
 						-webkit-transition:300ms;
@@ -156,10 +157,31 @@ section.product-box {
 			
 		}
 
-		iframe#view-product {
-			height:386px;
+		div.view {
 			width:770px;
-			outline:1px solid #fff;
+			height:386px;
+			overflow:hidden;
+
+			div.preview {
+				width: 1000px;
+				height:inherit;
+				position:relative;
+				overflow:hidden;
+				div.train {
+					background:  #666;
+					width:10000px;
+					height:inherit;
+					position:absolute;
+					left:0;
+					top:0;
+					div {
+						width:770px;
+						height:inherit;
+						float:left;
+						background-repeat:no-repeat;
+					}
+				}
+			}
 		}
 	}
 }
@@ -191,8 +213,6 @@ footer{
 
 		div.language {
 				background:url(images/product/language_button_repeatx.png) repeat-x 0 0;
-				background:url(images/language_button_repeatx.png) repeat-x 0 0;
-				background:url(images/language_button_repeatx.png) repeat-x 0 0;
 				border-radius: 5px;
 				height:20px;
 				width:100px;
@@ -237,7 +257,6 @@ footer{
 					height:20px;
 				li {
 					float:right;
-					background: url(images/product/menu_separetor.png) no-repeat;
 
 					a {
 						font-size:11px;
@@ -247,7 +266,7 @@ footer{
 						text-align:center;
 						line-height:20px;
 						text-transform:capitalize;
-						border-left:2px solid #ccc;
+						border-right:2px solid #ccc;
 						border-radius: 2px;
 					}
 				}
@@ -282,7 +301,6 @@ section.about-content {
 
 	div.web-info-middle {
 		background: url(images/about/background_page_repeaty.jpg) repeat-y center center;
-		height: 550px;
 
 		div.info {
 			min-height: 530px;
