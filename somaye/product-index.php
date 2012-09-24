@@ -12,7 +12,7 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="product">
 	<div class="container">
 		<!-- start Header -->
 		<header class="cover">
@@ -21,9 +21,9 @@
 			</div>
 			<nav class="main">
 				<ul>
-					<li><a href="#">products</a></li>
-					<li><a href="#">shopping info</a></li>
-					<li><a href="#">support</a></li>
+					<li><a href="#">محصولات</a></li>
+					<li><a href="#">اطلاعات خرید</a></li>
+					<li><a href="#">پشتیبانی</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -31,21 +31,21 @@
 		<section class="product-box w24 cover mt3">
 			<div class="commerical-box">
 				<div class="commerical cover">
-					<a class="right" href="#">GO TO COMMERICAL</a>
+					<a class="right" href="#">بازرگانی</a>
 					<span class="right last w15"></span>	
 				</div>
 			</div>
 			<div class="product">
-				<div class="list-product left">
+				<div class="list-product right">
 					<ul>
-						<li><a href='#'>notebooks</a></li>
+						<li><a href='#'>نوت بوک</a></li>
 						<li><a href='#'>ultrabooks</a></li>
-						<li><a href='#'>netbooks</a></li>
-						<li><a href='#'>tablets</a></li>
-						<li><a href='#'>desktops</a></li>
-						<li><a href='#'>monitors</a></li>
-						<li><a href='#'>projectors</a></li>
-						<li><a href='#'>option</a></li>
+						<li><a href='#'>نت بوک</a></li>
+						<li><a href='#'>تبلت</a></li>
+						<li><a href='#'>دسکتاپ</a></li>
+						<li><a href='#'>مانیتور</a></li>
+						<li><a href='#'>پروژکتور</a></li>
+						<li><a href='#'>انتخاب</a></li>
 					</ul>
 				</div>
 				<iframe class="" id='view-product' name='view-product' src="images/product/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe>
@@ -55,28 +55,28 @@
 
 		</section>
 		<section class="box-banner w24 cover mt4">
-			<div class="banner left w6">
+			<div class="banner right w6">
 			</div>
 		</section>
 		<footer class="mt3 cover">
 			<section class="footer-box w22 mlra">
-				<div class="left-pic left"></div>
-				<div class="language left">
-					<span class="language-icon left"></span>
-					<span class="next-icon right w1 last"></span>
+				<div class="right-pic right"></div>
+				<div class="language right">
+					<span class="language-icon right"></span>
+					<span class="next-icon left w1 last"></span>
 					<a class="mlra" href="#">Suomi</a>	
 				</div>
-				<div class="right-pic right"></div>
-				<div class="facebook right last"></div>
+				<div class="left-pic left"></div>
+				<div class="facebook left last"></div>
 				<nav class="footer-menu mlra w11">
 					<ul>
-						<li><a href='#'>about</a></li>
-						<li><a href='#'>legal</a></li>
-						<li><a href='#'>privacy</a></li>
-						<li><a href='#'>group</a></li>
-						<li><a href='#'>register</a></li>
-						<li><a href='#'>press</a></li>
-						<li><a href='#'>software</a></li>
+						<li><a href='#'>درباره ما</a></li>
+						<li><a href='#'>حقوقی</a></li>
+						<li><a href='#'>امنیتی</a></li>
+						<li><a href='#'>گروه</a></li>
+						<li><a href='#'>ثبات</a></li>
+						<li><a href='#'>مطبوعات</a></li>
+						<li><a href='#'>نرم افزار</a></li>
 					</ul>
 				</nav>
 			</section>
