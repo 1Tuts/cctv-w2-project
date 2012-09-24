@@ -46,11 +46,11 @@
 				slides.cueback();
 			});
 			
-			autoplayfunc = function(){
+			/*autoplayfunc = function(){
   				slides.cuenext();
 				setTimeout(autoplayfunc,1000);	
 				
-			}();
+			}();*/
 		},
 
 		cuenext : function(){

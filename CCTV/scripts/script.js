@@ -32,12 +32,12 @@
 	});
 })($)
 
-img = function() {
-	var lists = $('div.backimg .img1');
-	lists.click(function(){
-		console.log();
-		//	window.open("./demo2.php","_self");
-	});
+function img() {
+//	var lists = $('div.backimg .img1');
+//	lists.click(function(){
+//		console.log();
+			window.open("./demo2.php","_self");
+//	});
 	
 
 }

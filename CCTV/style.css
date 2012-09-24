@@ -35,9 +35,53 @@ div.banner ul li{
 div.banner ul li div{
 	width:100%;
 	height:100%;
+	cursor:pointer;
+	
+	background-repeat:no-repeat;
+	background-size:85% 85%;
+	-webkit-transition:all 0.5s;
+}
+
+div.banner ul li div:hover{
+	-webkit-transform: scale(1.3,1.3);
+	-moz-transform: scale(1.5,1.5);
+	-ms-transform: scale(1.5,1.5);
+	-o-transform: scale(1.5,1.5);
+	transform: scale(1.3,1.3);
+}
+
+div.banner ul li div.img1{
 	background-image:url('images/cueslider/iconia.png');
 }
 
+div.banner ul li div.img2{
+	background-image:url("images/cueslider/iconia_tabA100.png");
+}
+
+div.banner ul li div.img3{
+	background-image:url("images/cueslider/iconia_tabA200.png");
+}
+
+div.banner ul li div.img4{
+	background-image:url("images/cueslider/iconia_tabA500.png");
+}
+
+div.banner ul li div.img5{
+	background-image:url("images/cueslider/iconia_tabA510.png");
+}
+
+div.banner ul li div.img6{
+	background-image:url("images/cueslider/iconia_tabW500.png");
+}
+
+div.banner ul li div.img7{
+	background-image:url("images/cueslider/iconia_tabA200.png");
+}
+
+div.banner ul li div.img8{
+	background-image:url("images/cueslider/iconia_tabW500.png");
+}
+/*
 div.banner ul li img{
 	display:block;
 	cursor:pointer;
@@ -51,7 +95,7 @@ div.banner ul li img:hover{
 	-o-transform: scale(1.5,1.5);
 	transform: scale(1.3,1.3);
 }
-
+*/
 div.banner .next{
 	width:40px;
 	height:40px;
