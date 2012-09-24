@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>Cue Slider Demo 1</title>
+	<title>Pages 2</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="scripts/zepto.js"></script>
 	<script type="text/javascript" src="scripts/cueslider.js"></script>

@@ -36,7 +36,8 @@ function img() {
 //	var lists = $('div.backimg .img1');
 //	lists.click(function(){
 //		console.log();
-			window.open("./demo2.php","_self");
+//			window.open("./demo2.php","_self");
+			window.open("./support.php","_self");
 //	});
 	
 
