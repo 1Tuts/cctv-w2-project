@@ -16,9 +16,12 @@
 	<div class="container">
 		<!-- start Header -->
 		<header class="cover">
-			<div class="logo left">
-				<h1>LOGO</h1>
-			</div>
+			<a href="#">
+				<div class="logo left"><a href="#">
+			
+					<h1>LOGO</h1>
+				</div>
+			</a>
 			<nav class="main">
 				<ul>
 					<li><a href="#">محصولات</a></li>
@@ -55,8 +58,9 @@
 
 		</section>
 		<section class="box-banner w24 cover mt4">
-			<div class="banner right w6">
-			</div>
+			<a href="#">
+				<div class="banner right w6"></div>
+			</a>
 		</section>
 		<footer class="mt3 cover">
 			<section class="footer-box w22 mlra">
@@ -81,7 +85,7 @@
 				</nav>
 			</section>
 			<div class="copyright w3 mlra cover">
-				<a href="#">copyright 2012</a>
+				copyright 2012
 			</div>
 		</footer>
 
