@@ -31,6 +31,13 @@ div.banner ul li{
 	display:block;
 	position:absolute;
 }
+
+div.banner ul li div{
+	width:100%;
+	height:100%;
+	background-image:url('images/cueslider/iconia.png');
+}
+
 div.banner ul li img{
 	display:block;
 	cursor:pointer;
@@ -38,11 +45,11 @@ div.banner ul li img{
 }
 
 div.banner ul li img:hover{
-	-webkit-transform: scale(1.5,1.5);
+	-webkit-transform: scale(1.3,1.3);
 	-moz-transform: scale(1.5,1.5);
 	-ms-transform: scale(1.5,1.5);
 	-o-transform: scale(1.5,1.5);
-	transform: scale(1.5,1.5);
+	transform: scale(1.3,1.3);
 }
 
 div.banner .next{

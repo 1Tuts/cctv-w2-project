@@ -45,6 +45,12 @@
 			$(options.backBtn).click(function(){
 				slides.cueback();
 			});
+			
+			autoplayfunc = function(){
+  				slides.cuenext();
+				setTimeout(autoplayfunc,1000);	
+				
+			}();
 		},
 
 		cuenext : function(){

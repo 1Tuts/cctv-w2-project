@@ -11,7 +11,9 @@
 	<div class="welcom"></div>
 	<div class="banner">
 		<ul>
-            <li style="left: -255px; top: 5px; opacity: 0; width: 236px; height: 253px;"><img src="images/cueslider/iconia.png" width="90%" height="90%"/></li>
+            <li style="left: -255px; top: 5px; opacity: 0; width: 236px; height: 253px;">
+              <div></div>
+<!--            <img src="images/cueslider/iconia.png" width="90%" height="90%"/>--></li>
             <li style="left: 43px; top: 0px; width: 236px; height: 253px;"><img src="images/cueslider/iconia_tabA100.png" width="90%" height="90%"/></li>
             <li style="left: 175px; top: -200px; width: 290px; height: 310px;"><img src="images/cueslider/iconia_tabA200.png" width="90%" height="90%"/></li>
             <li style="left: 480px; top: -205px; width: 236px; height: 253px;"><img src="images/cueslider/iconia_tabA500.png" width="90%" height="90%"/></li>
