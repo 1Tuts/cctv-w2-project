@@ -12,7 +12,7 @@
 	<![endif]-->
 
 </head>
-<body>
+<body class="product">
 	<div class="container">
 		<!-- start Header -->
 		<header class="cover">
