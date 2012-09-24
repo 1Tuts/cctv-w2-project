@@ -19,20 +19,9 @@
 			<div class="logo left">
 				<h1>LOGO</h1>
 			</div>
-			<nav class="">
+			<nav class="main">
 				<ul>
-					<li><a href="#">products</a>
-						<ul>
-							<li><a href='#'>notebooks</a></li>
-							<li><a href='#'>ultrabooks</a></li>
-							<li><a href='#'>netbooks</a></li>
-							<li><a href='#'>tablets</a></li>
-							<li><a href='#'>desktops</a></li>
-							<li><a href='#'>monitors</a></li>
-							<li><a href='#'>projectors</a></li>
-							<li><a href='#'>option</a></li>
-						</ul>
-					</li>
+					<li><a href="#">products</a></li>
 					<li><a href="#">shopping info</a></li>
 					<li><a href="#">support</a></li>
 				</ul>
@@ -59,7 +48,7 @@
 						<li><a href='#'>option</a></li>
 					</ul>
 				</div>
-				<iframe class="" id='view-product' name='view-product' src="images/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe>
+				<iframe class="" id='view-product' name='view-product' src="images/product/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe>
 			</div>
 
 

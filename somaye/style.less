@@ -1,8 +1,8 @@
 /* Guide
 -------------------------- */
 body {
-	//background-image: url('images/product.png');
-	background: url('images/background_general_top.jpg') no-repeat top right;
+	//background-image: url('images/product/product.png');
+	background: url('images/product/background_general_top.jpg') no-repeat top right;
 
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -21,23 +21,6 @@ body > * > * * {
 	outline: 1px dashed green !important;
 }
 
-/* min-height 
--------------------------- */
-header > * * {
-	min-height: 65px;
-}
-
-
-
-div.container section.product-box {
-	min-height: 423px;
-}
-
-div.container section.box-banner > * {
-	min-height: 105px;
-
-}
-
 
 /* main styles
 -------------------------- */
@@ -54,19 +37,28 @@ header{
 	div.logo	{
 			overflow :hidden;
 			width:180px;
-			background :url(images/acer_logo_green.png) no-repeat center center;
+			background :url(images/product/acer_logo_green.png) no-repeat center center;
 		h1{
-			text-indent      :1000px;
-			white-space      :nowrap;
+			text-indent:1000px;
+			white-space:nowrap;
 		}
 	}
 
 	nav {
-		margin-left:180px;
-		background:url(images/menu_background.png) no-repeat center center;
+		width:770px; 
+		height:65px; 
+		background:url(images/product/menu_background.png) no-repeat center center; 
+		position:absolute; 
+		top:0; 
+		right:0;
 
 		ul {
 			list-style-type: none;
+			margin:0;
+			position:absolute; 
+			top:0px; 
+			right:350px; 
+			width:400px;
 
 			li {
 				margin-top:15px;
@@ -74,7 +66,7 @@ header{
 				position:relative;
 
 				a {
-					//background: url(images/menu_separetor.png) no-repeat;
+					//----------------
 					border-right:2px solid #505050;
 					border-radius:2px;
 					height: 65px;
@@ -89,44 +81,12 @@ header{
 					-webkit-transition:200ms;
 				}
 
-				a:hover{
+				:hover{ //a:hover
 					color:#6DC01C;
 					-webkit-transition:200ms;
 				}
 
-				ul {
-					margin:0 !important;
-					display:none;
-					position:absolute;
-					top:65px;
-					left:0;	
-					padding: 10px 10px 0 0;
-					width: 165px !important;
-					background:url(images/submenu_repeaty.png)  repeat-y right 0;
-					
-
-					li{
-						margin-top:0px;
-						float:none;
-						text-align:center;
-						width: 140px;
-
-						a{
-							border-left:none;
-							border-right:none;
-							padding: 3px 0 2px 0;
-							z-index: 10;
-							display:block;
-							white-space: normal;
-						}
-					}
-
-					li:hover{
-						ul{
-							display:block;
-						}
-					}
-				}
+				
 			}
 
 		}
@@ -143,7 +103,7 @@ section.product-box {
 
 			span {
 				height:37px;
-				background:url(images/commerical-back.png);
+				background:url(images/product/commerical-back.png);
 
 			}
 
@@ -189,14 +149,16 @@ section.product-box {
 						color:#6DC01C;
 						-webkit-transition:300ms;
 					}
+
 				}
 			}	
 			
 		}
 
-		iframe {
+		iframe#view-product {
 			height:386px;
 			width:770px;
+			outline:1px solid #fff;
 		}
 	}
 }
@@ -207,7 +169,7 @@ section.box-banner{
 
 	div.banner{
 		height: 105px;
-		background:url(images/mini-banner-productPage-consumer_clearfi.png) no-repeat center center;
+		background:url(images/product/mini-banner-productPage-consumer_clearfi.png) no-repeat center center;
 	}
 }
 
@@ -217,30 +179,31 @@ section.box-banner{
 footer{
 
 	section.footer-box {
-			background:url(images/green_bar_repeatx.png) repeat-x;
+			background:url(images/product/green_bar_repeatx.png) repeat-x;
 			border-radius: 4px;
 			height:20px;
 		div.left-pic {
-			background:url(images/green_bar_sx.png) no-repeat 0 0 !important;
+			background:url(images/product/green_bar_sx.png) no-repeat 0 0 !important;
 			width: 5px;
 			height:20px;
 		}
 
 		div.language {
+				background:url(images/product/language_button_repeatx.png) repeat-x 0 0;
+				background:url(images/language_button_repeatx.png) repeat-x 0 0;
 				background:url(images/language_button_repeatx.png) repeat-x 0 0;
 				border-radius: 5px;
 				height:20px;
 				width:100px;
 
 			span.language-icon {
-				background:url(images/language_button_sx.png) no-repeat 0 0;
+				background:url(images/product/language_button_sx.png) no-repeat 0 0;
 				width: 25px;
 				height:20px;
-				
 			}
 
 			span.next-icon{
-				background:url(images/language_button_dx.png) no-repeat 0 0;
+				background:url(images/product/language_button_dx.png) no-repeat 0 0;
 				height:20px;
 			}
 
@@ -256,13 +219,13 @@ footer{
 		}
 
 		div.right-pic {
-			background:url(images/green_bar_dx.png) no-repeat 0 0 !important; 
+			background:url(images/product/green_bar_dx.png) no-repeat 0 0 !important; 
 			width: 5px;
 			height:20px;
 		}	
 
 		div.facebook {
-			background:url(images/Facebook_icon.png) no-repeat center center;
+			background:url(images/product/Facebook_icon.png) no-repeat center center;
 			width: 16px;
 			height:20px;
 		}
@@ -274,7 +237,7 @@ footer{
 					height:20px;
 				li {
 					float:left;
-					background: url(images/menu_separetor.png) no-repeat;
+					background: url(images/product/menu_separetor.png) no-repeat;
 
 					a {
 						display:block;
