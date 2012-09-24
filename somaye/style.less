@@ -1,14 +1,7 @@
 /* Guide
 -------------------------- */
-body.product {
-	//background-image: url('images/product/product.png');
-	background: url('images/product/background_general_top.jpg') no-repeat top right;
 
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-color: #000;
-}
-/*
+
 body > * {
 	outline: 1px dashed blue;
 }
@@ -22,9 +15,17 @@ body > * > * * {
 }
 
 
-/* main styles
--------------------------- */
+/* product styles
+---------------------------------------------------- */
 
+body{
+	//background-image: url('images/about/about.png');
+	background: url('images/product/background_general_top.jpg') no-repeat top right;
+
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
 /* header 
 -------------------------- */
 header{
@@ -267,3 +268,26 @@ footer{
 	}
 }
 
+/* About page styles
+---------------------------------------------------- */
+section.about-content {
+	ul.web-nav {
+		height:45px;
+	}
+
+	div.web-info-top {
+		height: 40px;
+		background: url(images/about/background_page_top.jpg) no-repeat;
+	}
+
+	div.web-info-middle {
+		background: url(images/about/background_page_repeaty.jpg) repeat-y center center;
+		height: 546px;
+	}
+
+	div.web-info-bottom {
+		background: url(images/about/background_page_bottom.jpg) repeat-y center center;
+		height: 40px;
+	}	
+
+}
