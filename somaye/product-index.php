@@ -20,7 +20,7 @@
 		<!-- start Header -->
 		<header class="cover">
 			<a href="#">
-				<div class="logo left"><a href="#">
+				<div class="logo left"><a href="#"></a>
 			
 					<h1>LOGO</h1>
 				</div>
