@@ -25,13 +25,21 @@
 					<h1>LOGO</h1>
 				</div>
 			</a>
-			<nav class="main">
-				<ul>
-					<li><a href="#">محصولات</a></li>
-					<li><a href="#">اطلاعات خرید</a></li>
-					<li><a href="#">پشتیبانی</a></li>
-				</ul>
-			</nav>
+			<div class="main">
+				<nav>
+					<ul>
+						<li><a href="#">محصولات</a>
+							<ul>
+								<li><a href="#">محصولات</a></li>
+								<li><a href="#">اطلاعات خرید</a></li>
+								<li><a href="#">پشتیبانی</a></li>
+							</ul>	
+						</li>
+						<li><a href="#">اطلاعات خرید</a></li>
+						<li><a href="#">پشتیبانی</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<!-- start div product -->
 		<section class="product-box w24 cover mt3">
