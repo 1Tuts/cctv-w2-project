@@ -12,7 +12,7 @@
 	<![endif]-->
 	<script type="text/javascript" src="scripts/zepto.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
-
+	
 
 </head>
 <body>
@@ -44,34 +44,17 @@
 			<div class="product">
 				<div class="list-product right">
 					<ul>
-						<li><a href='#'>نوت بوک</a></li>
-						<li><a href='#'>ultrabooks</a></li>
-						<li><a href='#'>نت بوک</a></li>
-						<li><a href='#'>تبلت</a></li>
-						<li><a href='#'>دسکتاپ</a></li>
-						<li><a href='#'>مانیتور</a></li>
-						<li><a href='#'>پروژکتور</a></li>
-						<li><a href='#'>انتخاب</a></li>
+						<li><a href='images\product\view\1.jpg' target='view-product'>نوت بوک</a></li>
+						<li><a href='images\product\view\2.jpg' target='view-product'>ultrabooks</a></li>
+						<li><a href='images\product\view\3.jpg' target='view-product'>نت بوک</a></li>
+						<li><a href='images\product\view\4.jpg' target='view-product'>تبلت</a></li>
+						<li><a href='images\product\view\5.jpg' target='view-product'>دسکتاپ</a></li>
+						<li><a href='images\product\view\6.jpg' target='view-product'>مانیتور</a></li>
+						<li><a href='images\product\view\7.jpg' target='view-product'>پروژکتور</a></li>
+						<li><a href='images\product\view\8.jpg' target='view-product'>انتخاب</a></li>
 					</ul>
 				</div>
-				<div class="view">
-					<div class="preview">
-						<div class="train">
-							<?php
-								$path='images/product/view';
-								$scan=scandir($path);
-								foreach($scan as $img){
-									$exp=explode('.',$img);
-									$type=end($exp);
-									if($type=='jpg'){
-										echo "<div style=\"background-image:url('$path/$img');\"></div>";
-									}
-								}
-							?>
-						</div>
-					</div>
-				</div>		
-				<!-- <iframe class="" id='view-product' name='view-product' src="images/product/product_banner_notebook.jpg" frameborder="1" scrolling="no"></iframe> -->
+				<iframe id='view-product' src="images\product\view\1.jpg" name='view-product' frameborder="1" scrolling="no"></iframe>	
 			</div>
 
 
