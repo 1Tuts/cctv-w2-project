@@ -20,26 +20,36 @@
 		<!-- start Header -->
 		<header class="cover">
 			<a href="#">
-				<div class="logo left"><a href="#"></a>
+				<div class="logo left">
 			
 					<h1>LOGO</h1>
 				</div>
 			</a>
-			<div class="main">
-				<nav>
-					<ul>
-						<li><a href="#">محصولات</a>
-							<ul>
-								<li><a href="#">محصولات</a></li>
-								<li><a href="#">اطلاعات خرید</a></li>
-								<li><a href="#">پشتیبانی</a></li>
-							</ul>	
-						</li>
-						<li><a href="#">اطلاعات خرید</a></li>
-						<li><a href="#">پشتیبانی</a></li>
-					</ul>
-				</nav>
-			</div>
+			<nav>
+				<ul>
+					<li><a href="#">محصولات</a>
+						<ul>
+							<li><a href="#">محصولات</a></li>
+							<li><a href="#">اطلاعات خرید</a></li>
+							<li><a href="#">پشتیبانی</a></li>
+						</ul>	
+					</li>
+					<li><a href="#">اطلاعات خرید</a>
+						<ul>
+							<li><a href="#">محصولات</a></li>
+							<li><a href="#">اطلاعات خرید</a></li>
+							<li><a href="#">پشتیبانی</a></li>
+						</ul>
+					</li>
+					<li><a href="#">پشتیبانی</a>
+						<ul>
+							<li><a href="#">محصولات</a></li>
+							<li><a href="#">اطلاعات خرید</a></li>
+							<li><a href="#">پشتیبانی</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<!-- start div product -->
 		<section class="product-box w24 cover mt3">

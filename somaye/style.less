@@ -44,31 +44,31 @@ header{
 			white-space:nowrap;
 		}
 	}
-
-	div.main {
+		
+	nav {
 		width:770px; 
 		min-height:65px; 
 		background:url(images/product/menu_background.png) no-repeat center center; 
 		position:absolute; 
 		top:0; 
 		right:0;
-		nav {
+		ul {
+			list-style-type: none;
+			margin:0;
+			position:absolute; 
+			top:0px; 
+			left:400px;
 
-			ul {
-				list-style-type: none;
-				margin:0;
-				position:absolute; 
-				top:0px; 
-				left:400px;
-
-				li {
-					padding-top:15px;
-					float:right;
-					position:relative;
+			li {
+				padding-top:15px;
+				float:right;
+				position:relative;
+				
 				&:hover {
 
 					ul {
 						display:block;
+						//-webkit-transition:300ms;
 					}
 						
 				}
@@ -86,39 +86,40 @@ header{
 						-webkit-transition:200ms;
 					}
 
-					&:hover{ //a:hover
+					:hover{ //a:hover
 						color:#6DC01C;
 						-webkit-transition:200ms;
 					}
 
 				ul {
-					width:150px;
+					min-width:100%;
 					display:none;
 					position:absolute;
 					top:65px;
-					left:-25px;
+					left:0px;
 					background:url(images/product/submenu_repeaty.png) repeat-y center center; 
 					border-radius:0 0 10px 10px;
 					border:1px solid #555;
 					border-top:none;
+					z-index: 3;
+
 
 					li {
 						float:none;
-						text-align:center;
+						text-align:right;
 
 						a{
 						border-left:none;
-
+						white-space: nowrap;
+						//padding:0 !important;
 						}
 					}
 				}
 
-				}
-
 			}
+
 		}
-	}
-	
+	}	
 }
 
 
