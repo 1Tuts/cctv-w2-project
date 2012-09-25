@@ -1,4 +1,9 @@
+/*body{
+	background : #f4f4f4;
+}
+*/
 div.logo  {
+
 		position :fixed;
 		right    :0;
 		bottom   :50px;
@@ -13,7 +18,10 @@ div.logo  {
 		white-space      :nowrap;
 	}
 }
-
+a{
+	text-decoration:none; 
+}
+/*********************************** ATTRIBUTE HOME PAGE ******************************/
 section.slideshow{
 
 	section.backimg{
@@ -32,5 +40,55 @@ section.slideshow{
 	}
 }
 
+/********************************** ATTRIBUTE CONTENT-NAME-PRODUCT ***********************/
+body.name-product{
 
-		
+	background-image  : url('images/gallery/2.jpg');
+	background-repeat : no-repeat;
+	background-size   : cover;
+
+		section.content-name-product{
+
+			background-color : #fff;
+
+			menu{
+				
+				border-top    : 1px solid #d6d6d6;
+				border-bottom : 1px solid #d6d6d6;
+				
+				ul{
+					
+					li{
+
+						float    : right;
+						padding	 : 15px 0;
+
+						&:hover{
+							background-image    : url('images/name-product/li-hover.png');
+							background-repeat   : no-repeat;
+							background-position : bottom center;
+						}	
+						
+						a{
+							dispaly     : block;
+							padding     : 10px 15px;
+							color       : #aaa;
+							font-family : Verdana, Geneva, sans-serif;
+							
+							&:hover{
+								color   : #666;
+							}
+						}
+				  	}
+				}
+			}
+			
+			section.slide-name-product{
+			}
+			
+			section.light-box-name-product{
+				border-top    : 1px solid #d6d6d6;
+				border-bottom : 1px solid #d6d6d6;
+			}
+		}
+}

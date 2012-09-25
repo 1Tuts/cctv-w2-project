@@ -64,3 +64,10 @@
 		}
 	});
 })($);
+
+$(function(){
+	var lists = $('div.banner ul li');
+	lists.click(function(){
+		window.open('name-product.php','_self');
+	});
+});
