@@ -26,6 +26,7 @@
 				</div>
 			</a>
 			<nav>
+			<img src="images/product/menu_background.png" /> 
 				<ul>
 					<li><a href="#">محصولات</a>
 						<ul>
@@ -38,14 +39,11 @@
 						<ul>
 							<li><a href="#">محصولات</a></li>
 							<li><a href="#">اطلاعات خرید</a></li>
-							<li><a href="#">پشتیبانی</a></li>
 						</ul>
 					</li>
 					<li><a href="#">پشتیبانی</a>
 						<ul>
 							<li><a href="#">محصولات</a></li>
-							<li><a href="#">اطلاعات خرید</a></li>
-							<li><a href="#">پشتیبانی</a></li>
 						</ul>
 					</li>
 				</ul>

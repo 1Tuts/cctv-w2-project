@@ -20,7 +20,7 @@
 						<li><a href='#'>ثبات</a></li>
 						<li><a href='#'>مطبوعات</a></li>
 						<li><a href='#'>نرم افزار</a></li>
-					</ul>
+					</ul>	
 				</nav>
 			</section>
 			<div class="copyright w3 mlra cover">
