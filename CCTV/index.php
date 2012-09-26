@@ -51,6 +51,5 @@
 
 		</section>
 	</section>
-    
-</body>
-</html>
+ </body>
+ </html>
