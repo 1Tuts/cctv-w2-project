@@ -30,13 +30,17 @@
             </ul>
         </menu>
         
+         <section class="light-box-name-product cover">
+            <p class="mt2 mr1 mb2 txr">گالری</p>
+        	<?php
+			  include "test3.php";
+			?>
+        </section>
+        
         <section class="slide-name-product mh40">
         	SLIDE
         </section>
-        
-        <section class="light-box-name-product mh40">
-        	GALLERY(LIGHT BOX)
-        </section>
+       
         FOOTER
     </section>
 
