@@ -37,7 +37,7 @@ function img() {
 //	lists.click(function(){
 //		console.log();
 			window.open("./demo2.php","_self");
-//			window.open("./support.php","_self");
+			
 //	});
 	
 
