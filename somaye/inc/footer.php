@@ -11,7 +11,7 @@
 				<a href="">
 					<div class="facebook left last"></div>
 				</a>
-				<nav class="footer-menu mlra w11">
+				<nav class="footer-menu w15 cover">
 					<ul>
 						<li><a href='#'>درباره ما</a></li>
 						<li><a href='#'>همکار ما شوید</a></li>

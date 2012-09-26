@@ -20,13 +20,14 @@
 		<!-- start Header -->
 		<header class="cover">
 			<a href="#">
-				<div class="logo left"><a href="#"></a>
+				<div class="logo left ">
 			
 					<h1>LOGO</h1>
 				</div>
 			</a>
 			<div class="main">
 				<nav>
+					<img src="images/product/menu_background.png" />
 					<ul>
 						<li><a href="#">محصولات</a>
 							<ul>
