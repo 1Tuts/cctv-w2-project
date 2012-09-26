@@ -37,8 +37,10 @@
 			?>
         </section>
         
-        <section class="slide-name-product mh40">
-        	SLIDE
+        <section class="slide-name-product cover">
+        	<?php
+				include "slide-product.php";
+			?>
         </section>
        
         FOOTER
