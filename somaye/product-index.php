@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<title>Product</title>
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
 	<link rel="stylesheet/less" type="text/css" href="style.less" />
@@ -20,34 +20,27 @@
 		<!-- start Header -->
 		<header class="cover">
 			<a href="#">
-				<div class="logo left">
+				<div class="logo left ">
 			
 					<h1>LOGO</h1>
 				</div>
 			</a>
-			<nav>
-			<img src="images/product/menu_background.png" /> 
-				<ul>
-					<li><a href="#">محصولات</a>
-						<ul>
-							<li><a href="#">محصولات</a></li>
-							<li><a href="#">اطلاعات خرید</a></li>
-							<li><a href="#">پشتیبانی</a></li>
-						</ul>	
-					</li>
-					<li><a href="#">اطلاعات خرید</a>
-						<ul>
-							<li><a href="#">محصولات</a></li>
-							<li><a href="#">اطلاعات خرید</a></li>
-						</ul>
-					</li>
-					<li><a href="#">پشتیبانی</a>
-						<ul>
-							<li><a href="#">محصولات</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
+			<div class="main">
+				<nav>
+					<img src="images/product/menu_background.png" />
+					<ul>
+						<li><a href="#">محصولات</a>
+							<ul>
+								<li><a href="#">محصولات</a></li>
+								<li><a href="#">اطلاعات خرید</a></li>
+								<li><a href="#">پشتیبانی</a></li>
+							</ul>	
+						</li>
+						<li><a href="#"> پشتیبانی</a></li>
+						<li><a href="#">ارتباط با ما</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<!-- start div product -->
 		<section class="product-box w24 cover mt3">
