@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<title>Product</title>
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
 	<link rel="stylesheet/less" type="text/css" href="style.less" />
@@ -35,8 +35,8 @@
 								<li><a href="#">پشتیبانی</a></li>
 							</ul>	
 						</li>
-						<li><a href="#">اطلاعات خرید</a></li>
-						<li><a href="#">پشتیبانی</a></li>
+						<li><a href="#"> پشتیبانی</a></li>
+						<li><a href="#">ارتباط با ما</a></li>
 					</ul>
 				</nav>
 			</div>

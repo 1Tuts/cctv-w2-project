@@ -14,12 +14,12 @@
 				<nav class="footer-menu mlra w11">
 					<ul>
 						<li><a href='#'>درباره ما</a></li>
-						<li><a href='#'>حقوقی</a></li>
-						<li><a href='#'>امنیتی</a></li>
-						<li><a href='#'>گروه</a></li>
-						<li><a href='#'>ثبات</a></li>
+						<li><a href='#'>همکار ما شوید</a></li>
+						<li><a href='#'>مقالات تخصصی</a></li>
+						<li><a href='#'>پرسش و پاسخ</a></li>
+						<!--<li><a href='#'>ثبات</a></li>
 						<li><a href='#'>مطبوعات</a></li>
-						<li><a href='#'>نرم افزار</a></li>
+						<li><a href='#'>نرم افزار</a></li>-->
 					</ul>
 				</nav>
 			</section>
