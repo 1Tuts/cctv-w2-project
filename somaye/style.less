@@ -376,8 +376,27 @@ footer{
 /* About page styles
 ---------------------------------------------------- */
 section.about-content {
-	ul.nav {
-		height:45px;
+	div.nav {
+			background: url(images/about/arrow_breadcrumb.png) no-repeat 8.5% center;
+
+		a {
+			height:45px;
+			color:#fff;
+			line-height: 45px;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: capitalize;
+			padding-left: 18px;
+			text-decoration: none;
+			&:hover {
+				color:#6DC01C;
+			}
+		}
+
+		a.next-link {
+			color:#6DC01C;
+		}
+		
 		
 	}
 
@@ -385,7 +404,6 @@ section.about-content {
 		background: url(images/about/background_page_repeaty.jpg) repeat-y center center;
 		
 		border-radius: 10px;
-		border-top: 1px solid #red;
 		-webkit-box-shadow:1px 1px 10px #444 inset;
 
 		div.info {
@@ -441,21 +459,17 @@ section.about-content {
 					&:last-child {
 						padding-bottom: 5px;
 					}
-					//sbackground:url(images/about/menu_arrow.png) no-repeat right center;
-						//height: 11px;
-						//width: 8px;
-						//padding-left: 50px;pan {
-						
-					//}
+
 					a {
-						//display:block;
+						//outline: 1px solid red;
+						display:block;
 						font-size:11px;
 						color:#333;
 						text-decoration:none;
 						text-transform:capitalize;
 						line-height: 30px;
-						padding: 8px 10px 9px 10px;
-						text-align:right;
+						padding: 2px 10px 0px 10px;
+						text-align:left;
 
 						&:hover {
 							color:#6DC01C;

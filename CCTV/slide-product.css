@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.container{
+	width:980px;
+	margin:0 auto;
+	padding-top:1px;
+}
+
+div.slide{
+	width:920px;
+	position:relative;
+}
+
+div.scroll{
+	width:900px;
+	height:620px;
+	margin:0 auto 0;
+	overflow:hidden;
+	position:relative;
+}
+
+div.scroll div.train{
+	width:10000px;
+	height:600px;
+	position:absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
+	-webkit-transition:left 1s;
+	-moz-transition:left 1s;
+}
+
+div.scroll div.train > div{
+	width:900px;
+	height:inheri;
+	float:left;
+	
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:cover;
+}
+
+div.scroll ul.btn{
+	list-style:none;
+	width:220px;
+	height:12px;
+	position:absolute;
+	bottom:10px;
+	right:400px;
+}
+
+div.scroll ul.btn li{
+	background-color:transparent;
+	margin-right:8px;
+	float:left;
+	width:25px;
+	height:8px;
+	cursor:pointer;
+	
+	-webkit-transition:all 1200ms;
+	-moz-transition:all 1200ms;
+	-ms-transition:all 1200ms;
+	transition:all 1200ms;
+	
+	-webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+	-ms-border-radius: 9px;
+    border-radius: 9px;
+	border:2px solid #06dc1c;
+}
+
+div.scroll ul.btn li:hover,
+div.scroll ul.btn li.active{
+	background-color:#06dc1c;
+	
+	-webkit-transition-duration:300ms;
+	-moz-transition-duration:300ms;
+}

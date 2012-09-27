@@ -5,7 +5,11 @@
 		<!-- start About info -->
 		<section class="about-content cover">
 
-			<ul class="nav cover mt2"></ul>
+			<div class="nav cover mt2">
+				<a href="#">about us</a>
+				<span></span>
+				<a class="next-link" href="#">about us</a>
+			</div>
 			<div class="web-info cover">
 				<div class="info right last">
 					<p class="mt1">
