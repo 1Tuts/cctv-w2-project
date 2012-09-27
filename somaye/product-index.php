@@ -1,47 +1,7 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8" />
-	<title>Product</title>
-	<link rel="stylesheet" type="text/css" href="1styles.css" />
-	<link rel="stylesheet/less" type="text/css" href="style.less" />
-
-	<script src="scripts/less.js" type="text/javascript"></script>
-	<!--[if IE]>
-		<script type="text/javascript" src="scripts/html5.js"></script>
-	<![endif]-->
-	<script type="text/javascript" src="scripts/zepto.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
-	
-
-</head>
-<body>
-	<div class="container">
-		<!-- start Header -->
-		<header class="cover">
-			<a href="#">
-				<div class="logo left ">
-			
-					<h1>LOGO</h1>
-				</div>
-			</a>
-			<div class="main">
-				<nav>
-					<img src="images/product/menu_background.png" />
-					<ul>
-						<li><a href="#">محصولات</a>
-							<ul>
-								<li><a href="#">محصولات</a></li>
-								<li><a href="#">اطلاعات خرید</a></li>
-								<li><a href="#">پشتیبانی</a></li>
-							</ul>	
-						</li>
-						<li><a href="#"> پشتیبانی</a></li>
-						<li><a href="#">ارتباط با ما</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+		
+		<?php
+			include('inc/header.php');
+		?>
 		<!-- start div product -->
 		<section class="product-box w24 cover mt3">
 			<div class="commerical-box">
@@ -50,20 +10,50 @@
 					<span class="left last w15"></span>	
 				</div>
 			</div>
+
+
 			<div class="product">
-				<div class="list-product right">
+				<div class="list-product right cover">
 					<ul>
-						<li><a href='images\product\view\1.jpg' target='view-product'>نوت بوک</a></li>
-						<li><a href='images\product\view\2.jpg' target='view-product'>ultrabooks</a></li>
-						<li><a href='images\product\view\3.jpg' target='view-product'>نت بوک</a></li>
-						<li><a href='images\product\view\4.jpg' target='view-product'>تبلت</a></li>
-						<li><a href='images\product\view\5.jpg' target='view-product'>دسکتاپ</a></li>
-						<li><a href='images\product\view\6.jpg' target='view-product'>مانیتور</a></li>
-						<li><a href='images\product\view\7.jpg' target='view-product'>پروژکتور</a></li>
-						<li><a href='images\product\view\8.jpg' target='view-product'>انتخاب</a></li>
+						<li onmouseover="preview()"><a href='#'>نوت بوک</a></li>
+						<li onmouseover="preview1()"><a href='#'>ultrabooks</a></li>
+						<li onmouseover="preview2()"><a href='#'>نت بوک</a></li>
+						<li onmouseover="preview3()"><a href='#'>تبلت</a></li>
+						<li onmouseover="preview4()">><a href='#'>دسکتاپ</a></li>
+						<li onmouseover="preview5()">><a href='#'>مانیتور</a></li>
+						<li onmouseover="preview6()">><a href='#'>پروژکتور</a></li>
+						<li onmouseover="preview7()">><a href='#'>انتخاب</a></li>
 					</ul>
 				</div>
-				<iframe id='view-product' src="images\product\view\1.jpg" name='view-product' frameborder="1" scrolling="no"></iframe>	
+				<div class="view cover">
+					<div class="train">
+						<div class="pro" id="img1">
+							<img src="images\product\view\1.jpg" width="770" height="386" alt="slide" title="نوت بوک" />
+						</div>
+						<div class="pro" id="img2">
+							<img src="images\product\view\2.jpg" width="770" height="386" alt="slide2" title="" id="tra" />
+						</div>
+						<div class="pro" id="img3">
+							<img src="images\product\view\3.jpg" width="770" height="386" alt="slide3" title="" />
+						</div>
+						<div class="pro" id="img4">
+							<img src="images\product\view\4.jpg" width="770" height="386" alt="slide4" title="" />
+						</div>
+						<div class="pro" id="img5">
+							<img src="images\product\view\5.jpg" width="770" height="386" alt="slide" title="" />
+						</div>
+						<div class="pro" id="img6">
+							<img src="images\product\view\6.jpg" width="770" height="386" alt="slide2" title="" id="tra" />
+						</div>
+						<div class="pro" id="img7">
+							<img src="images\product\view\7.jpg" width="770" height="386" alt="slide3" title="" />
+						</div>
+						<div class="pro" id="img8">
+							<img src="images\product\view\8.jpg" width="770" height="386" alt="slide4" title="" />
+						</div>
+					</div>
+				</div>
+			<!--	<iframe id='view-product' src="images\product\view\1.jpg" name='view-product' frameborder="1" scrolling="no"></iframe>	-->
 			</div>
 
 

@@ -1,63 +1,47 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>About</title>
-	<link rel="stylesheet" type="text/css" href="1styles.css" />
-	<link rel="stylesheet/less" type="text/css" href="style.less" />
+		<?php
+			include('inc/header.php');
+		?>
 
-	<script src="scripts/less.js" type="text/javascript"></script>
-	<!--[if IE]>
-		<script type="text/javascript" src="scripts/html5.js"></script>
-	<![endif]-->
+		<!-- start About info -->
+		<section class="about-content cover">
 
-</head>
-<body>
-
-	<div class="container">
-		<!-- start Header -->
-		<header class="cover">
-			<a href="#">
-				<div class="logo left"><a href="#">
-			
-					<h1>LOGO</h1>
-				</div>
-			</a>
-			<nav class="main">
-				<ul>
-					<li><a href="#">محصولات</a></li>
-					<li><a href="#">اطلاعات خرید</a></li>
-					<li><a href="#">پشتیبانی</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- start content -->
-		<section class="about-content">
-
-			<ul class="web-nav cover mt2"></ul>
-			<div class="web-info-top"></div>
-			<div class="web-info-middle cover">
+			<ul class="nav cover mt2"></ul>
+			<div class="web-info cover">
 				<div class="info right last">
 					<p class="mt1">
 						Since its founding in 1976, Acer has achieved its goal of breaking barriers between people and technology. Globally, Acer ranks No. 2 for notebook PCs.1 A profitable and sustainable Channel Business Model is instrumental to the company's continuing growth, while its multi-brand approach integrates Acer, Gateway, Packard Bell, and eMachines brands in worldwide markets.
 					</p>
-					<div class="img mt2">
-						<img src="images/about/about_us_01.jpg">
-						<img src="images/about/about_us_02.jpg">
-					</div>
-					<p class="mt1">
+					
+					<img src="images/about/about_us_01.jpg"/>
+					<img src="images/about/about_us_02.jpg"/>
+					
+					<p class="mt1 mb3">
 						Acer designs environmentally friendly products and has established a green supply chain through collaboration with suppliers. Acer is proud to be a Worldwide Partner of the Olympic Movement, including supporting the Vancouver 2010 Olympic Winter Games and London 2012 Olympic Games.
-					</p>
-					<p class="mt1">
+					<br />
+					<br />
 						The Acer Group employs 8,000 people across the globe. Revenues for 2011 reached US$15.7 billion.<br />
 						Visit <a href="#"> www.acer-group.com </a>for more information.
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<span><sup>1</sup>Source, Gartner data 2011.</span>
 					</p>
 				</div>
-				<ul class="left-menu"></ul>
+				<nav class="left-menu">
+					<ul>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">executeive team</a></li>
+						<li><a href="#">milestones</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">corporate social responsiblity</a></li>
+					</ul>
+				</nav>
 			</div>
-			<div class="web-info-bottom"></div>
-
+			
 		</section>
 
 		<?php

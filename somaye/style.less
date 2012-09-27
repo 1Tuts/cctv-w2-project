@@ -60,6 +60,8 @@ header{
 				position:absolute; 
 				top:30px; 
 				left:450px;
+				-webkit-transition:all 300ms;
+
 
 
 				li {
@@ -68,12 +70,14 @@ header{
 					background:url(images/product/menu_separetor.png) no-repeat center left; 
 					padding-top:0px;
 					padding-bottom:2px;
+					-webkit-transition:all 300ms;
+
 
 
 					&:hover {
 						ul {
 							display:block;
-							-webkit-transition:300ms;
+							opacity:1;
 						}	
 					}
 
@@ -85,29 +89,35 @@ header{
 						padding:10px 40px 10px 15px;
 						text-align:right;
 						font-weight:bold;
-						text-transform:capitalize;
-						-webkit-transition:200ms;
+						//text-transform:capitalize;
 					}
 
 					a:hover{
 						color:#6DC01C;
-						-webkit-transition:500ms;
+						-webkit-transition:300ms;
 					}
 
 					ul {
+						opacity:0;
+						//-webkit-transition: opacity .25s ease .1s;
 						min-width:100%;
 						display:none;
 						position:absolute;
 						top:35px;
-						left:0px;
+						left:-15px;
 						background:url(images/product/submenu_repeaty.png) repeat-y center center; 
 						border-radius:0 0 10px 10px;
 						border:1px solid #555;
 						border-top:none;
-						z-index: 3;
 						-webkit-box-shadow:1px 1px 10px #444 inset;
 
+
 						li {
+							height: 0;
+							overflow: hidden;
+							padding: 0;
+							-webkit-transition: height 100ms;
+
 							padding-bottom:10px;
 							float:none;
 							text-align:right;
@@ -116,8 +126,9 @@ header{
 
 
 							a {
-							padding:10px 20px 5px 20px;
+							padding:15px 20px 5px 30px;
 							border-left:none;
+							height:30px;
 							white-space: nowrap;
 							}
 						}
@@ -182,22 +193,76 @@ section.product-box {
 						-webkit-transition:300ms;
 					}
 
-					a:hover {
-						font-size:18px;
-						color:#6DC01C;
-						-webkit-transition:300ms;
-					}
+						a:hover {
+							font-size:18px;
+							color:#6DC01C;
+							-webkit-transition:300ms;
+						}
+
+						a.action{
+							font-size:18px;
+							color:#6DC01C;
+						}
+
 
 				}
 			}	
 			
 		}
 
-		iframe {
+		div.view {
 			width:770px;
-			height:386px;
+			//outline:1px solid red;
 			overflow:hidden;
+			div.train {
+				div.pro {
+					float:left;
+					-webkit-transition:opacity 300ms;
+					img {
+						display:block;
+					}
+				}
+				div#img1 {
+					opacity:1;
+				}
+				div#img2 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img3 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img4 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img5 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img6 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img7 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img8 {
+					margin-top:-386px;
+					opacity:0;
+				}
+			}
 		}
+
+
+
+		//iframe {
+		//	width:770px;
+		//	height:386px;
+		//	overflow:hidden;
+		//}
 		
 	}
 }
@@ -206,7 +271,7 @@ section.product-box {
 -------------------------- */
 section.box-banner{
 	div.banner{
-		height: 105px;
+		height: 105px; // age logo ro faal konim footer miad zire Logo!!! man rahi b nazaram naresid ..mitooni ye fekri bkoni ??
 		background:url(images/product/mini-banner-productPage-consumer_clearfi.png) no-repeat center center;
 	}
 }
@@ -215,14 +280,13 @@ section.box-banner{
 /* footer 
 -------------------------- */
 footer{
-	position:absolute;
-	bottom:-120px;
+	//position:fixed;
+	//bottom: -120px;
 	z-index:-1;
 
 	section.footer-box {
 			background:url(images/product/green_bar_repeatx.png) repeat-x;
 			border-radius: 5px;
-			height:20px;
 		div.left-pic {
 			background:url(images/product/green_bar_sx.png) no-repeat 0 0 !important;
 			width: 5px;
@@ -269,26 +333,28 @@ footer{
 			height:20px;
 		}
 
-		nav.footer-menu {
-			padding-right:230px;
+		div.footer-menu {
+			padding-right:230px;  //???????? 
 			margin:auto;
-			ul {
-					list-style-type: none;
-					direction:rtl;
-				li {
-					float:right;
-					background:url(images/product/menu_separetor.png) no-repeat center right; 
-				&:first-child{
-					background:none; 
-				}
+			nav {
+				ul {
+						list-style-type: none;
+						direction:rtl;
+					li {
+						float:right;
+						background:url(images/product/menu_separetor.png) no-repeat center right; 
+					&:first-child{
+						background:none; 
+					}
 
-					a {
-						display:block;
-						font-size:11px;
-						color:#fff;
-						text-decoration:none;
-						padding:0px 12px;
-						line-height:20px;
+						a {
+							
+							font-size:11px;
+							color:#fff;
+							text-decoration:none;
+							padding:0px 12px;
+							line-height:20px;
+						}
 					}
 				}
 			}
@@ -310,26 +376,27 @@ footer{
 /* About page styles
 ---------------------------------------------------- */
 section.about-content {
-	ul.web-nav {
+	ul.nav {
 		height:45px;
+		
 	}
 
-	div.web-info-top {
-		height: 40px;
-		background: url(images/about/background_page_top.jpg) no-repeat;
-	}
-
-	div.web-info-middle {
+	div.web-info {
 		background: url(images/about/background_page_repeaty.jpg) repeat-y center center;
+		
+		border-radius: 10px;
+		border-top: 1px solid #red;
+		-webkit-box-shadow:1px 1px 10px #444 inset;
 
 		div.info {
-			min-height: 530px;
+			//min-height: 530px;
 			width: 650px;
 			padding-right: 50px;
 			background: url(images/about/menu_separator.jpg) repeat-y 0 0;
+			border-left: 1px solid #ccc;
+			margin: 40px 0 40px 0; 
 
-
-			p{
+			p {
 				color:#434343;
 				font-size: 12px;
 				line-height: 20px;
@@ -338,21 +405,65 @@ section.about-content {
 				a {
 					color:darkmagenta;
 				}
+
+				span {
+					font-size: 10px;
+
+				}
 			}
 
-			div.img {
-				height: 168px;
+			img {
+				padding:10px 0 5px 10px;
+			}	
+		}
 
-				img {
-					padding-left: 10px;
+		nav.left-menu{
+			width: 210px;
+			padding-top: 40px;
+			padding-left:40px;
+
+			ul {
+				
+				border-radius: 10px 0 0 10px;
+				border: 1px solid #ccc;
+				padding-right: 5px;
+
+				li {
+					float:none;
+					border-top: 1px solid #ccc;
+					height: 30px;
+					background:url(images/about/menu_arrow.png) no-repeat right center;
+					//outline:1px solid red;
+					&:first-child {
+						border-top:none;
+						padding-top: 5px;
+					}
+					&:last-child {
+						padding-bottom: 5px;
+					}
+					//sbackground:url(images/about/menu_arrow.png) no-repeat right center;
+						//height: 11px;
+						//width: 8px;
+						//padding-left: 50px;pan {
+						
+					//}
+					a {
+						//display:block;
+						font-size:11px;
+						color:#333;
+						text-decoration:none;
+						text-transform:capitalize;
+						line-height: 30px;
+						padding: 8px 10px 9px 10px;
+						text-align:right;
+
+						&:hover {
+							color:#6DC01C;
+						}
+					}
 				}
 			}
 		}
-	}
-
-	div.web-info-bottom {
-		background: url(images/about/background_page_bottom.jpg) repeat-y center center;
-		height: 40px;
 	}	
 
 }

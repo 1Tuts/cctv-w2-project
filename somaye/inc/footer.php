@@ -11,17 +11,19 @@
 				<a href="">
 					<div class="facebook left last"></div>
 				</a>
-				<nav class="footer-menu w15 cover">
-					<ul>
-						<li><a href='#'>درباره ما</a></li>
-						<li><a href='#'>همکار ما شوید</a></li>
-						<li><a href='#'>مقالات تخصصی</a></li>
-						<li><a href='#'>پرسش و پاسخ</a></li>
-						<!--<li><a href='#'>ثبات</a></li>
-						<li><a href='#'>مطبوعات</a></li>
-						<li><a href='#'>نرم افزار</a></li>-->
-					</ul>
-				</nav>
+				<div class="footer-menu w15 cover">
+					<nav>
+						<ul>
+							<li><a href='#'>درباره ما</a></li>
+							<li><a href='#'>همکار ما شوید</a></li>
+							<li><a href='#'>مقالات تخصصی</a></li>
+							<li><a href='#'>پرسش و پاسخ</a></li>
+							<!--<li><a href='#'>ثبات</a></li>
+							<li><a href='#'>مطبوعات</a></li>
+							<li><a href='#'>نرم افزار</a></li>-->
+						</ul>
+					</nav>
+				</div>
 			</section>
 			<div class="copyright w3 mlra cover">
 				copyright 2012
