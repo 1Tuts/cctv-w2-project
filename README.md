@@ -18,7 +18,7 @@ Final project of CIW Programing
 * [1Styles](http://ali.md/1styles)
 * [JavaScript](http://ali.md/wiki/javascript)
 * [jQuery.js](http://ali.md/jquery.js)
-* [zepto.js]
+* [zepto.js](http://zeptojs.com/)
 * [PHP](http://ali.md/php/)
 * [MySQL](http://ali.md/wiki/mysql)
 
