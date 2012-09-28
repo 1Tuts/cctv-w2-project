@@ -14,8 +14,7 @@
 </head>
 <body class="name-product">
 
-	
-    <section class="container mlra content-name-product cover">
+    <div class="container mlra content-name-product cover">
     	<header class="mh12">
     		MAIN MENU
     	</header>
@@ -43,8 +42,6 @@
 			?>
         </section>
        
-        FOOTER
-    </section>
-
-</body>
-</html>
+       <?php
+	    	include "inc/footer.php";
+	   ?>

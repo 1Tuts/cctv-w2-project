@@ -1,7 +1,3 @@
-/*body{
-	background : #f4f4f4;
-}
-*/
 div.logo  {
 
 		position :fixed;/**change*/
@@ -98,7 +94,7 @@ body.name-product{
 	background-repeat : no-repeat;
 	background-size   : cover;
 
-		section.content-name-product{
+		div.content-name-product{
 
 			background-color : #fff;
 
@@ -147,4 +143,102 @@ body.name-product{
 			}
 		}
 }
+
+/* footer 
+-------------------------- */
+footer{
+	//position:fixed;
+	//bottom: -120px;
+	z-index:-1;
+
+	section.footer-box {
+			background:url(images/product/green_bar_repeatx.png) repeat-x;
+			border-radius: 5px;
+		div.left-pic {
+			background:url(images/product/green_bar_sx.png) no-repeat 0 0 !important;
+			width: 5px;
+			height:20px;
+		}
+
+		div.language {
+				background:url(images/product/language_button_repeatx.png) repeat-x 0 0;
+				border-radius: 5px;
+				height:20px;
+				width:100px;
+
+			span.language-icon {
+				background:url(images/product/language_button_sx.png) no-repeat 0 0;
+				width: 25px;
+				height:20px;
+			}
+
+			span.next-icon{
+				background:url(images/product/language_button_dx.png) no-repeat 0 0;
+				height:20px;
+			}
+
+			a {
+				display:block;
+				color:#fff;
+				height:20px;
+				line-height:20px;
+				text-align:center;
+				font-size:12px;
+				text-decoration:none;
+			}
+		}
+
+		div.right-pic {
+			background:url(images/product/green_bar_dx.png) no-repeat 0 0 !important; 
+			width: 5px;
+			height:20px;
+		}	
+
+		div.facebook {
+			background:url(images/product/Facebook_icon.png) no-repeat center center;
+			width: 16px;
+			height:20px;
+		}
+
+		div.footer-menu {
+			padding-right:230px;  //???????? 
+			margin:auto;
+			nav {
+				ul {
+						list-style-type: none;
+						direction:rtl;
+					li {
+						float:right;
+						background:url(images/product/menu_separetor.png) no-repeat center right; 
+					&:first-child{
+						background:none; 
+					}
+
+						a {
+							
+							font-size:11px;
+							color:#fff;
+							text-decoration:none;
+							padding:0px 12px;
+							line-height:20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.copyright{
+
+			display: block;
+			color:#06dc1c;
+			font-size:11px;
+			text-decoration: none;
+			text-align: center;
+			line-height:20px;
+		
+	}
+}
+
+
 

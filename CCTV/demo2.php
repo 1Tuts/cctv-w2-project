@@ -1,15 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<title>Pages 2</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="1styles.css" />
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="scripts/less.js" type="text/javascript"></script>
     <script type="text/javascript" src="scripts/zepto.js"></script>
 	<script type="text/javascript" src="scripts/cueslider.js"></script>
 </head>
 <body>
-	<div class="welcom"></div>
-	<div class="banner">
+	<!--<div class="welcom"></div>-->
+    <div class="container">
+    <header class="mh9 " style="outline:1px solid red;">
+    </header>
+	<div class="banner mh40">
 		<ul>
             <li style="left: -180px; top: 5px; opacity: 0; width: 236px; height: 253px;">
             	<div class="img1"></div>
@@ -46,5 +52,6 @@
 			});
 		});
 	</script>
-</body>
-</html>
+    <?php
+		include "inc/footer.php";
+	?>
