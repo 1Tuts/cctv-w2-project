@@ -33,14 +33,20 @@
 })($)
 
 $(function(){
-	var BgImg1 = $('section.backimg > #img1');
-	
+	var BgImg1 = $('.backimg  #img1'),
+		BgImg2 = $('.backimg  #img2'),
+		BgImg3 = $('.backimg  #img3');
+
 	BgImg1.click(function(){
-		alert(1)
+		window.open("./test3.php","_self");
+	});
+		
+	BgImg2.click(function(){
+		window.open("./demo2.php","_self");
 	});
 	
-	
-//	BgImg2.click(function(){
-//		window.open("./404.php","_self");
-//	});
+	BgImg3.click(function(){
+		window.open("./404.php","_self");
+	});
+
 });
