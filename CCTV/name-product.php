@@ -15,9 +15,11 @@
 <body class="name-product">
 
     <div class="container mlra content-name-product cover">
-    	<header class="mh12">
-    		MAIN MENU
-    	</header>
+    	<header class="mh8">
+        <?php
+			include "inc/main-menu.php";
+		?>
+        </header>
     	<menu class="cover">
         	<ul class="right f10">
             	<li><a href="#">محصولمحصول 1</a></li>

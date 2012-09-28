@@ -14,7 +14,7 @@
 				<div class="footer-menu w15 cover">
 					<nav>
 						<ul>
-							<li><a href='#'>درباره ما</a></li>
+							<li><a href='./about-index.php'>درباره ما</a></li>
 							<li><a href='#'>همکار ما شوید</a></li>
 							<li><a href='#'>مقالات تخصصی</a></li>
 							<li><a href='#'>پرسش و پاسخ</a></li>
