@@ -2,7 +2,6 @@ $(function(){
 
 	var list = $('div.main nav ul li li');
 		li = $('div.main nav ul li a');
-		list = $('div.main nav ul li li');
 		currentSlide = 0;
 
 

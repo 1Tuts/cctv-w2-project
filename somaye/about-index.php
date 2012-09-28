@@ -6,25 +6,38 @@
 		<section class="about-content cover">
 
 			<div class="nav cover mt2">
-				<a href="#">about us</a>
+				<a href="#">درباره شرکت</a>
 				<span></span>
-				<a class="next-link" href="#">about us</a>
+				<a class="next-link" href="#">درباره ما</a>
+
 			</div>
 			<div class="web-info cover">
-				<div class="info right last">
+				
+				<nav class="left-menu right">
+					<ul>
+						<li><a href="#">درباره ما</a></li>
+						<li><a href="#">تیم اجرایی</a></li>
+						<li><a href="#">milestones</a></li>
+						<li><a href="#">تماس با ما</a></li>
+						<li><a href="#">شرکت اجتماعی</a></li>
+					</ul>
+				</nav>
+				<div class="info left">
 					<p class="mt1">
-						Since its founding in 1976, Acer has achieved its goal of breaking barriers between people and technology. Globally, Acer ranks No. 2 for notebook PCs.1 A profitable and sustainable Channel Business Model is instrumental to the company's continuing growth, while its multi-brand approach integrates Acer, Gateway, Packard Bell, and eMachines brands in worldwide markets.
+						از زمان تاسیس آن در سال 1976، ایسر، هدف خود را از شکستن موانع بین مردم و فن آوری به دست آورد. در سطح جهانی، ایسر در رتبه شماره 2 برای نوت بوک PCs.1 کانال مدل کسب و کار سود آور و پایدار به رشد این شرکت ادامه ابزاری است، در حالی که رویکرد خود را چند نام تجاری ادغام ایسر، دروازه، پاکارد بل، و مارک های آغازین در بازارهای جهانی است.
 					</p>
 					
 					<img src="images/about/about_us_01.jpg"/>
 					<img src="images/about/about_us_02.jpg"/>
 					
 					<p class="mt1 mb3">
-						Acer designs environmentally friendly products and has established a green supply chain through collaboration with suppliers. Acer is proud to be a Worldwide Partner of the Olympic Movement, including supporting the Vancouver 2010 Olympic Winter Games and London 2012 Olympic Games.
+						ایسر طراحی محصولات سازگار با محیط زیست است و یک زنجیره تامین سبز را از طریق همکاری با تامین کنندگان تاسیس شده است. ایسر مفتخر است که به عنوان یک شریک در سراسر جهان از جنبش المپیک، از جمله حمایت از ونکوور 2010 المپیک زمستانی بازی ها و بازی های المپیک 2012 لندن است.
 					<br />
 					<br />
-						The Acer Group employs 8,000 people across the globe. Revenues for 2011 reached US$15.7 billion.<br />
-						Visit <a href="#"> www.acer-group.com </a>for more information.
+						گروه ایسر از 8،000 نفر را در سراسر جهان. درآمد در سال 2011 به 15،7 میلیارد دلار آمریکا رسیده است.<br />
+						<a href="#"> www.acer-group.com </a> : برای کسب اطلاعات بیشتر
+
+
 					<br />
 					<br />
 					<br />
@@ -35,15 +48,7 @@
 					<span><sup>1</sup>Source, Gartner data 2011.</span>
 					</p>
 				</div>
-				<nav class="left-menu">
-					<ul>
-						<li><a href="#">about us</a></li>
-						<li><a href="#">executeive team</a></li>
-						<li><a href="#">milestones</a></li>
-						<li><a href="#">contact us</a></li>
-						<li><a href="#">corporate social responsiblity</a></li>
-					</ul>
-				</nav>
+				
 			</div>
 			
 		</section>
