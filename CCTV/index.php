@@ -46,8 +46,8 @@
         
 			<script type="text/javascript">
 				document.write('<div class="slideshow " id="img1" style="background-image :url(images/gallery/1.png);"></div>');
-				document.write('<div class="slideshow img2"  style="background-image :url(images/gallery/2.png);"></div>');
-				document.write('<div class="slideshow img3"  style="background-image :url(images/gallery/3.png);"></div>');
+				document.write('<div class="slideshow "  style="background-image :url(images/gallery/2.png);"></div>');
+				document.write('<div class="slideshow "  style="background-image :url(images/gallery/3.png);"></div>');
 				$('.backimg > div.slideshow').fadeLoop();
 			</script>
 

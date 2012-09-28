@@ -33,7 +33,7 @@
 })($)
 
 $(function(){
-	var BgImg1 = $('section.backimg #img1');
+	var BgImg1 = $('section.backimg > #img1');
 	
 	BgImg1.click(function(){
 		alert(1)
