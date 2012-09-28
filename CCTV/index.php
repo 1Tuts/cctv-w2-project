@@ -45,7 +45,9 @@
 		<section class="backimg">
         
 			<script type="text/javascript">
-				for(var i=1;i<4;i++) document.write('<div class="slideshow img'+i+'" onclick="img()"  style="background-image :url(images/gallery/'+i+'.png);"></div>');
+				document.write('<div class="slideshow " id="img1" style="background-image :url(images/gallery/1.png);"></div>');
+				document.write('<div class="slideshow img2"  style="background-image :url(images/gallery/2.png);"></div>');
+				document.write('<div class="slideshow img3"  style="background-image :url(images/gallery/3.png);"></div>');
 				$('.backimg > div.slideshow').fadeLoop();
 			</script>
 

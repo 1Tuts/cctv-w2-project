@@ -32,13 +32,15 @@
 	});
 })($)
 
-function img() {
-//	var lists = $('div.backimg .img1');
-//	lists.click(function(){
-//		console.log();
-			window.open("./demo2.php","_self");
-			
-//	});
+$(function(){
+	var BgImg1 = $('section.backimg #img1');
 	
-
-}
+	BgImg1.click(function(){
+		alert(1)
+	});
+	
+	
+//	BgImg2.click(function(){
+//		window.open("./404.php","_self");
+//	});
+});
