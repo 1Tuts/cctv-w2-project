@@ -28,28 +28,28 @@
 				<div class="view cover">
 					<div class="train">
 						<div class="pro" id="img1">
-							<img src="images\product\view\1.jpg" width="770" height="386" alt="slide" title="نوت بوک" />
+							<a href="#"><img src="images\product\view\1.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 						<div class="pro" id="img2">
-							<img src="images\product\view\2.jpg" width="770" height="386" alt="slide2" title="" id="tra" />
+							<a href="#"><img src="images\product\view\2.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 						<div class="pro" id="img3">
-							<img src="images\product\view\3.jpg" width="770" height="386" alt="slide3" title="" />
+							<a href="#"><img src="images\product\view\3.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 						<div class="pro" id="img4">
-							<img src="images\product\view\4.jpg" width="770" height="386" alt="slide4" title="" />
+							<a href="#"><img src="images\product\view\4.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 						<div class="pro" id="img5">
-							<img src="images\product\view\5.jpg" width="770" height="386" alt="slide" title="" />
+							<a href="#"><img src="images\product\view\5.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 						<div class="pro" id="img6">
-							<img src="images\product\view\6.jpg" width="770" height="386" alt="slide2" title="" id="tra" />
+							<a href="#"><img src="images\product\view\6.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 						<div class="pro" id="img7">
-							<img src="images\product\view\7.jpg" width="770" height="386" alt="slide3" title="" />
+							<a href="#"><img src="images\product\view\7.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 						<div class="pro" id="img8">
-							<img src="images\product\view\8.jpg" width="770" height="386" alt="slide4" title="" />
+							<a href="#"><img src="images\product\view\8.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>
 					</div>
 				</div>
