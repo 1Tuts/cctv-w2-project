@@ -1,8 +1,7 @@
 $(function(){
 
-	var list = $('div.main nav ul li li');
-		li = $('div.main nav ul li a');
-		that = $('div.view div.train div.pro img'); 
+	var list = $('nav.mainmenu ul li li');
+		li = $('nav.mainmenu ul li a');
 		listPro = $('div.product div.list-product ul li');
 		product = $('div.view div.train div.pro');
 		currentList = 0;
