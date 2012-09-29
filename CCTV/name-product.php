@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!--<!DOCTYPE HTML>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -11,25 +11,25 @@
 		<script type="text/javascript" src="scripts/html5.js"></script>
 	<![endif]-->
 
-</head>
+<!--</head>
 <body class="name-product">
 
     <div class="container mlra content-name-product cover">
-    	<header class="mh8">
+    	<header class="mh8">-->
         <?php
-			include "inc/main-menu.php";
+			include "inc/header.php";
 		?>
-        </header>
-    	<menu class="cover">
-        	<ul class="right f10">
+        <section calss="name-product">
+<!--    	<menu class="cover">-->
+        	<menu class="right f10 cover">
             	<li><a href="#">محصولمحصول 1</a></li>
                 <li><a href="#">محصول 2</a></li>
                 <li><a href="#">محصول 3</a></li>
                 <li><a href="#">محصول 4</a></li>
                 <li><a href="#">محصول 5</a></li>
                 <li><a href="#">محصول 6</a></li>
-            </ul>
-        </menu>
+            </menu>
+<!--        </menu>-->
         
          <section class="light-box-name-product cover">
             <p class="mt2 mr1 mb2 txr">گالری</p>
@@ -43,7 +43,7 @@
 				include "slide-product.php";
 			?>
         </section>
-       
+       </section>
        <?php
 	    	include "inc/footer.php";
 	   ?>

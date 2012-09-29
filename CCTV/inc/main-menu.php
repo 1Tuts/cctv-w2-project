@@ -16,7 +16,7 @@
 								<li><a href="#">اطلاعات خرید</a></li>
 							</ul>
 						</li>
-						<li><a href="#">ارتباط با ما</a></li>
+						<li><a href="./demo2.php">ارتباط با ما</a></li>
 					</ul>
 				</nav>
 			</div>
