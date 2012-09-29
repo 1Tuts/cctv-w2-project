@@ -15,14 +15,14 @@
 			<div class="product">
 				<div class="list-product right cover">
 					<ul>
-						<li onmouseover="preview()"><a href='#'>نوت بوک</a></li>
-						<li onmouseover="preview1()"><a href='#'>ultrabooks</a></li>
-						<li onmouseover="preview2()"><a href='#'>نت بوک</a></li>
-						<li onmouseover="preview3()"><a href='#'>تبلت</a></li>
-						<li onmouseover="preview4()">><a href='#'>دسکتاپ</a></li>
-						<li onmouseover="preview5()">><a href='#'>مانیتور</a></li>
-						<li onmouseover="preview6()">><a href='#'>پروژکتور</a></li>
-						<li onmouseover="preview7()">><a href='#'>انتخاب</a></li>
+						<li class="active"><a href='#'>نوت بوک</a></li>
+						<li ><a href='#'>ultrabooks</a></li>
+						<li ><a href='#'>نت بوک</a></li>
+						<li ><a href='#'>تبلت</a></li>
+						<li >><a href='#'>دسکتاپ</a></li>
+						<li >><a href='#'>مانیتور</a></li>
+						<li >><a href='#'>پروژکتور</a></li>
+						<li >><a href='#'>انتخاب</a></li>
 					</ul>
 				</div>
 				<div class="view cover">
