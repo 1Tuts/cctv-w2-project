@@ -45,12 +45,6 @@
 			$(options.backBtn).click(function(){
 				slides.cueback();
 			});
-			
-			/*autoplayfunc = function(){
-  				slides.cuenext();
-				setTimeout(autoplayfunc,1000);	
-				
-			}();*/
 		},
 
 		cuenext : function(){
@@ -61,7 +55,11 @@
 		cueback : function(){
 			this.cuePos.shifc(true);
 			this.refresh();
-		}
+		},
+		
+		/*autoplay : function(){
+			setInterval(cuenext,1000);	
+		}()*/
 	});
 })($);
 

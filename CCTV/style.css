@@ -23,6 +23,7 @@ div.banner{
 	position:relative;
 	margin:200px auto 0;
 	width:900px; 
+	min-height:450px;
 }
 div.banner ul{
 	margin-top:10px;	

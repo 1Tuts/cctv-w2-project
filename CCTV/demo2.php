@@ -16,7 +16,7 @@
 		include "inc/header.php";
 	?>
     <div class="container">
-	<div class="banner mh40">
+	<div class="banner">
 		<ul>
             <li style="left: -180px; top: 5px; opacity: 0; width: 236px; height: 253px;">
             	<div class="img1"></div>
@@ -48,9 +48,12 @@
 	</div>
 	<script type="text/javascript">
 		$(function(){
+			var cue = $('div.banner > ul li');
+			
 			$('div.banner > ul li').cueslider({
 				transitionProperty : 'left top opacity width height'.split(' ')
 			});
+//			setInterval(cuenext,1000);
 		});
 	</script>
     <?php

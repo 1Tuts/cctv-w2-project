@@ -22,9 +22,10 @@
 			options.fadeFirstImage || pics.eq(0).css(fadeIn);
 
 			(nextPic=function(){
-				pics.eq(indx).animate(fadeOut,options.duration,ease);
+				pics.eq(indx).css(zindex=-1).animate(fadeOut,options.duration,ease);
 				indx=indx<plen-1?indx+1:0;
-				pics.eq(indx).animate(fadeIn,options.duration,ease,function(){
+//				pics.eq(indx).css(zindex=100);
+				pics.eq(indx).css(zindex=100).animate(fadeIn,options.duration,ease,function(){
 					setTimeout(nextPic,options.delay);
 				});
 			})();
@@ -33,9 +34,9 @@
 })($)
 
 $(function(){
-	var BgImg1 = $('.backimg  #img1'),
-		BgImg2 = $('.backimg  #img2'),
-		BgImg3 = $('.backimg  #img3');
+	var BgImg1 = $('.slideshow .backimg  #bgimg1'),
+		BgImg2 = $('.slideshow .backimg  #bgimg2'),
+		BgImg3 = $('.slideshow .backimg  #bgimg3');
 
 	BgImg1.click(function(){
 		window.open("./test3.php","_self");
@@ -44,7 +45,7 @@ $(function(){
 	BgImg2.click(function(){
 		window.open("./demo2.php","_self");
 	});
-	
+
 	BgImg3.click(function(){
 		window.open("./404.php","_self");
 	});

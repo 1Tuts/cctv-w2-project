@@ -22,7 +22,8 @@
 </head>
 <body>-->
 <?php
-	include "inc/header.php";
+  include "inc/header.php";
+  echo "<div style='min-height:630px;'></div>";
 ?>
 	<section class='slideshow'>
     	<!--<div class="logo mla mra">
@@ -31,16 +32,16 @@
 		<section class="backimg">
         
 			<script type="text/javascript">
-				document.write('<div class="slideshow " id="img1" style="background-image :url(images/gallery/1.png);"></div>');
-				document.write('<div class="slideshow " id="img2" style="background-image :url(images/gallery/2.png);"></div>');
-				document.write('<div class="slideshow " id="img3" style="background-image :url(images/gallery/3.png);"></div>');
+				document.write('<div class="slideshow " id="bgimg1" style="background-image :url(images/gallery/1.png);"></div>');
+				document.write('<div class="slideshow " id="bgimg2" style="background-image :url(images/gallery/2.png);"></div>');
+				document.write('<div class="slideshow " id="bgimg3" style="background-image :url(images/gallery/3.png);"></div>');
 				$('.backimg > div.slideshow').fadeLoop();
 			</script>
 
 		</section>
 	</section>
     <?php
-		echo "<div style='min-height:630px;'></div>";
+		
 		include "inc/footer.php";
 	?>
 <!--   
