@@ -1,0 +1,497 @@
+/* Guide
+-------------------------- 
+
+
+body > * {
+	outline: 1px dashed blue;
+}
+
+body > * > * {
+	outline: 1px dotted red !important;
+}
+
+body > * > * * {
+	outline: 1px dashed green !important;
+}
+*/
+
+/* product styles
+---------------------------------------------------- */
+
+body{
+	//background-image: url('images/about/about.png');
+	background: url('images/product/background_general_top.jpg') no-repeat top right;
+
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+/* header 
+-------------------------- */
+header{
+	//height: 65px;
+	text-align: center;
+	//line-height: 30px;
+	z-index: 5;
+	position: relative;
+
+	div.logo	{
+			overflow :hidden;
+			width:180px;
+			min-height:90px;
+			background :url(images/product/acer_logo_green.png) no-repeat center center;
+		h1{
+			text-indent:1000px;
+			white-space:nowrap;
+		}
+	}
+	nav.mainmenu { 
+		background:url(images/product/menu_background.png) no-repeat center center; 
+		position:absolute; 
+		height:65px;
+		width:770px;
+		top:0; 
+		right:0;
+		//outline:1px solid red;
+
+		ul {
+			list-style-type: none;
+			position:absolute; 
+			top:30px; 
+			right:10px;
+			-webkit-transition:all 300ms;
+			-moz-transition:all 300ms;
+			-o-transition:all 300ms;
+			-ms-transition:all 300ms;
+			transition:all 300ms;
+
+
+
+			li {
+				float:right;
+				position:relative;
+				background:url(images/product/menu_separetor.png) no-repeat center left; 
+				padding-top:0px;
+				padding-bottom:2px;
+				-webkit-transition:all 300ms;
+				-moz-transition:all 300ms;
+				-o-transition:all 300ms;
+				-ms-transition:all 300ms;
+				transition:all 300ms;
+
+
+
+				&:hover {
+					ul {
+						display:block;
+						opacity:1;
+					}	
+				}
+
+				a {
+					display:block;
+					font-size:14px;
+					color:#fff;
+					text-decoration:none;
+					padding:10px 40px 10px 15px;
+					text-align:right;
+					font-weight:bold;
+
+					&:hover{
+						color:#6DC01C;
+						-webkit-transition:300ms;
+						-moz-transition:all 300ms;
+						-o-transition:all 300ms;
+						-ms-transition:all 300ms;
+						transition:all 300ms;
+					}
+				}
+
+				
+
+				ul {
+					opacity:0;
+					-webkit-transition: opacity .25s ease .1s; //////////
+					min-width:100%;
+					display:none;
+					position:absolute;
+					top:35px;
+					left:0px;
+					background:url(images/product/submenu_repeaty.png) repeat-y center center; 
+					border-radius:0 0 10px 10px;
+					border:1px solid #555;
+					border-top:none;
+					-webkit-box-shadow:1px 1px 10px #444 inset;
+					-moz-box-shadow:1px 1px 10px #444 inset;
+					-o-box-shadow:1px 1px 10px #444 inset;
+					-ms-box-shadow:1px 1px 10px #444 inset;
+					box-shadow:1px 1px 10px #444 inset;
+
+
+					li {
+						height: 0;
+						overflow: hidden;
+						padding: 0;
+						-webkit-transition: height 100ms;
+						-moz-transition: height 100ms;
+						-o-transition: height 100ms;
+						-ms-transition: height 100ms;
+						transition: height 100ms;
+						padding-bottom:0px;
+						float:none;
+						text-align:right;
+						margin-top:0;
+						background:none;
+
+
+						a {
+						padding:15px 20px 5px 20px;
+						border-left:none;
+						height:30px;
+						white-space: nowrap;
+						//outline:1px solid red;
+						}
+					}
+				}
+
+			}
+
+		}
+	}
+	
+}
+
+
+/* product 
+-------------------------- */
+section.product-box {
+	div.commerical {
+		height:37px;
+
+			span {
+				height:37px;
+				background:url(images/product/commerical-back.png);
+
+			}
+
+			a {
+				text-align:center;
+				font-size:16px;
+				color:#343434;
+				text-decoration:none;
+				font-weight:bold;
+				line-height:37px;
+				width:170px;
+				display:block;
+				height:37px;
+				background-color:#fff;
+				border-radius:5px 0 0 0;
+			}	
+	}
+
+	div.product {
+		div.list-product{
+			height:386px;
+			width:170px;
+
+			ul {
+				list-style-type: none;
+				margin-top:30px;
+				//outline:1px solid white;
+				margin-left:25px;
+
+
+				li {
+					height:40px;
+					//outline:1px solid blue;
+
+					a {
+						//outline:1px solid red;
+						display:block;
+						font-size:16px;
+						color:#fff;
+						text-decoration:none;
+						padding:11px 20px;
+						text-align:right;
+						font-weight:bold;
+						text-transform:capitalize;
+						-webkit-transition:300ms;
+						-moz-transition:300ms;
+						-o-transition:300ms;
+						-ms-transition:300ms;
+						transition:300ms;
+
+						&:hover {
+							font-size:20px;
+							color:#6DC01C;
+							-webkit-transition:300ms;
+							-moz-transition:300ms;
+							-o-transition:300ms;
+							-ms-transition:300ms;
+							transition:300ms;
+						}
+					}
+				}
+				li.active {
+					a {
+						font-size:20px;
+						color:#6DC01C;
+					}
+				}
+			}	
+			
+		}
+
+		div.view {
+			width:770px;
+			//outline:1px solid red;
+			overflow:hidden;
+			div.train {
+				div.pro {
+					float:left;
+					-webkit-transition:opacity 300ms;
+					-moz-transition:opacity 300ms;
+					-o-transition:opacity 300ms;
+					-ms-transition:opacity 300ms;
+					transition:opacity 300ms;
+					a {
+						display:block;
+						img {
+							display:block;
+						}
+					}
+				}
+				div#img1 {
+					opacity:1;
+				}
+				div#img2 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img3 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img4 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img5 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img6 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img7 {
+					margin-top:-386px;
+					opacity:0;
+				}
+				div#img8 {
+					margin-top:-386px;
+					opacity:0;
+				}
+			}
+		}
+
+
+
+		//iframe {
+		//	width:770px;
+		//	height:386px;
+		//	overflow:hidden;
+		//}
+		
+	}
+}
+
+/* box-banner
+-------------------------- */
+section.box-banner{
+	div.banner{
+		height: 105px; // age logo ro faal konim footer miad zire Logo!!! man rahi b nazaram naresid ..mitooni ye fekri bkoni ??
+		background:url(images/product/mini-banner-productPage-consumer_clearfi.png) no-repeat center center;
+	}
+}
+
+
+/* footer 
+-------------------------- */
+footer{
+	section.footer-box {
+			background:url(images/product/green_bar_repeatx.png) repeat-x;
+			border-radius: 5px;
+		div.left-pic {
+			background:url(images/product/green_bar_sx.png) no-repeat 0 0 !important;
+			width: 5px;
+			height:20px;
+		}
+		div.language {
+				background:url(images/product/language_button_repeatx.png) repeat-x 0 0;
+				border-radius: 5px;
+				height:20px;
+				width:100px;
+
+			span.language-icon {
+				background:url(images/product/language_button_sx.png) no-repeat 0 0;
+				width: 25px;
+				height:20px;
+			}
+			span.next-icon{
+				background:url(images/product/language_button_dx.png) no-repeat 0 0;
+				height:20px;
+			}
+			a {
+				display:block;
+				color:#fff;
+				height:20px;
+				line-height:20px;
+				text-align:center;
+				font-size:12px;
+				text-decoration:none;
+			}
+		}
+		div.right-pic {
+			background:url(images/product/green_bar_dx.png) no-repeat 0 0 !important; 
+			width: 5px;
+			height:20px;
+		}	
+		div.facebook {
+			background:url(images/product/Facebook_icon.png) no-repeat center center;
+			width: 16px;
+			height:20px;
+		}
+		div.footer-menu {
+			padding-right:230px;  //???????? 
+			margin:auto;
+			nav {
+				ul {
+					list-style-type: none;
+					direction:rtl;
+					li {
+						float:right;
+						background:url(images/product/menu_separetor.png) no-repeat center right; 
+					&:first-child{
+						background:none; 
+					}
+						a {
+							font-size:11px;
+							color:#fff;
+							text-decoration:none;
+							padding:0px 12px;
+							line-height:20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.copyright {
+		display: block;
+		color:#fff;
+		font-size:11px;
+		text-decoration: none;
+		text-align: center;
+		line-height:20px;
+	}
+}
+
+/* About page styles
+---------------------------------------------------- */
+section.about-content {
+	div.nav {
+			background: url(images/about/arrow_breadcrumb.png) no-repeat 853px center;
+			text-align: right;
+		a {
+			height:45px;
+			color:#fff;
+			line-height: 45px;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: capitalize;
+			padding-right: 18px; //left
+			text-decoration: none;
+			&:hover {
+				color:#6DC01C;
+			}
+		}
+		a.next-link {
+			color:#6DC01C;
+		}
+	}
+
+	div.web-info {
+		background: url(images/about/background_page_repeaty.jpg) repeat-y center center;
+		border-radius: 10px;
+		-webkit-box-shadow:1px 1px 10px #444 inset;
+		-moz-box-shadow:1px 1px 10px #444 inset;
+		-o-box-shadow:1px 1px 10px #444 inset;
+		-ms-box-shadow:1px 1px 10px #444 inset;
+		box-shadow:1px 1px 10px #444 inset;
+		div.info {
+			//min-height: 530px;
+			width: 650px;
+			text-align: right;
+			padding-left: 50px;
+			background: url(images/about/menu_separator.jpg) repeat-y right center;
+			border-left: 1px solid #ccc;
+			margin: 40px 0 40px 0; 
+			padding-right : 10px;
+			p {
+				color:#434343;
+				font-size: 14px;
+				line-height: 20px;
+				padding-right: 10px;
+				a {
+					color:darkmagenta;
+				}
+				span {
+					font-size: 10px;
+				}
+			}
+			img {
+				padding:10px 10px 5px 0px;
+			}	
+		}
+		nav.left-menu{
+			width: 200px;
+			padding-top: 40px;
+			padding-right:30px;
+			ul {
+				border-radius: 0 10px 10px 0;
+				border: 1px solid #ccc;
+				padding-left: 5px;
+				li {
+					float:none;
+					border-top: 1px solid #ccc;
+					height: 30px;
+					background:url(images/about/menu_arrow.png) no-repeat left center;
+					&:first-child {
+						border-top:none;
+						padding-top: 5px;
+					}
+					&:last-child {
+						padding-bottom: 5px;
+					}
+					a {
+						display:block;
+						font-size:12px;
+						color:#333;
+						text-decoration:none;
+						text-transform:capitalize;
+						line-height: 30px;
+						padding: 2px 10px 0px 10px;
+						text-align:right;
+						&:hover {
+							color:#6DC01C;
+						}
+					}
+				}
+			}
+		}
+	}	
+
+}

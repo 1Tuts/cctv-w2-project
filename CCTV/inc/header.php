@@ -11,6 +11,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
 	<link rel="stylesheet/less" type="text/css" href="style.less" />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <link rel="stylesheet" type="text/css" href="style.css" /><!--css fro demo.php(cueslider)-->    
 
 	<link rel="stylesheet/less" type="text/css" href="style.less" />
@@ -26,6 +27,7 @@
 	<![endif]-->
 	<script type="text/javascript" src="scripts/zepto.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
+   	<script type="text/javascript" src="scripts/scripts.js"></script>
 	<script type="text/javascript" src="scripts/cueslider.js"></script><!--java script for cueslider-->
     
 </head>
