@@ -1,7 +1,7 @@
 ﻿<?php
 	//if(!isset($_GET['debug']))  header('Location: CCTVunder-construction.html');
 ?>
-
+<!--
 <!doctype html>
 <html lang="en-US">
 <head>
@@ -14,34 +14,20 @@
 	<!--[if IE]>
 		<script type="text/javascript" src="scripts/html5.js"></script>
 	<![endif]-->
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 		document.write('<script type="text/javascript" src=scripts/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>');
 	</script>
 
 	<script type="text/javascript" src="scripts/script.js"></script>
 </head>
-<body>
-	<!--<header>
-	<section class="nav-container">	
-		<div class="nav">
-			
-			<ul class="mla">
-				<li><a href="./">خانه</a></li>
-				<li><a href="about.php">درباره ما</a></li>
-				<li><a href="document.html">گواهینامه ها</a></li>
-				<li><a href="project.html">پروژه ها </a></li>
-				<li><a href="#"> خدمات</a></li>
-				<li><a href="#"> پیوند ها</a></li>
-				<li><a href="contact.php"> تماس با ما</a></li>
-			</ul>		
-		</div>
-				
-	</section>
-	</header>-->
+<body>-->
+<?php
+	include "inc/header.php";
+?>
 	<section class='slideshow'>
-    	<div class="logo mla mra">
+    	<!--<div class="logo mla mra">
 				<h1>CCTV</h1>
-		</div>
+		</div>-->
 		<section class="backimg">
         
 			<script type="text/javascript">
@@ -53,6 +39,10 @@
 
 		</section>
 	</section>
-    
+    <?php
+		echo "<div style='min-height:630px;'></div>";
+		include "inc/footer.php";
+	?>
+<!--   
  </body>
- </html>
+ </html>-->

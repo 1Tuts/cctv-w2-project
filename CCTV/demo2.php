@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!--<!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" />
@@ -12,9 +12,10 @@
 </head>
 <body>
 	<!--<div class="welcom"></div>-->
+    <?php
+		include "inc/header.php";
+	?>
     <div class="container">
-    <header class="mh9 " style="outline:1px solid red;">
-    </header>
 	<div class="banner mh40">
 		<ul>
             <li style="left: -180px; top: 5px; opacity: 0; width: 236px; height: 253px;">

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!--<!DOCTYPE HTML>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -11,15 +11,14 @@
 		<script type="text/javascript" src="scripts/html5.js"></script>
 	<![endif]-->
 
-</head>
+<!--</head>
 <body class="name-product">
 
     <div class="container mlra content-name-product cover">
-    	<header class="mh8">
+    	<header class="mh8">-->
         <?php
-			include "inc/main-menu.php";
+			include "inc/header.php";
 		?>
-        </header>
     	<menu class="cover">
         	<ul class="right f10">
             	<li><a href="#">محصولمحصول 1</a></li>
