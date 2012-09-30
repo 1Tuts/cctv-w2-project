@@ -4,9 +4,10 @@
 	<meta charset="UTF-8" />
 	<title>Product</title>
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
-  	<link rel="stylesheet/less" type="text/css" href="style.less" />
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
-     <link rel="stylesheet" type="text/css" href="style.css" /><!--css fro cueslider-->
+  	<link rel="stylesheet/less" type="text/css" href="style.less" />
+    
+    <link rel="stylesheet" type="text/css" href="style.css" /><!--css fro cueslider-->
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
     
 	<script type="text/javascript" src="scripts/less.js"></script>
@@ -28,7 +29,6 @@
 		<header class="cover">
 			<a href="./index.php">
 				<div class="logo left ">
-			
 					<h1>LOGO</h1>
 				</div>
 			</a>
