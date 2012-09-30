@@ -56,6 +56,7 @@ header{
 		//outline:1px solid red;
 
 		ul {
+			outline:1px solid red;
 			list-style-type: none;
 			position:absolute; 
 			top:30px; 
@@ -70,6 +71,9 @@ header{
 
 			li {
 				float:right;
+				//outline:1px solid blue;
+
+				display:block;////////////////
 				position:relative;
 				background:url(images/product/menu_separetor.png) no-repeat center left; 
 				padding-top:0px;
@@ -90,6 +94,7 @@ header{
 				}
 
 				a {
+					outline:1px solid green;
 					display:block;
 					font-size:14px;
 					color:#fff;
@@ -111,8 +116,9 @@ header{
 				
 
 				ul {
+					//outline:1px solid white;
 					opacity:0;
-					-webkit-transition: opacity .25s ease .1s; //////////
+					-webkit-transition: opacity 2s ease 2s; //////////
 					min-width:100%;
 					display:none;
 					position:absolute;
@@ -130,14 +136,10 @@ header{
 
 
 					li {
+						//outline:1px solid blue;
 						height: 0;
 						overflow: hidden;
 						padding: 0;
-						-webkit-transition: height 100ms;
-						-moz-transition: height 100ms;
-						-o-transition: height 100ms;
-						-ms-transition: height 100ms;
-						transition: height 100ms;
 						padding-bottom:0px;
 						float:none;
 						text-align:right;
@@ -146,11 +148,11 @@ header{
 
 
 						a {
-						padding:15px 20px 5px 20px;
-						border-left:none;
-						height:30px;
-						white-space: nowrap;
-						//outline:1px solid red;
+							padding:15px 20px 5px 20px;
+							border-left:none;
+							height:30px;
+							white-space: nowrap;
+							//outline:1px solid red;
 						}
 					}
 				}
