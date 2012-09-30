@@ -19,31 +19,36 @@
         <?php
 			include "inc/header.php";
 		?>
-        <section calss="name-product">
+         <div class="bg-img"></div>
+        <div calss="name-product">
 <!--    	<menu class="cover">-->
-        	<menu class="right f10 cover">
+        	<ul class="right f10 cover menu-product">
             	<li><a href="#">محصولمحصول 1</a></li>
                 <li><a href="#">محصول 2</a></li>
                 <li><a href="#">محصول 3</a></li>
                 <li><a href="#">محصول 4</a></li>
                 <li><a href="#">محصول 5</a></li>
                 <li><a href="#">محصول 6</a></li>
-            </menu>
+            </ul>
 <!--        </menu>-->
         
          <section class="light-box-name-product cover">
+         
             <p class="mt2 mr1 mb2 txr">گالری</p>
         	<?php
 			  include "test3.php";
 			?>
         </section>
         
+        
         <section class="slide-name-product cover">
         	<?php
 				include "slide-product.php";
 			?>
         </section>
-       </section>
+        
+       </div>
+      
        <?php
 	    	include "inc/footer.php";
 	   ?>

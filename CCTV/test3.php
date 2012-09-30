@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <title>Lightbox 2</title>
+  <link rel="stylesheet" type="text/css" href="1styles.css" />
   <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" /> <!-- CSS for Lightbox -->
 </head>
 <body>
 
 
 <div class="gallery">
-
-  <a href="images/name-product/light-box/gallery1/1.png" title="...." rel="lightbox[group1]" >
+	
+  <a href="images/name-product/light-box/gallery1/1.png" title="..sasasasasasasasasa" rel="lightbox[group1]" >
     <img src="images/name-product/light-box/gallery1/thumb_1.jpg" alt="" />
   </a>
 
