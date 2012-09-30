@@ -23,8 +23,8 @@
 <body>-->
 <?php
   include "inc/header.php";
-  echo "<div style='min-height:630px;'></div>";
 ?>
+<div style=" min-height:630px">
 	<section class='slideshow'>
     	<!--<div class="logo mla mra">
 				<h1>CCTV</h1>
@@ -40,8 +40,8 @@
 
 		</section>
 	</section>
+    </div>
     <?php
-		
 		include "inc/footer.php";
 	?>
 <!--   

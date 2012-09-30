@@ -4,9 +4,9 @@
 	<meta charset="UTF-8" />
 	<title>Product</title>
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
-	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	
   	<link rel="stylesheet/less" type="text/css" href="style.less" />
-    
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
     
     
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
