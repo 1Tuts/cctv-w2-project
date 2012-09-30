@@ -22,7 +22,7 @@
 			options.fadeFirstImage || pics.eq(0).css(fadeIn);
 
 			(nextPic=function(){
-				pics.eq(indx).css(zindex=-1).animate(fadeOut,options.duration,ease);
+				pics.eq(indx).css(zindex=-3).animate(fadeOut,options.duration,ease);
 				indx=indx<plen-1?indx+1:0;
 //				pics.eq(indx).css(zindex=100);
 				pics.eq(indx).css(zindex=100).animate(fadeIn,options.duration,ease,function(){
