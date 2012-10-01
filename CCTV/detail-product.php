@@ -2,19 +2,9 @@
 			include('inc/header.php');
 		?>
 		<section class="product-camera-content txr cover">
-			<div class="nav cover mt2">
-				<a href="#">دوربین  </a>
-				<a class="next-link" href="#"> ما</a>
-
-			</div>
-			<div class="content-pr cover">
-              <nav class="content-pr-nav">
-	              <ul>
-                  	<li class="current"><a href="#"> مزایای</a></li>
-                    <li><a href="#"> گالری عکس</a></li>
-                    <li><a href="#"> مدل</a></li>
-    	          </ul>
-              </nav>
+			<?php
+				include "inc/detail-product-menu.php";
+			?>
 			<section class="detail-pr cover">
             	<article class="txt-detail-pr">
                 	<h3>P SERIES</h3>
