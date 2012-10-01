@@ -11,7 +11,7 @@
 				<a class="next-link" href="#">درباره ما</a>
 
 			</div>
-			<div class="web-info cover">
+			<div class="about-info cover">
 				<?php
 					include('inc/left-menu.php');
 				?>
