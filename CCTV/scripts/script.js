@@ -59,7 +59,7 @@ $(function(){
 		window.open("./detail-product.php","_self");
 	});
 	
-	//JS PAGE DETAIL PRODUCT
+	//JS PAGE DETAIL PRODUCT CLICK MENU
 	
 	$('div.content-pr nav.content-pr-nav ul li').click(function(){
 		
