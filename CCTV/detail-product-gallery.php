@@ -1,11 +1,20 @@
 			<div class="info cover"> 
             	<div class="container">
-                	<div class="gallery-product mh40 cover"></div>
+                	<div class="gallery-product mh40 cover">
+                    	<div class="img-top"></div>
+                        <div class="img-center"></div>
+                        <div class="img-bottom"></div>
+                    </div>
                    	<div class="gallery-nav">
                     	<div class="prv"></div>
                         <div class="next"></div>
                     </div>
-                    <div class="gallery-thumbs "></div> 
+                    <div class="gallery-thumbs ">
+                    	<ul>
+                        	<li></li>
+                        </ul>
+                    	
+                    </div> 
                         
 
                     <div class="footer-note txr">
