@@ -1,13 +1,9 @@
 		<?php
 			include('inc/header.php');
 		?>
-
-		<!-- start About info -->
 		<section class="product-camera-content txr cover">
-
 			<div class="nav cover mt2">
 				<a href="#">دوربین  </a>
-<!--				<span></span>-->
 				<a class="next-link" href="#"> ما</a>
 
 			</div>
