@@ -126,3 +126,147 @@ div.name-product{
 			}
 		}
 }
+/********************************************PRODUCT DETAIL(CAMERA)*****************************/
+section.product-camera-content {
+	h3{
+		color : #6dc01c;
+		font-size:25px;
+		padding : 0 0  15px 0;
+	}
+	div.nav {
+			background: url(images/product/detail-product/arrow_breadcrumb.png) no-repeat 853px center;
+			text-align: right;
+		a {
+			height:45px;
+			color:#fff;
+			line-height: 45px;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: capitalize;
+			padding-right: 18px; //left
+			text-decoration: none;
+			
+			&:hover {
+				color:#6DC01C;
+			}
+		}
+		a.next-link {
+			color:#6DC01C;
+		}
+	}
+
+	div.content-pr {
+		background: url(images/product/detail-product/background_page_repeaty.jpg) repeat-y center center;
+		border-radius: 10px;
+		-webkit-box-shadow:1px 1px 10px #444 inset;
+		-moz-box-shadow:1px 1px 10px #444 inset;
+		-o-box-shadow:1px 1px 10px #444 inset;
+		-ms-box-shadow:1px 1px 10px #444 inset;
+		box-shadow:1px 1px 10px #444 inset;
+		
+		nav.content-pr-nav{
+			background: url(images/product/detail-product/bg-menu.png) repeat-y center center;
+			height:41px;
+			position : relative;
+			text-align : center;
+			
+			ul{
+				float : right;
+				position : absolute;
+				margin : 10px 0 0 0;
+				display : inline-block;
+				height : 25px;
+				
+				li{
+					float : right;
+					margin :0 0 30px 0;
+					padding:0 0 0 5px;
+
+					line-height : 24px;
+					overflow : hidden;
+					
+					&:hover{
+
+						background: url(images/product/detail-product/general_button_2.png) no-repeat left -100px;
+						
+						a{
+							color: #fff;
+							background: url(images/product/detail-product/general_button_2.png) no-repeat right -125px;
+						}
+					}
+					
+					a{
+						color:#000;
+						padding:4px 6px;
+					}
+				}
+			}
+		}
+		
+		section.detail-pr{
+			width : 870px;
+			padding : 60px 40px 30px 40px;
+			border-bottom:1px solid #e4e4e4;
+			background: url(images/product/detail-product/bg-product-preview.jpg) repeat-y 0 0;
+			
+			article.txt-detail-pr{
+				width :390px;
+				float : right;
+				text-align : right;
+				
+				
+				p{
+					color : #434343;
+					font-size : 16px;
+					line-height : 20px;
+					margin : 15px 0 20px 0;	
+				}
+			}
+			
+			img{
+					width : 350px;
+					height : 250px;
+					float : right;
+			}
+		}
+		
+		div.info {
+			
+			div.share-property{
+				width : 205px;
+				margin : 0 10px 20px 0;
+				padding : 0 5px;
+				min-height : 400px;
+				float : right;
+				clear : none;
+				
+				background: url(images/product/detail-product/separator-beenfit.jpg) no-repeat left 173px;
+				
+				img{
+					width : 200px;
+					height :210px;
+		
+				}
+				
+				p{
+					color: #434343;
+					line-height : 20px;
+					padding :0 10px 0 4px;
+				}
+			}
+			
+			div.last-pr{
+				background: none;
+			}
+			
+			div.bottom-bg{
+				height:40px;
+				width : 950px;
+				overflow: hidden;
+				clear: both;
+				background: url(images/product/detail-product/background_page_bottom.jpg) no-repeat 0 0;
+			}
+		}
+		
+	}	
+}
