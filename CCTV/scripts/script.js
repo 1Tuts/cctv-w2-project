@@ -55,7 +55,7 @@ $(function(){
 	});
 
 	BgImg3.click(function(){
-		window.open("./404.php","_self");
+		window.open("./about-index.php","_self");
 	});
 
 });
