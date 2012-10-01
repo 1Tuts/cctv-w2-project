@@ -44,7 +44,8 @@
 $(function(){
 	var BgImg1 = $('.slideshow .backimg  #bgimg1'),
 		BgImg2 = $('.slideshow .backimg  #bgimg2'),
-		BgImg3 = $('.slideshow .backimg  #bgimg3');
+		BgImg3 = $('.slideshow .backimg  #bgimg3'),
+		currentList = 0;
 
 	BgImg1.click(function(){
 		window.open("./test3.php","_self");
@@ -55,7 +56,24 @@ $(function(){
 	});
 
 	BgImg3.click(function(){
-		window.open("./about-index.php","_self");
+		window.open("./detail-product.php","_self");
 	});
+	
+	//JS PAGE DETAIL PRODUCT
+	
+	$('div.content-pr nav.content-pr-nav ul li').click(function(){
+		
+		index = ($(this).index());
+		actioncurrent( $(this).index() );
+	})
+				
+	
+	actioncurrent = function(n){
+		
+		var list = $('div.content-pr nav.content-pr-nav ul li');
+		list.eq(currentList).removeClass('current');
+		list.eq(n).addClass('current');
+		currentList=n;
+	}
 
 });
