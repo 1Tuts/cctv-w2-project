@@ -1,6 +1,19 @@
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () { 
 
+		$('#nav li').hover(
+			function () {
+			$('ul', this).slideDown(400);
+		},function () {
+				$('ul', this).slideUp(400);
+			}
+		);
+
+	});
+</script>
 <nav class="mainmenu">
-	<ul>
+	<ul id="nav">
 		<li><a href="#">محصولات</a>
 			<ul>
 				<li><a href="#">محصولات</a></li>

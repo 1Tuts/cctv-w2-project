@@ -54,7 +54,7 @@ header{
 		top:0; 
 		right:0;
 
-		ul {
+		ul#nav {
 			list-style-type: none;
 			position:absolute; 
 			top:30px; 
@@ -80,18 +80,9 @@ header{
 				-o-transition:all 300ms;
 				-ms-transition:all 300ms;
 				transition:all 300ms;
-
-
-
-				&:hover {
-					ul {
-						display:block;
-						opacity:1;
-					}	
-				}
+        		z-index:500;
 
 				a {
-					//outline:1px solid white;
 					display:block;
 					font-size:14px;
 					color:#fff;
@@ -113,10 +104,6 @@ header{
 				
 
 				ul {
-					//outline:1px solid white;
-					opacity:0;
-					-webkit-transition: opacity 2s ease 2s; //////////
-					min-width:100%;
 					display:none;
 					position:absolute;
 					top:35px;
@@ -133,8 +120,7 @@ header{
 
 
 					li {
-						//outline:1px solid blue;
-						height: 0;
+						min-width:50px;
 						overflow: hidden;
 						padding: 0;
 						padding-bottom:0px;
@@ -147,9 +133,8 @@ header{
 						a {
 							padding:15px 20px 5px 20px;
 							border-left:none;
-							height:30px;
+							height:25px;
 							white-space: nowrap;
-							//outline:1px solid red;
 						}
 					}
 				}

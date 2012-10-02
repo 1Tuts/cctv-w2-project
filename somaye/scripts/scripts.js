@@ -1,23 +1,8 @@
 $(function(){
 
-	var list = $('nav.mainmenu ul li li');
-		li = $('nav.mainmenu ul');
-		listPro = $('div.product div.list-product ul li');
+	var listPro = $('div.product div.list-product ul li');
 		product = $('div.view div.train div.pro');
 		currentList = 0;
-
-
-	li.mouseover(function(){
-		list.animate({
-			height:40
-		},300,'ease-in-out');
-	});
-
-	li.mouseout(function(){
-		list.animate({
-			height:0
-		},300,'ease-in-out');
-	});
 
 	action = function(n){
 		var list = $('div.product div.list-product ul li')
