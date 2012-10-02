@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" type="text/css" href="style.css" /><!--css fro cueslider-->
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="slide-gallery-product.css" /><!--css for slide page gallery product -->
     
 	<script type="text/javascript" src="scripts/less.js"></script>
 	<script type="text/javascript">
@@ -21,6 +22,7 @@
 	<script type="text/javascript" src="scripts/zepto.js"></script>
 	<script type="text/javascript" src="scripts/scripts.js"></script>
 	<script type="text/javascript" src="scripts/cueslider.js"></script>
+    <script type="text/javascript" src="scripts/slide-gallery-product.js"></script>
     
 </head>
 <body>
