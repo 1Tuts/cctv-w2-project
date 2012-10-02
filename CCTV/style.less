@@ -127,10 +127,17 @@ div.name-product{
 		}
 }
 /********************************************PRODUCT DETAIL(CAMERA)*****************************/
+.current{
+	background: url(images/product/detail-product/general_button_2.png) no-repeat left -100px;
+  a{
+		color: #fff;
+		background: url(images/product/detail-product/general_button_2.png) no-repeat right -124px;
+	}
+}
 section.product-camera-content {
 	h3{
 		color : #6dc01c;
-		font-size:25px;
+		font-size:20px;
 		padding : 0 0  15px 0;
 	}
 	div.nav {
@@ -167,15 +174,15 @@ section.product-camera-content {
 		nav.content-pr-nav{
 			background: url(images/product/detail-product/bg-menu.png) repeat-y center center;
 			height:41px;
-			position : relative;
+			
 			text-align : center;
 			
 			ul{
-				float : right;
-				position : absolute;
+				
+				position : relative;
 				top: 10px;				
-				display : inline-block;
-				height : 25px;
+				width : 270px;
+				margin : 0 auto;
 				
 				li{
 					float : right;
@@ -202,14 +209,7 @@ section.product-camera-content {
 						
 					}
 				}
-				li.current{
-						background: url(images/product/detail-product/general_button_2.png) no-repeat left -100px;
-						
-						a{
-							color: #fff;
-							background: url(images/product/detail-product/general_button_2.png) no-repeat right -124px;
-						}
-					}
+				
 			}
 		}
 		
@@ -242,6 +242,7 @@ section.product-camera-content {
 		
 		div.info {
 			background: url(images/product/detail-product/background_page_repeaty.jpg) repeat-y center center;
+			/***************************************** PAGE MAZAYA **********************************/
 			div.share-property{
 				width : 205px;
 				margin : 0 10px 20px 0;
@@ -275,6 +276,79 @@ section.product-camera-content {
 				overflow: hidden;
 				clear: both;
 				background: url(images/product/detail-product/background_page_bottom.jpg) no-repeat 0 0;
+			}
+			/************************************ GALLERY PRODUCT ******************************/
+			div.container{
+				position : relative;
+				
+				div.gallery-product{
+					width : 850px;
+					margin : 5px 50px;
+					
+					div.img-top{
+						background: url(images/product/detail-product/border_image_top.jpg) no-repeat 0 0;
+						height : 7px;
+					}
+					
+					div.img-center{
+						background: url(images/product/detail-product/border_image_repeatx.jpg) repeat-y 0 0;
+						height : 400px;/*=img height*/
+					}
+					
+					div.img-bottom{
+						background: url(images/product/detail-product/border_image_bottom.jpg) no-repeat 0 0;
+						height : 7px;
+					}
+				}
+				
+				div.gallery-nav{
+					width : 950px;
+					position :absolute;
+					top : 10px;
+					min-height : 400px;
+					
+					
+					div{
+						width : 47px;
+						height : 400px;
+						position : absolute;
+						cursor : pointer;
+					}
+					div.prv{
+						
+						background: url(images/product/detail-product/new-arrow-photogallery-left.jpg) no-repeat 0 -400px;
+						left : 0;
+						
+						&:hover{
+							background: url(images/product/detail-product/new-arrow-photogallery-left.jpg) no-repeat 0 0px;
+						}
+					}
+					
+					div.next{
+						background: url(images/product/detail-product/new-arrow-photogallery-right.jpg) no-repeat 0 -400px;
+						right : 0;
+						
+						&:hover{
+							background: url(images/product/detail-product/new-arrow-photogallery-right.jpg) no-repeat 0 0px;
+						}
+					}
+				}
+					
+				div.gallery-thumbs{
+					width : 750px;
+					height :85px;
+					
+					margin : 10px 55px;
+					
+				}
+			}
+			
+			
+			div.footer-note{
+				padding : 25px 25px 0 25px;
+				color : #434343;
+				line-height : 20px;
+				font-size : 14px;
 			}
 		}
 		

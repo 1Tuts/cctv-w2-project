@@ -45,7 +45,9 @@ $(function(){
 	var BgImg1 = $('.slideshow .backimg  #bgimg1'),
 		BgImg2 = $('.slideshow .backimg  #bgimg2'),
 		BgImg3 = $('.slideshow .backimg  #bgimg3'),
-		currentList = 0;
+		currentList = 0,
+		list = $('div.content-pr nav.content-pr-nav ul li'),
+		product='gallery';
 
 	BgImg1.click(function(){
 		window.open("./test3.php","_self");
@@ -60,17 +62,14 @@ $(function(){
 	});
 	
 	//JS PAGE DETAIL PRODUCT CLICK MENU
-	
-	$('div.content-pr nav.content-pr-nav ul li').click(function(){
-		
-		index = ($(this).index());
+
+	list.click(function(){
 		actioncurrent( $(this).index() );
 	})
 				
 	
 	actioncurrent = function(n){
-		
-		var list = $('div.content-pr nav.content-pr-nav ul li');
+	
 		list.eq(currentList).removeClass('current');
 		list.eq(n).addClass('current');
 		currentList=n;
