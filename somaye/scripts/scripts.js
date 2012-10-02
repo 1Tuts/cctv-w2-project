@@ -4,6 +4,7 @@ $(function(){
 		product = $('div.view div.train div.pro');
 		currentList = 0;
 
+
 	action = function(n){
 		var list = $('div.product div.list-product ul li')
 		list.eq(currentList).removeClass('active');
@@ -16,75 +17,75 @@ $(function(){
 		switch(index)
 		{
 			case 0:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img1').animate({
+				});
+				$('div.view div.train div#img1').css({
 					opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 			case 1:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img2').animate({
+				});
+				$('div.view div.train div#img2').css({
 					opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 			case 2:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img3').animate({
+				});
+				$('div.view div.train div#img3').css({
 						opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 			case 3:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img4').animate({
+				});
+				$('div.view div.train div#img4').css({
 					opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 			case 4:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img5').animate({
+				});
+				$('div.view div.train div#img5').css({
 					opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 			case 5:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img6').animate({
+				});
+				$('div.view div.train div#img6').css({
 					opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 			case 6:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img7').animate({
+				});
+				$('div.view div.train div#img7').css({
 					opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 			case 7:
-				product.animate({
+				product.css({
 					opacity:'0'
-				},100);
-				$('div.view div.train div#img8').animate({
+				});
+				$('div.view div.train div#img8').css({
 					opacity:'1'
-				},100);
+				});
 				action( $(this).index() );
 				break;
 		}
