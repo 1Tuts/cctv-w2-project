@@ -1,16 +1,25 @@
-			<section class="detail-pr cover">
-            	<article class="txt-detail-pr">
-                	<h3>P SERIES</h3>
-                    <p>
-                    	ایسر سری P ویترین، تصاویر شگفت انگیز برای لذت بردن چند رسانه ای عالی، گرافیک برنامه های کاربردی فشرده، و مرور اینترنت می باشد.تعادل کامل بین صفحه نمایش جذاب، عملکرد قابل اعتماد، و فن آوری های سازگار با محیط زیست آگاه می سازد این سری ایده آل برای رسانه های خانگی و برنامه های کاربردی سینمایی.
-
-                    </p>
-                </article>
-                <img src="images/product/detail-product/P_350x250.jpg" />
-            </section>
+<?php
+	include "inc/header.php";
+?>
+<section class="product-camera-content txr cover">
+	<div class="nav cover mt2">
+		<a href="#">دوربین  </a>
+		<a class="next-link" href="#"> ما</a>
+	</div>
+	<div class="content-pr cover">
+		<nav class="content-pr-nav">
+			<ul>
+	            <li><a href="./body-detail-product.php">مزایای	</a></li>
+	        	<li><a href="./detail-product-gallery.php">گالری عکس	</a></li>
+	            <li class="current"><a href="./detail-product-model.php"> مدل</a></li>
+	    	</ul>
+	    </nav>
+        
+			
 				<div class="info left cover">
-                	<div class="share-property">
-                    	<img src="images/product/detail-product/PSeries_elegant_design.jpg"/>
+                	<div class="mh40"></div>
+              <!-- <div class="share-property">
+                    		<img src="images/product/detail-product/PSeries_elegant_design.jpg"/>
                         <h3>طراحی زیبا و کارآمد</h3>
                         <p>
                         	قاب براق صفحه نمایش، الگوی پایه دور، و از نقطه ایستادگی این سری ظرافت سن جدید که نوسازی هر اتاق در خانه است. به علاوه، دکمه قدرت های بزرگ در گوشه پایین سمت راست چراغ به رنگ آبی روشن زمانی که دستگاه روشن باشد، برای دسترسی آسان و شیک نگاه.
@@ -40,10 +49,13 @@
 جیوه تکنولوژی نور پس زمینه LED به حداقل تضمین های دادرسی استفاده ایمن و مراقبت از محیط زیست است. تکنولوژی LED نیز از انرژی کمتر استفاده می کند، ارائه تا 68٪ صرفه جویی در قدرت است.
 
                         </p>
-                    </div>
+                    </div>-->
                     <div class="bottom-bg"></div>
 				</div>
 				
 			</div>
 			
 		</section>
+<?php
+	include 'inc/footer.php';
+?>
