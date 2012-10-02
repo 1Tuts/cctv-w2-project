@@ -11,7 +11,7 @@
 			<ul>
 	            <li><a href="body-detail-product.php">مزایای	</a></li>
 	        	<li class="current"><a href="./detail-product.php">گالری عکس	</a></li>
-	            <li><a href="#"> مدل</a></li>
+	            <li><a href="./detail-product-model.php"> مدل</a></li>
 	    	</ul>
 	    </nav>
         <div class="info cover"> 
