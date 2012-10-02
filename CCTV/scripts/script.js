@@ -58,11 +58,11 @@ $(function(){
 	});
 
 	BgImg3.click(function(){
-		window.open("./detail-product.php","_self");
+		window.open("./body-detail-product.php","_self");
 	});
 	
 	//JS PAGE DETAIL PRODUCT CLICK MENU
-
+/*
 	list.click(function(){
 		actioncurrent( $(this).index() );
 	})
@@ -74,5 +74,5 @@ $(function(){
 		list.eq(n).addClass('current');
 		currentList=n;
 	}
-
+*/
 });

@@ -1,7 +1,4 @@
 div.slide{
-	/*margin-top:30px;
-	background:#d9d9d9;
-	border-bottom:5px solid black;*/
 	width: 820px;
 	position:relative;
 	left:5px;
@@ -35,8 +32,6 @@ div.slide div.train > div{
 div.gallery-thumbs ul.button{
 	list-style:none;
 	position:absolute;
-	/*right:50px;
-	bottom:10px;*/
 }
 
 div.gallery-thumbs ul.button li{
