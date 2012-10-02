@@ -1,5 +1,6 @@
 			<div class="info cover"> 
             	<div class="container">
+                	<div class="content-slide">
                 	<div class="gallery-product mh40 cover">
                     	<div class="img-top"></div>
                         <div class="img-center">
@@ -25,6 +26,7 @@
                    	<div class="gallery-nav">
                     	<div class="prv"></div>
                         <div class="next"></div>
+                    </div>
                     </div>
                     <div class="gallery-thumbs ">
                     	 <ul class="button">

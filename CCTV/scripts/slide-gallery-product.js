@@ -1,6 +1,6 @@
 $(function(){
 	
-	var slide = $('div.container'),
+	var slide = $('div.content-slide'),
 		train = $('div.slide div.train'),
 		btn = $('div.gallery-thumbs ul.button li'),
 		prv = $('div.gallery-nav div.prv'),
