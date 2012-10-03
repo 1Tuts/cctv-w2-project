@@ -17,7 +17,15 @@
         
 			
 				<div class="info left cover">
-                	<div class="mh40"></div>
+                	<div class="models">
+		                <div class="snigle-product mh20">
+                        	<div class="medel-left">
+                            	<a href="#"><img src="images/product/model/P196HQL_01.jpg" /></a>
+                            </div>
+                            <div class="model-right">ldjkfnbldfgjfkbgbkg</div>
+                        </div>
+                 	</div>
+                	<!--<div class="mh40"></div>
               <!-- <div class="share-property">
                     		<img src="images/product/detail-product/PSeries_elegant_design.jpg"/>
                         <h3>طراحی زیبا و کارآمد</h3>
