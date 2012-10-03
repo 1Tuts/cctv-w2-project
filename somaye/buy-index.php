@@ -6,7 +6,7 @@
 			<div class="nav cover mt2">
 				<a href="#">درباره شرکت</a>
 				<span></span>
-				<a class="next-link" href="#">تماس با ما</a>
+				<a class="next-link" href="#">خرید</a>
 			</div>
 			<div class="buy-info cover">
 				<?php

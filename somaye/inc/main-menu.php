@@ -9,14 +9,13 @@
 				$('ul', this).slideUp(400);
 			}
 		);
-
 	});
 </script>
 <nav class="mainmenu">
 	<ul id="nav">
 		<li><a href="#">محصولات</a>
 			<ul>
-				<li><a href="#">محصولات</a></li>
+				<li><a href="product-index.php">محصولات</a></li>
 				<li><a href="#">اطلاعات خرید</a></li>
 				<li><a href="#">پشتیبانی</a></li>
 			</ul>	
