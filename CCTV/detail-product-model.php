@@ -22,7 +22,23 @@
                         	<div class="medel-left">
                             	<a href="#"><img src="images/product/model/P196HQL_01.jpg" /></a>
                             </div>
-                            <div class="model-right">ldjkfnbldfgjfkbgbkg</div>
+                            <div class="model-right">
+                              <h3>P238HLbd</h3>
+                              <p>
+                            23 "عریض 16:9 - وضوح 1920x1080 @ 60HZ - 5 MS - 100.000.000:1 - 250 سی دی / متر مربع - LED - VGA - DVI - 2 سال حمل - ES 5.0 - ویژه المپیک مدل
+                              </p>
+							</div>
+                        </div>
+                        <div class="snigle-product mh20">
+                        	<div class="medel-left">
+                            	<a href="#"><img src="images/product/model/P196HQL_01.jpg" /></a>
+                            </div>
+                            <div class="model-right">
+                            	<h3>P238HLbd</h3>
+	                              <p>
+    		                        23 "عریض 16:9 - وضوح 1920x1080 @ 60HZ - 5 MS - 100.000.000:1 - 250 سی دی / متر مربع - LED - VGA - DVI - 2 سال حمل - ES 5.0 - ویژه المپیک مدل
+            	                  </p>
+                            </div>
                         </div>
                  	</div>
                 	<!--<div class="mh40"></div>

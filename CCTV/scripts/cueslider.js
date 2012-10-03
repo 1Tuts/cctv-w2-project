@@ -4,7 +4,7 @@
 		cueslider : function(options){
 			options = $.extend({
 				duration : 500,
-				autoPlay : false,
+				autoPlay : true,
 				nextBtn  : 'div.banner .next',
 				backBtn  : 'div.banner .back',
 				autoPlayInterval   : 3000,
