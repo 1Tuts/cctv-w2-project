@@ -8,11 +8,11 @@
 	</div>
 	<div class="content-pr cover">
 		<nav class="content-pr-nav">
-			<ul>
+			<!--<ul>
 	            <li class="current"><a href="./body-detail-product.php">مزایای	</a></li>
 	        	<li><a href="./detail-product-gallery.php" target="_self">گالری عکس	</a></li>
 	            <li><a href="./detail-product-model.php"> مدل</a></li>
-	    	</ul>
+	    	</ul>-->
 	    </nav>
         
 			<section class="detail-pr cover">
@@ -23,10 +23,15 @@
 
                     </p>
                 </article>
-                <a href="./detail-product-attribute.php"><img src="images/product/detail-product/P_350x250.jpg" /></a>
+                <img src="images/product/detail-product/P_350x250.jpg" />
             </section>
 				<div class="info left cover">
-                	<div class="share-property">
+                	<div class="mh10 pt1 pr1 pl1">
+                    	<ul>
+                        	<li></li>
+                        </ul>
+                    </div>
+                	<!--<div class="share-property">
                     	<img src="images/product/detail-product/PSeries_elegant_design.jpg"/>
                         <h3>طراحی زیبا و کارآمد</h3>
                         <p>
@@ -57,7 +62,7 @@
 جیوه تکنولوژی نور پس زمینه LED به حداقل تضمین های دادرسی استفاده ایمن و مراقبت از محیط زیست است. تکنولوژی LED نیز از انرژی کمتر استفاده می کند، ارائه تا 68٪ صرفه جویی در قدرت است.
 
                         </p>
-                    </div>
+                    </div>-->
                     <div class="bottom-bg"></div>
 				</div>
 				
