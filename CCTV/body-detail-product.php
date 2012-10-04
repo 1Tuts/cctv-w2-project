@@ -23,7 +23,7 @@
 
                     </p>
                 </article>
-                <img src="images/product/detail-product/P_350x250.jpg" />
+                <a href="./detail-product-attribute.php"><img src="images/product/detail-product/P_350x250.jpg" /></a>
             </section>
 				<div class="info left cover">
                 	<div class="share-property">
