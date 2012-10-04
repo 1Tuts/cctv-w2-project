@@ -26,11 +26,16 @@
                 <img src="images/product/detail-product/P_350x250.jpg" />
             </section>
 				<div class="info left cover">
-                	<div class="mh10 pt1 pr1 pl1">
+                	<div class="content-attr mh10 pt1 pr1 pl1">
                     	<ul>
-                        	<li></li>
+                        	<li>
+                            	<div class="bg-green">اطلاعات فنی</div>
+                                <div class="bg-end"></div>
+                            </li>
                         </ul>
                     </div>
+                    <div class="footer-note">همه ارائه می دهد موضوع بدون اطلاع قبلی و یا تعهدی تغییر است و ممکن است در تمام مکان های خرده فروشی در دسترس می باشد. قیمت ذکر شده در کارخانه سازنده پیشنهاد قیمت خرده فروشی فراگیر مالیات بر ارزش افزوده ممکن است متفاوت باشد و از محل خرده فروشی است. برای قیمت گذاری و یا سایر خطاهای تایپی و یا photographical و یا حذفیات. عکسها ممکن است از پیشنهاد متفاوت است.
+</div>
                 	<!--<div class="share-property">
                     	<img src="images/product/detail-product/PSeries_elegant_design.jpg"/>
                         <h3>طراحی زیبا و کارآمد</h3>
