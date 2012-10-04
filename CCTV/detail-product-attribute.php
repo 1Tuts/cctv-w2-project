@@ -28,9 +28,10 @@
 				<div class="info left cover">
                 	<div class="content-attr mh10 pt1 pr1 pl1">
                     	<ul>
-                        	<li>
+                        	<li><a href="./select-product.php">
                             	<div class="bg-green">اطلاعات فنی</div>
                                 <div class="bg-end"></div>
+                                </a>
                             </li>
                             <li>
                             	<div class="bg-green">واسط های / پورتها</div>
