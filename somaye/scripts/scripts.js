@@ -3,13 +3,20 @@ $(function(){
 	var listPro = $('div.product div.list-product ul li');
 		product = $('div.view div.train div.pro');
 		currentList = 0;
-
+		currentLink = 0;
 
 	action = function(n){
 		var list = $('div.product div.list-product ul li')
 		list.eq(currentList).removeClass('active');
 		list.eq(n).addClass('active');
 		currentList=n;
+	}
+
+	activeLink = function(m){
+		var link = $('div.left-menu ul li')
+		link.eq(currentLink).removeClass('activelink');
+		link.eq(m).addClass('activelink');
+		currentLink=m;
 	}
 
 	listPro.mouseover(function(){
