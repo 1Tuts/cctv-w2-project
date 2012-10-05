@@ -23,9 +23,9 @@
 $(document).ready(function () { 
 	$('#nav li').hover(
 		function () {
-		$('ul', this).slideDown(400);
+		$('ul', this).slideDown(600);
 	},function () {
-			$('ul', this).slideUp(400);
+			$('ul', this).slideUp(600);
 		}
 	);
 });

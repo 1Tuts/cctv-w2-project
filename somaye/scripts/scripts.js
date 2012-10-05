@@ -97,6 +97,31 @@ $(function(){
 				break;
 		}
 	});
+/* slide ---------------------------- */
+var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train'),
+		//lists = $('div.slideshow ul.btns li')
+		currentPic = 0,
+		autoPlayIv = false;
+
+	go2slide = function(n){
+		//if(n>lists.length-1) n=0;
+		//if(n<0) n = lists.length-1;
+		train.animate({
+			left:-450*n
+		},500,'ease-in-out');
+		//lists.eq(currentPic).removeClass('current');
+		//lists.eq(n).addClass('current');
+		currentPic=n;
+	
+	}
+
+	$('section.product-detail div.info-pro div.slide-pro div.slideshow .next').click(nextSlide = function(){
+		go2slide(currentPic+1);
+	});
+
+
+
+
 
 });
 
