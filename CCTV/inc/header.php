@@ -5,12 +5,12 @@
 	<title>Product</title>
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
-  	<link rel="stylesheet/less" type="text/css" href="style.less" />
+  	
     
     <link rel="stylesheet" type="text/css" href="style.css" /><!--css fro cueslider-->
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="slide-gallery-product.css" /><!--css for slide page gallery product -->
-    
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
 	<script type="text/javascript" src="scripts/less.js"></script>
 	<script type="text/javascript">
 		document.write('<script type="text/javascript" src=scripts/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>');
