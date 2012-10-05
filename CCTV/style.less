@@ -52,23 +52,84 @@ body.not-found{
 	}
 }
 /*********************************** ATTRIBUTE HOME PAGE ******************************/
-section.slideshow{
+div.div-home{
 
-	section.backimg{
-		div.slideshow {
-			position :fixed;
-			top      :0;
-			left     :0;
-			right    :0;
-			bottom   :0;
-			z-index  :-2;
-
-			background-position :center center;
-			background-repeat   :no-repeat;
-			background-size     :cover;
+	section.slideshow{
+  
+	  	section.backimg{
+	  		div.slideshow {
+	  			position :fixed;
+	  			top      :0;
+	  			left     :0;
+	  			right    :0;
+	  			bottom   :0;
+	  			z-index  :-2;
+	  			cursor : pointer;
+	  			background-position :center center;
+	  			background-repeat   :no-repeat;
+	  			background-size     :cover;
+	  			
+	  		} 		
+	  	}
+	}
+	div.footer-home{
+		
+		width : 950px;
+		position : relative;
+		z-index :5;
+		
+		div.footer-left{
+			width : 470px;
+			height : 120px;/*del*/
+			background : url('images/gallery/footer-gallery/home_box_background.png') no-repeat;
+			div.slide{
+				width : 435px;
+				height : 80px;
+				margin : 10px 13px 10px;
+				div.train{ 
+					div {
+						cursor : pointer;
+					}
+					
+				}
+			}
+		}
+		div.footer-right{
+			height : 120px;/*del*/
+			width : 470px;
+			background : url('images/gallery/footer-gallery/home_box_background.png') no-repeat;
 			
+			nav.nav-qlink{
+				padding : 10px 15px;
+				ul{
+					li{
+						a{
+							color : #fff;
+							font-size : 13px;
+							
+							&:hover{
+								color:#6DC01C;
+							}
+						}
+						
+					}
+				}
+			}
+			
+			div.img-about{
+				width : 130px;
+				height : 100px;
+				float : right;
+				background : url('images/gallery/footer-gallery/csr_small.png');
+			}
 		}
 		
+		p{
+				text-align : left;
+				font-size : 12px;
+				font-weight : bold;
+				margin : 4px 0 4px 15px;
+			}
 	}
 }
 /********************************** ATTRIBUTE CONTENT-NAME-PRODUCT ***********************/

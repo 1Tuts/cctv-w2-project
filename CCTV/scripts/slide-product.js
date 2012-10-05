@@ -5,7 +5,8 @@ $(function(){
 		train	 = $('div.scroll div.train'),
 		lists	 = $('div.scroll ul.btn li'),
 		pics	  = $('div.scroll div.train > div  div'),
-		current=0,picsize=900,flag=false;
+		picsize   = $('div.scroll div.train > div img').width(),
+		current=0,flag=false;
 	
 	(gotoslide = function(n){
 
