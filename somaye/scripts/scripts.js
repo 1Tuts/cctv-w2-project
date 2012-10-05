@@ -12,7 +12,7 @@ $(function(){
 		currentList=n;
 	}
 
-	activeLink = function(m){
+	activeLink = function(m){ // Kar Nakard !!!!!!!!!!!
 		var link = $('div.left-menu ul li')
 		link.eq(currentLink).removeClass('activelink');
 		link.eq(m).addClass('activelink');
@@ -98,24 +98,87 @@ $(function(){
 		}
 	});
 /* slide ---------------------------- */
-var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train');
-	next =  $('section.product-detail div.info-pro div.slide-pro div.slideshow div.next');
-	list = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train img');
+var listDetail = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train div.detail');
+	viewDetail = $('div.img-desc div.train div.pro');
+	nameDetail = $('div.name-desc div.train div.pro')
+	descDetail = $('div.desc div.train div.pro')
+	currentDet = 0;
 
-	currentSlide = 0;
-go2slide = function(n){
-		if(n>list.length-1) n=0;
-		if(n<0) n = list.length-1;
-		train.animate({
-			left:-100*n
-		},500,'ease-in-out');
-		//lists.eq(currentSlide).removeClass('active');
-		//lists.eq(n).addClass('active');
-		currentSlide=n;
+
+	current = function(n){
+		var listPic = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
+		listPic.eq(currentDet).removeClass('current');
+		listPic.eq(n).addClass('current');
+		currentDet=n;
 	}
 
-	next.click(nextSlide = function(){
-		go2slide(currentSlide+1);
+listDetail.click(function(){
+		index = ($(this).index());
+		switch(index)
+		{
+			case 0:
+				viewDetail.css({
+					opacity:'0'
+				});
+				nameDetail.css({
+					opacity:'0'
+				});
+				descDetail.css({
+					opacity:'0'
+				});
+				$('div.img-desc div.train div#img1').css({
+					opacity:'1'
+				});
+				$('div.name-desc div.train div#name1').css({
+					opacity:'1'
+				});
+				$('div.desc div.train div#desc1').css({
+					opacity:'1'
+				});
+				current( $(this).index() );
+				break;
+			case 1:
+				viewDetail.css({
+					opacity:'0'
+				});
+				nameDetail.css({
+					opacity:'0'
+				});
+				descDetail.css({
+					opacity:'0'
+				});
+				$('div.img-desc div.train div#img2').css({
+					opacity:'1'
+				});
+				$('div.name-desc div.train div#name2').css({
+					opacity:'1'
+				});
+				$('div.desc div.train div#desc2').css({
+					opacity:'1'
+				});
+				current( $(this).index() );
+				break;
+			case 2:
+				viewDetail.css({
+					opacity:'0'
+				});
+				nameDetail.css({
+					opacity:'0'
+				});
+				descDetail.css({
+					opacity:'0'
+				});
+				$('div.img-desc div.train div#img3').css({
+						opacity:'1'
+				});
+				$('div.name-desc div.train div#name3').css({
+						opacity:'1'
+				});
+				$('div.desc div.train div#desc3').css({
+					opacity:'1'
+				});
+				current( $(this).index() );
+				break;
+		}
 	});
 });
-
