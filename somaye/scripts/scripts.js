@@ -98,30 +98,24 @@ $(function(){
 		}
 	});
 /* slide ---------------------------- */
-var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train'),
-		//lists = $('div.slideshow ul.btns li')
-		currentPic = 0,
-		autoPlayIv = false;
+var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train');
+	next =  $('section.product-detail div.info-pro div.slide-pro div.slideshow div.next');
+	list = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train img');
 
-	go2slide = function(n){
-		//if(n>lists.length-1) n=0;
-		//if(n<0) n = lists.length-1;
+	currentSlide = 0;
+go2slide = function(n){
+		if(n>list.length-1) n=0;
+		if(n<0) n = list.length-1;
 		train.animate({
-			left:-450*n
+			left:-100*n
 		},500,'ease-in-out');
-		//lists.eq(currentPic).removeClass('current');
-		//lists.eq(n).addClass('current');
-		currentPic=n;
-	
+		//lists.eq(currentSlide).removeClass('active');
+		//lists.eq(n).addClass('active');
+		currentSlide=n;
 	}
 
-	$('section.product-detail div.info-pro div.slide-pro div.slideshow .next').click(nextSlide = function(){
-		go2slide(currentPic+1);
+	next.click(nextSlide = function(){
+		go2slide(currentSlide+1);
 	});
-
-
-
-
-
 });
 
