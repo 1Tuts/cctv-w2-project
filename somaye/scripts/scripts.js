@@ -371,7 +371,7 @@ listDetail.click(function(){
 				break;
 		}
 	});
-
+	// slide kar nemikonad ??????
 	var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train '),
 		lists = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
 		currentSlide = 0;

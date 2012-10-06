@@ -11,10 +11,12 @@
 				<a class="next-link" href="#">درباره ما</a>
 
 			</div>
+			<div class="top-pic"></div>
 			<div class="about-info cover">
 				<?php
 					include('inc/left-menu.php');
 				?>
+
 				<div class="info left">
 					<p class="mt1">
 						از زمان تاسیس آن در سال 1976، ایسر، هدف خود را از شکستن موانع بین مردم و فن آوری به دست آورد. در سطح جهانی، ایسر در رتبه شماره 2 برای نوت بوک PCs.1 کانال مدل کسب و کار سود آور و پایدار به رشد این شرکت ادامه ابزاری است، در حالی که رویکرد خود را چند نام تجاری ادغام ایسر، دروازه، پاکارد بل، و مارک های آغازین در بازارهای جهانی است.
@@ -38,6 +40,7 @@
 					</p>
 				</div>
 			</div>
+			<div class="bottom-pic"></div>
 		</section>
 		<?php
 			include('inc/footer.php');
