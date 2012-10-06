@@ -8,6 +8,7 @@
 				<span></span>
 				<a class="next-link" href="#">کاتالوگ</a>
 			</div>
+			<div class="top-pic"></div>
 			<div class="catalog-info cover">
 				<div class="left-txt">
 					<p>
@@ -30,6 +31,7 @@
 						</ul>	
 				</div>
 			</div>
+			<div class="bottom-pic"></div>
 		</section>
 		<?php
 			include('inc/footer.php');
