@@ -53,6 +53,7 @@
 					</div>
 				</div>
 				<div class="desc-pro">
+					<div class="top-pic"></div>
 					<div class="name-desc">
 						<div class="train">
 							<div class="pro" id="name1">
@@ -146,10 +147,12 @@
 								<p>TRAVELMATE TimelineX سری 8 + ساعت از باتری life1 2 در یک طراحی بسیار همراه با قدرت پردازش کارآمد، قابلیت های ارتباطی گسترده، و راه حل های امنیتی ضروری پنجشنبه حداکثر رساندن بالقوه در حالی که خود را در حال حرکت است. از آن بالا، این نوت بوک را به مخاطره ماده و ویژگی های انرژی، حفاظت یکپارچه برای کمک به صرفه جویی در هزینه و محیط زیست.</p>
 							</div>
 						</div>
+						<span><a class="btn" href="#">برو به سری</a></span>
 					</div>
-					<span><a class="btn" href="#">برو به سری</a></span>
+					
 				</div>
 			</div>
+			<div class="bottom-pic"></div>
 		</section>
 		<?php
 			include('inc/footer.php');

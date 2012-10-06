@@ -97,7 +97,8 @@ $(function(){
 				break;
 		}
 	});
-/* slide ---------------------------- */
+/* Detail Page
+ ------------------------------------- */
 var listDetail = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train div.detail');
 	viewDetail = $('div.img-desc div.train div.pro');
 	nameDetail = $('div.name-desc div.train div.pro')
@@ -179,9 +180,7 @@ listDetail.click(function(){
 				});
 				current( $(this).index() );
 				break;
-
-
-				case 3:
+			case 3:
 				viewDetail.css({
 					opacity:'0'
 				});
@@ -372,4 +371,23 @@ listDetail.click(function(){
 				break;
 		}
 	});
+
+	var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train '),
+		lists = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
+		currentSlide = 0;
+	go2slide = function(n){
+			if(n>lists.length-1) n=0;
+			if(n<0) n = lists.length-1;
+			train.animate({
+				left:100*n
+			},500,'ease-in-out');
+			currentSlide=n;
+		}
+
+	$('div.slide-pro div.slide div.slideshow div.next').click(nextSlide = function(){
+		go2slide(currentSlide+1);
+	});
+
+
+
 });

@@ -798,15 +798,13 @@ section.product-detail {
 		}
 	}
 	div.info-pro {
-		background-color: #eee;
-		border-radius: 10px;
-
+		background : url('images/product/notebook/bg-right-white.png') repeat-y right;
+		border-radius: 0 30px 0 0;
 		div.slide-pro {
-			//outline: 1px solid blue;
 			width: 535px;
 			div.title {
 				min-height: 40px;
-				background : url('images/product/notebook/bg-top-left.jpg');
+				background : url('images/product/notebook/bg-top-left.jpg') repeat-x 0 0;
 				font-size: 17px;
 				border-radius: 0 10px 0 0;
 				font-weight: bold;
@@ -874,12 +872,15 @@ section.product-detail {
 		}
 		div.desc-pro {
 			min-height: 600px;
-			margin-right: 540px;
-			background-color: #eee;
-			border-radius: 10px;
+			margin-right: 535px;
+			div.top-pic {
+				background  : url('images/product/notebook/bg-top-right.png') no-repeat;
+				height: 41px;
+
+			}
 			div.name-desc {
-				margin-top: 40px;
 				overflow: hidden;
+				background  : url('images/product/notebook/bg-right-white.jpg') repeat-y left 0;
 				height: 40px;
 				div.train {
 					div.pro {
@@ -932,6 +933,7 @@ section.product-detail {
 			div.img-desc {
 				padding-left: 40px;
 				overflow: hidden;
+				background: url(images/product/notebook/bg-right-white.jpg) repeat-y left 0;
 				div.train {
 					div.pro {
 						float:left;
@@ -980,14 +982,31 @@ section.product-detail {
 				}
 			}
 			div.desc {
-				height: 140px;
-				margin-top: 20px;
+				height: 303px;
 				overflow: hidden;
+				position: relative;
+				background: url(images/product/notebook/bg-right-gradient.jpg) no-repeat left 0;
+				span {
+					a.btn {
+						margin-left: 120px;
+						text-decoration: none;
+						font-size: 15px;
+						font-weight: bold;
+						position: absolute;
+						top: 150px;
+						text-align: left;
+						color: white;
+						padding: 10px 55px 13px 20px;
+						border-radius: 5px;
+						background : url('images/product/notebook/btn.png') no-repeat;
+					}
+				}
 				div.train {
 					div.pro {
 						float:none;
 						p {
 							display:block;
+							background-color: transparent;
 							color : #444;
 							line-height: 20px;
 							padding: 0px 30px 0px 30px;
@@ -1033,20 +1052,11 @@ section.product-detail {
 					}
 				}
 			}	
-			span {
-
-				a.btn {
-					margin-left: 120px;
-					text-decoration: none;
-					font-size: 15px;
-					font-weight: bold;
-					text-align: left;
-					color: white;
-					padding: 10px 55px 10px 20px;
-					border-radius: 5px;
-					background : url('images/product/notebook/btn.png') no-repeat;
-				}
-			}
+			
 		}
+	}
+	div.bottom-pic {
+		background: url('images/product/notebook/bg-bottom-right.png') no-repeat;
+		height: 35px;
 	}
 }
