@@ -8,6 +8,7 @@
 				<span></span>
 				<a class="next-link" href="#">خرید</a>
 			</div>
+			<div class="top-pic"></div>
 			<div class="buy-info cover">
 				<?php
 					include('inc/left-menu.php');
@@ -23,6 +24,7 @@
 					</p>
 				</div>
 			</div>
+			<div class="bottom-pic"></div>
 		</section>
 		<?php
 			include('inc/footer.php');
