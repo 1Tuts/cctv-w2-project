@@ -147,6 +147,7 @@
 							</div>
 						</div>
 					</div>
+					<span><a class="btn" href="#">برو به سری</a></span>
 				</div>
 			</div>
 		</section>
