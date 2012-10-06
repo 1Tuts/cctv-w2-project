@@ -8,6 +8,7 @@
 				<span></span>
 				<a class="next-link" href="#">تماس با ما</a>
 			</div>
+			<div class="top-pic"></div>
 			<div class="contact-info cover">
 				<?php
 					include('inc/left-menu.php');
@@ -54,6 +55,7 @@
 					</p>
 				</div>
 			</div>
+			<div class="bottom-pic"></div>
 		</section>
 		<?php
 			include('inc/footer.php');
