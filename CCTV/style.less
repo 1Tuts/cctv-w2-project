@@ -232,7 +232,12 @@ section.product-camera-content {
 		-o-box-shadow:1px 1px 10px #444 inset;
 		-ms-box-shadow:1px 1px 10px #444 inset;
 		box-shadow:1px 1px 10px #444 inset;
-		
+		/**************************************** SIGN IN PAGE *****************************************/
+		div.img-top{
+		  height : 40px;
+		  background :url('images/product/P196HQL_01.jpg') no-repeat;
+		}
+		/***********************************************************************************************/
 		nav.content-pr-nav{
 			background: url(images/product/detail-product/bg-menu.png) repeat-y center center;
 			height:41px;
@@ -442,6 +447,52 @@ section.product-camera-content {
 						}
 					}
 					
+				}
+			}
+			/********************************* PAGE SIGN IN ******************************************/
+			div.content-sign-in{
+				padding :5px 40px;
+				color : #434343;
+				min-height : 450px;
+				
+				h1{
+					font-size:25px;
+					line-height : 45px;
+					
+				}
+				
+				p{
+					line-height : 20px;
+					font-size : 16px;
+					padding : 0 3px 0 0;
+					text-align:justify;
+				}
+				
+				form.frmsign-in{
+					
+					input{
+					  	display : block;
+						border : 1px solid #ddd;
+						margin-top : 10px;
+						text-align: right;
+						padding : 3px 10px;
+						font-size : 14px;
+						-webkit-transition : all 1s;
+						
+						&:focus{
+							outline : 1px solid #fafafa;
+							background-color : #fcfcfc;
+						}
+					}
+					
+					input[type='submit']{
+						background : url('images/product/green_bar_repeatx.png') repeat-x 0 0;
+						padding :0 20px;
+						border-radius : 5px;
+						border-color: #06dc1c;
+						color : #fff;
+						font-size: 16px;
+					}
 				}
 			}
 			/********************************* PAGE ATTRIBUTE PRODUCT ********************************/
