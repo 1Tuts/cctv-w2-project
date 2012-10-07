@@ -16,7 +16,7 @@ $(document).ready(function () {
 	<ul id="nav">
 		<li><a href="product-index.php">محصولات</a>
 			<ul>
-				<li class="active"><a href='#'>مصرف کننده</a></li>
+				<li class="active"><a href='product-detail.php'>مصرف کننده</a></li>
 				<li><a href='product-detail.php'>نوت بوک</a></li>
 				<li><a href='product-detail.php'>ultrabooks</a></li>
 				<li><a href='product-detail.php'>نت بوک</a></li>

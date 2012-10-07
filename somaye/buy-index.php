@@ -4,7 +4,7 @@
 		<!-- start contact info -->
 		<section class="buy cover">
 			<div class="nav cover mt2">
-				<a href="#">درباره شرکت</a>
+				<a href="about-index.php">درباره شرکت</a>
 				<span></span>
 				<a class="next-link" href="#">خرید</a>
 			</div>

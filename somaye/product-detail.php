@@ -3,7 +3,7 @@
 		?>
 		<section class="product-detail cover">
 			<div class="nav cover ">
-				<a href="#">محصولات</a>
+				<a href="product-index.php">محصولات</a>
 				<span></span>
 				<a class="next-link" href="#">معرفی محصولات</a>
 			</div>
