@@ -7,14 +7,7 @@
 		<a class="next-link" href="#"> ما</a>
 	</div>
 	<div class="content-pr cover">
-		<nav class="content-pr-nav">
-			<!--<ul>
-	            <li class="current"><a href="./body-detail-product.php">مزایای	</a></li>
-	        	<li><a href="./detail-product-gallery.php" target="_self">گالری عکس	</a></li>
-	            <li><a href="./detail-product-model.php"> مدل</a></li>
-	    	</ul>-->
-	    </nav>
-        
+		<nav class="content-pr-nav"></nav>
 			<section class="detail-pr cover">
             	<article class="txt-detail-pr">
                 	<h3>P SERIES</h3>
@@ -23,7 +16,7 @@
 
                     </p>
                 </article>
-                <img src="images/product/detail-product/P_350x250.jpg" />
+                <img src="images/product/detail-product/P_350x250.png" />
             </section>
 				<div class="info left cover">
                 	<div class="content-attr mh10 pt1 pr1 pl1">
