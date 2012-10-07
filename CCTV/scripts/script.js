@@ -60,19 +60,4 @@ $(function(){
 	BgImg3.click(function(){
 		window.open("./body-detail-product.php","_self");
 	});
-	
-	//JS PAGE DETAIL PRODUCT CLICK MENU
-/*
-	list.click(function(){
-		actioncurrent( $(this).index() );
-	})
-				
-	
-	actioncurrent = function(n){
-	
-		list.eq(currentList).removeClass('current');
-		list.eq(n).addClass('current');
-		currentList=n;
-	}
-*/
 });

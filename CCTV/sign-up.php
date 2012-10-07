@@ -46,11 +46,18 @@
                         </tr>
                         <tr>
                         	<td><label>مجددا پسورد :</label></td>
-                            <td><input type="text" name="conpas" id="name" placeholder="مجددا پسور"/></td>
+                            <td><input type="text" name="conpas" id="name" placeholder=" مجددا پسورد"/></td>
                         </tr>
                         <tr>
                         	<td><label>استان :</label></td>
-                            <td><input type="text" name="country" id="name" placeholder="استان"/></td>
+
+                            <td>
+                            	<select style="width:265px;">
+                                	<option value="shz">شیراز</option>
+                                    <option value="th">تهران</option>
+                                    <option value="ah">اهواز</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                         	<td><label>شهر :</label></td>
@@ -67,7 +74,10 @@
                         <tr>
                         	<td><label>کدامنیتی :</label></td>
                             <td><input type="text" name="controlcode" id="name" placeholder="کد امنیتی"/></td>
-                        </tr>         
+                        </tr>  
+                        <tr>
+                          	<td><input type="submit" name="submit" value="ارسال اطلاعات"  class="sub txc" /> </td>
+                        </tr>       
                        </table>
                     </form>
                 </div>
