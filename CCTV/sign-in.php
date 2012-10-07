@@ -6,13 +6,6 @@
 		<a class="next-link" href="#"> حساب من</a>
 	</div>
 	<div class="content-pr cover">
-		<!--<nav class="content-pr-nav">
-			<ul>
-	            <li><a href="./body-detail-product.php">مزایای	</a></li>
-	        	<li><a href="./detail-product-gallery.php">گالری عکس	</a></li>
-	            <li class="current"><a href="./detail-product-model.php"> مدل</a></li>
-	    	</ul>
-	    </nav>-->
         <div class="img-top"></div>
         <div class="info left cover">
         	<div class="content-sign-in">

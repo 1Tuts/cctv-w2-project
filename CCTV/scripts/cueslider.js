@@ -56,10 +56,11 @@
 			this.cuePos.shifc(true);
 			this.refresh();
 		},
-		
-		/*autoplay : function(){
+		/*
+		autoplay : function(options){
+			
 			setInterval(cuenext,1000);	
-		}()*/
+		},*/
 	});
 })($);
 

@@ -49,11 +49,10 @@
 	<script type="text/javascript">
 		$(function(){
 			var cue = $('div.banner > ul li');
-			
-			$('div.banner > ul li').cueslider({
+			/*cue.cueslider({
 				transitionProperty : 'left top opacity width height'.split(' ')
-			});
-//			setInterval(cuenext,1000);
+			});*/
+			setInterval(cue.cuenext,1000);
 		});
 	</script>
     <?php
