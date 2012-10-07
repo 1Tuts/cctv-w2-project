@@ -371,21 +371,27 @@ listDetail.click(function(){
 				break;
 		}
 	});
-	// slide kar nemikonad ??????
-	var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train '),
+
+
+	var train = $('div.slideshow div.train'),
 		lists = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
 		currentSlide = 0;
-	go2slide = function(n){
-			if(n>lists.length-1) n=0;
-			if(n<0) n = lists.length-1;
-			train.animate({
-				left:100*n
-			},500,'ease-in-out');
-			currentSlide=n;
-		}
 
-	$('div.slide-pro div.slide div.slideshow div.next').click(nextSlide = function(){
-		go2slide(currentSlide+1);
+	go2slide = function(n){
+		if(n>lists.length-1) n=0;
+		if(n<0) n = lists.length-1;
+		train.animate({
+			left:-111*n
+		},1000);
+		currentSlide=n;
+	}
+
+
+	$('div.slideshow div.next').click(nextSlide = function(){
+		go2slide(currentSlide+2);
+	});
+	$('div.slideshow div.previous').click(preSlide = function(){
+		go2slide(currentSlide-2);
 	});
 
 

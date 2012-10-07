@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
   	<link rel="stylesheet/less" type="text/css" href="style.less" />
+    <link rel="stylesheet" type="text/css" href="slidepro.css" /><!--css fro cueslider-->
     
     <link rel="stylesheet" type="text/css" href="style.css" /><!--css fro cueslider-->
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
