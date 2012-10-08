@@ -10,9 +10,9 @@
 			<div class="info-pro cover">
 				<div class="slide-pro right">
 					<div class="title">Aspir</div>
-					<div class="slide">
-						<div class="slideshow">
-							<div class="train">
+					<div class="slider">
+						<div class="slideshow-pro">
+							<div class="scroll">
 								<div class="detail current-pic" >
 									<img src="images/product/notebook/Aspire_202x146.jpg" width="89" height="64" />
 									<a href="#">Aspire</a>
@@ -147,7 +147,7 @@
 								<p>TRAVELMATE TimelineX سری 8 + ساعت از باتری life1 2 در یک طراحی بسیار همراه با قدرت پردازش کارآمد، قابلیت های ارتباطی گسترده، و راه حل های امنیتی ضروری پنجشنبه حداکثر رساندن بالقوه در حالی که خود را در حال حرکت است. از آن بالا، این نوت بوک را به مخاطره ماده و ویژگی های انرژی، حفاظت یکپارچه برای کمک به صرفه جویی در هزینه و محیط زیست.</p>
 							</div>
 						</div>
-						<span><a class="btn" href="#">برو به سری</a></span>
+						<span><a class="btnlink" href="#">برو به سری</a></span>
 					</div>
 					
 				</div>

@@ -25,8 +25,8 @@
 						<li><a href='product-detail.php'>انتخاب</a></li>
 					</ul>
 				</div>
-				<div class="view cover">
-					<div class="train">
+				<div class="view-pro cover">
+					<div class="scroll">
 						<div class="pro" id="img1">
 							<a href="product-detail.php"><img src="images\product\view\1.jpg" width="770" height="386" alt="" title="" /></a>
 						</div>

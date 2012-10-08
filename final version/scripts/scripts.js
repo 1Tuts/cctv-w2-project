@@ -1,7 +1,7 @@
 $(function(){
 
 	var listPro = $('div.product div.list-product ul li');
-		product = $('div.view div.train div.pro');
+		product = $('div.view-pro div.scroll div.pro');
 		currentList = 0;
 		currentLink = 0;
 
@@ -27,7 +27,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img1').css({
+				$('div.view-pro div.scroll div#img1').css({
 					opacity:'1'
 				});
 				action( $(this).index() );
@@ -36,7 +36,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img2').css({
+				$('div.view-pro div.scroll div#img2').css({
 					opacity:'1'
 				});
 				action( $(this).index() );
@@ -45,7 +45,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img3').css({
+				$('div.view-pro div.scroll div#img3').css({
 						opacity:'1'
 				});
 				action( $(this).index() );
@@ -54,7 +54,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img4').css({
+				$('div.view-pro div.scroll div#img4').css({
 					opacity:'1'
 				});
 				action( $(this).index() );
@@ -63,7 +63,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img5').css({
+				$('div.view-pro div.scroll div#img5').css({
 					opacity:'1'
 				});
 				action( $(this).index() );
@@ -72,7 +72,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img6').css({
+				$('div.view-pro div.scroll div#img6').css({
 					opacity:'1'
 				});
 				action( $(this).index() );
@@ -81,7 +81,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img7').css({
+				$('div.view-pro div.scroll div#img7').css({
 					opacity:'1'
 				});
 				action( $(this).index() );
@@ -90,7 +90,7 @@ $(function(){
 				product.css({
 					opacity:'0'
 				});
-				$('div.view div.train div#img8').css({
+				$('div.view-pro div.scroll div#img8').css({
 					opacity:'1'
 				});
 				action( $(this).index() );
@@ -99,7 +99,7 @@ $(function(){
 	});
 /* Detail Page
  ------------------------------------- */
-var listDetail = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train div.detail');
+var listDetail = $('section.product-detail div.info-pro div.slide-pro div.slideshow-pro div.scroll div.detail');
 	viewDetail = $('div.img-desc div.train div.pro');
 	nameDetail = $('div.name-desc div.train div.pro')
 	descDetail = $('div.desc div.train div.pro')
@@ -107,7 +107,7 @@ var listDetail = $('section.product-detail div.info-pro div.slide-pro div.slides
 
 
 	currentPic = function(n){
-		var listPic = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
+		var listPic = $('section.product-detail div.info-pro div.slide-pro div.slideshow-pro div.scroll > div')
 		listPic.eq(currentDet).removeClass('current-img');
 		listPic.eq(n).addClass('current-img');
 		currentDet=n;
@@ -373,23 +373,23 @@ listDetail.click(function(){
 	});
 
 
-	var train = $('div.slideshow div.train'),
-		lists = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
+	var train = $('div.slideshow-pro div.scroll'),
+		lists = $('section.product-detail div.info-pro div.slide-pro div.slideshow-pro div.scroll > div')
 		currentSlide = 0;
 
 	go2slide = function(n){
 		if(n>lists.length-1) n=0;
 		if(n<0) n = lists.length-1;
 		train.animate({
-			left:-111*n
+			left:-112*n
 		},1000);
 		currentSlide=n;
 	}
 
-	$('section.product-detail div.info-pro div.slide-pro div.slideshow div.next').click(nextSlide = function(){
+	$('section.product-detail div.info-pro div.slide-pro div.slideshow-pro div.next').click(nextSlide = function(){
 		go2slide(currentSlide+2);
 	});
-	$('section.product-detail div.info-pro div.slide-pro div.slideshow div.previous').click(preSlide = function(){
+	$('section.product-detail div.info-pro div.slide-pro div.slideshow-pro div.previous').click(preSlide = function(){
 		go2slide(currentSlide-2);
 	});
 

@@ -158,7 +158,7 @@ header{
 section.product-box {
 	div.commerical {
 		height:37px;
-
+		margin-left: 10px;
 			span {
 				height:37px;
 				background:url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAAlCAYAAACeRZfqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJASURBVHja7N0xi1RXAIbhd7cUEhIlhUVs0ljEwsLCX2BA7SSsqQRRiIVCLAQLsbIISZGIiCIkP0FsEkQ7mwRsVEghSoKFBLSyknVdi3GJLG7YXY9kN/s8zczcmXtm+E7zcbj3zNT8/PzLJu5XN6sb1bXqRQAArNjU64I1tej4k+pC9X31TEwAAO9esBb8XZ2pLosKAGBMwaqaq36pDlVPRQYA8O4Fa8Gj6qvqltgAAJY2vYLPflpdrQ6KDQBgTMGq2tLk4vcjogMAGFOwqj6uvqtOig8AYEzBqvqwOl0dFSEAwJiCVbW5OlcdFiMAwD9WchfhUh5Xx5pcAA8AoGANKFhVD5ps4fC7SAEABWtMwaq6W+2v/hIrALCRTQ8ca0d1sclWDgAACtYge6pvG7MiBgCgYL0eb6Y6K1oAQMEaZ1N1vPpavACAgjXOR9Wpap+IAYCNZuRdhG9zrzpU3RY1ALBRTL/n8T+vzlefiRoAULDG2V39UG0VNwCgYI2zt/qxyZ9EAwAoWIMcqC5VH4gdAFCwxpmprlSfiB4AULDG+bL6qdomfgBAwRpnb3W12mUKAAAFa5yd1fXqxH/8OwAAhnrfG40u16/VN9UfpgQAWO/WysrRF012e/+52m5aAID1bK2sYC12p7pW/VY9r/6sHlZzpgwAULAAgP+TuWq2evHG4+Lnb3u9cGz2jTGWc86/fc/sKs9Z6rOL31v1wo6LywEABlOwAAAULAAABQsAQMECAEDBAgBYM14BAAD//wMAhi+crWrH/bAAAAAASUVORK5CYII=');
@@ -229,10 +229,10 @@ section.product-box {
 			}	
 		}
 
-		div.view {
+		div.view-pro {
 			width:770px;
 			overflow:hidden;
-			div.train {
+			div.scroll {
 				div.pro {
 					float:left;
 					a {
@@ -791,6 +791,7 @@ section.product-detail {
 		border-radius: 0 30px 0 0;
 		div.slide-pro {
 			width: 535px;
+			height : 165px;
 			div.title {
 				min-height: 40px;
 				background : url('images/product/notebook/bg-top-left.jpg') repeat-x 0 0;
@@ -799,16 +800,17 @@ section.product-detail {
 				font-weight: bold;
 				line-height: 40px;
 				text-align:right;
+				color:black;
 				padding-right: 40px;
 			}
-			div.slide {
-				div.slideshow {
+			div.slider {
+				div.slideshow-pro {
 					width      : 535px;
 					height     : 125px;
 					overflow   : hidden;
 					position   : relative;
 					background-color: #FFF;
-					div.train {
+					div.scroll {
 						padding-left : 60px;
 						width    : 5000px;
 						height   : 125px;
@@ -976,16 +978,19 @@ section.product-detail {
 				position: relative;
 				background: url(images/product/notebook/bg-right-gradient.jpg) no-repeat left 0;
 				span {
-					a.btn {
+					a.btnlink {
 						margin-left: 120px;
 						text-decoration: none;
 						font-size: 15px;
 						font-weight: bold;
 						position: absolute;
 						top: 150px;
+						left:30px;
+						width: 115px;
+						display: block;
 						text-align: left;
 						color: white;
-						padding: 10px 55px 13px 20px;
+						padding: 10px 0px 13px 20px;
 						border-radius: 5px;
 						background : url('images/product/notebook/btn.png') no-repeat;
 					}
