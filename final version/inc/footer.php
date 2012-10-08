@@ -15,7 +15,7 @@
 					<nav>
 						<ul>
 							<li><a href='./about-index.php'>درباره ما</a></li>
-							<li><a href='#'>همکار ما شوید</a></li>
+							<li><a href='./sign-in.php'>همکار ما شوید</a></li>
 							<li><a href='#'>مقالات تخصصی</a></li>
 							<li><a href='#'>پرسش و پاسخ</a></li>
 							<!--<li><a href='#'>ثبات</a></li>

@@ -24,7 +24,7 @@
                     	<input class="inp" type="text"     name="email"  id="email" size="40px" placeholder="ایمیل" />
                         <input type="password" name="pas"    id="pas"   size="40px" placeholder="رمز" />
                         <input type="submit"   name="submit" value="ورود به سیستم" />
-                        <input type="submit"   name="submit" value="ایجاد حساب جدید" />
+                        <a href="./sign-up.php"><input type="button"   name="submit" value="ایجاد حساب جدید" /></a>
                     </form>
                 </div>
             </div>
