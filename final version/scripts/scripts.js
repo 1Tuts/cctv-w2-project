@@ -397,7 +397,7 @@ $(function(){
 	liList.mouseover(function(){
 		$('ul',this).animate({
 			top:-35
-		},900);
+		},400);
 	});
 
 	liList.mouseout(function(){
