@@ -112,7 +112,7 @@
 								<a href="#"><img src="images/product/notebook/TravelMate_BA_350x250.jpg" /></a>
 							</div>
 							<div class="pro" id="img9">
-								<a href="#"><img src="images/product/notebook/TravelMate_TimelineX_04_350x250.jpg" /></a>
+								<a href="./body-detail-product.php"><img src="images/product/notebook/TravelMate_TimelineX_04_350x250.jpg" /></a>
 							</div>
 						</div>
 
