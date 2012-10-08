@@ -400,12 +400,12 @@ var liList = $('nav.mainmenu li');
 	liList.mouseover(function(){
 		$('ul',this).animate({
 			top:-35
-		},1000);
+		},1500);
 	});
 
 	liList.mouseout(function(){
 		$('ul',this).animate({
 			top:-500
-		},2000);
+		},1500);
 	});
 });
