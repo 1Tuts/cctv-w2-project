@@ -1,0 +1,55 @@
+div.slide{
+	width: 820px;
+	position:relative;
+	left:5px;
+	height:410px;
+	overflow:hidden;
+}
+
+div.slide div.train{
+	background:  #D9D9D9;
+	width:50000px;
+	height:400px;
+	position:absolute;
+	left:0;
+	top:0;
+	background-size : cover;
+	-webkit-transition : all 500ms ease-out;
+	-moz-transition : all 500ms ease-out;
+	-ms-transition : all 500ms ease-out;
+	-o-transition : all 500ms ease-out;
+	transition : all 500ms ease-out;
+}
+
+div.slide div.train > div{
+	width:820px;
+	height:inherit;
+	float:left;
+	background-repeat:no-repeat;
+}
+/* ------------ button ------------ */
+
+div.gallery-thumbs ul.button{
+	list-style:none;
+	position:absolute;
+}
+
+div.gallery-thumbs ul.button li{
+	float:left;
+	cursor:pointer;
+	padding: 0 0 7px 0;
+	margin:0 15px 0 0;
+	background:url('images/product/img-slide/button/shadow_preview.jpg') no-repeat 0 bottom;
+	-webkit-transition:all 1100ms;
+	opacity:0.5;
+}
+
+div.gallery-thumbs ul.button li:hover,
+div.gallery-thumbs ul.button li.active{
+	-webkit-transition-duration:200ms;
+	opacity:1;
+}
+
+div.gallery-thumbs ul.button li img{
+	border:1px solid #ddd;
+}
