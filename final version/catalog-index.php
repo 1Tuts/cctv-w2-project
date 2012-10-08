@@ -21,8 +21,8 @@
 				</div>
 				<div class="info left">
 					<ul>
-							<li><a href="#"><span class="download">صادرات این گروه</span><span class="list">نت بوک</span></a></li>
-							<li><a href="#"><span class="download">صادرات این گروه</span><span class="list">دسک تاب</span></a></li>
+							<li><a href="download/4.zip"><span class="download">صادرات این گروه</span><span class="list">نت بوک</span></a></li>
+							<li><a href="download/101.zip"><span class="download">صادرات این گروه</span><span class="list">دسک تاب</span></a></li>
 							<li><a href="#"><span class="download">صادرات این گروه</span><span class="list">مانیتور</span></a></li>
 							<li><a href="#"><span class="download">صادرات این گروه</span><span class="list">پروژکتور</span></a></li>
 							<li><a href="#"><span class="download">صادرات این گروه</span><span class="list">تبلت</span></a></li>
