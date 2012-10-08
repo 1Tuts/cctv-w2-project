@@ -19,7 +19,7 @@
                 <img src="images/product/detail-product/P_350x250.png" />
             </section>
 				<div class="info left cover">
-                	<div class="content-attr mh10 pt1 pr1 pl1">
+                	<div class="content-attr mh15  pt1 pr1 pl1">
                     	<ul>
                         	<li><a href="./select-product.php">
                             	<div class="bg-green">اطلاعات فنی</div>
