@@ -1,17 +1,4 @@
-<script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript">
-	
-$(document).ready(function () { 
-	$('#nav li').hover(
-		function () {
-		$('ul', this).slideDown(800);
-	},function () {
-			$('ul', this).slideUp(800);
-		}
-	);
-});
 
-</script>
 <nav class="mainmenu">
 	<ul id="nav">
 		<li><a href="product-index.php">محصولات</a>

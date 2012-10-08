@@ -386,7 +386,6 @@ listDetail.click(function(){
 		currentSlide=n;
 	}
 
-
 	$('section.product-detail div.info-pro div.slide-pro div.slideshow div.next').click(nextSlide = function(){
 		go2slide(currentSlide+2);
 	});
@@ -394,6 +393,19 @@ listDetail.click(function(){
 		go2slide(currentSlide-2);
 	});
 
+/* Main Menu ************************/
+var liList = $('nav.mainmenu li');
+	//ulList = $('nav.mainmenu li ul',this);
 
+	liList.mouseover(function(){
+		$('ul',this).animate({
+			top:-35
+		},1000);
+	});
 
+	liList.mouseout(function(){
+		$('ul',this).animate({
+			top:-500
+		},2000);
+	});
 });
