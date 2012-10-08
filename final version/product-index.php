@@ -60,7 +60,7 @@
 		</section>
 		<section class="box-banner w24 cover mt4">
 			<a href="#">
-				<div class="banner right w6"></div>
+				<div class="right-banner right w6"></div>
 			</a>
 		</section>
 		<?php

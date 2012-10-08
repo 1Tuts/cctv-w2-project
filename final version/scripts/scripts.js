@@ -106,10 +106,10 @@ var listDetail = $('section.product-detail div.info-pro div.slide-pro div.slides
 	currentDet = 0;
 
 
-	current = function(n){
+	currentPic = function(n){
 		var listPic = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
-		listPic.eq(currentDet).removeClass('current');
-		listPic.eq(n).addClass('current');
+		listPic.eq(currentDet).removeClass('current-img');
+		listPic.eq(n).addClass('current-img');
 		currentDet=n;
 	}
 
@@ -136,7 +136,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc1').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 1:
 				viewDetail.css({
@@ -157,7 +157,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc2').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 2:
 				viewDetail.css({
@@ -178,7 +178,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc3').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 3:
 				viewDetail.css({
@@ -199,7 +199,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc4').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 1:
 				viewDetail.css({
@@ -220,7 +220,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc2').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 2:
 				viewDetail.css({
@@ -241,7 +241,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc3').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 3:
 				viewDetail.css({
@@ -262,7 +262,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc4').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 4:
 				viewDetail.css({
@@ -283,7 +283,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc5').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 5:
 				viewDetail.css({
@@ -304,7 +304,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc6').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 6:
 				viewDetail.css({
@@ -325,7 +325,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc7').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 7:
 				viewDetail.css({
@@ -346,7 +346,7 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc8').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 			case 8:
 				viewDetail.css({
@@ -367,25 +367,31 @@ listDetail.click(function(){
 				$('div.desc div.train div#desc9').css({
 					opacity:'1'
 				});
-				current( $(this).index() );
+				currentPic( $(this).index() );
 				break;
 		}
 	});
-	// slide kar nemikonad ??????
-	var train = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train '),
+
+
+	var train = $('div.slideshow div.train'),
 		lists = $('section.product-detail div.info-pro div.slide-pro div.slideshow div.train > div')
 		currentSlide = 0;
-	go2slide = function(n){
-			if(n>lists.length-1) n=0;
-			if(n<0) n = lists.length-1;
-			train.animate({
-				left:100*n
-			},500,'ease-in-out');
-			currentSlide=n;
-		}
 
-	$('div.slide-pro div.slide div.slideshow div.next').click(nextSlide = function(){
-		go2slide(currentSlide+1);
+	go2slide = function(n){
+		if(n>lists.length-1) n=0;
+		if(n<0) n = lists.length-1;
+		train.animate({
+			left:-111*n
+		},1000);
+		currentSlide=n;
+	}
+
+
+	$('section.product-detail div.info-pro div.slide-pro div.slideshow div.next').click(nextSlide = function(){
+		go2slide(currentSlide+2);
+	});
+	$('section.product-detail div.info-pro div.slide-pro div.slideshow div.previous').click(preSlide = function(){
+		go2slide(currentSlide-2);
 	});
 
 

@@ -3,7 +3,7 @@
 		?>
 		<section class="product-detail cover">
 			<div class="nav cover ">
-				<a href="#">محصولات</a>
+				<a href="product-index.php">محصولات</a>
 				<span></span>
 				<a class="next-link" href="#">معرفی محصولات</a>
 			</div>
@@ -13,7 +13,7 @@
 					<div class="slide">
 						<div class="slideshow">
 							<div class="train">
-								<div class="detail current" >
+								<div class="detail current-pic" >
 									<img src="images/product/notebook/Aspire_202x146.jpg" width="89" height="64" />
 									<a href="#">Aspire</a>
 								</div>
