@@ -23,6 +23,7 @@ body{
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-color: #000;
+	background-size:contain;
 }
 
 /* header 
@@ -107,9 +108,6 @@ header{
 						margin-top:0;
 						background:none;
 						background:url('images/product/menu_separetor1.png') repeat-y center 0; 
-
-
-
 						a {
 							padding:8px 30px 8px 20px;
 							border-left:none;
@@ -141,9 +139,6 @@ header{
 					}
 				}
 			}
-			li:hover{
-
-			}
 		}
 	}
 }
@@ -155,41 +150,35 @@ section.product-box {
 	div.commerical {
 		height:37px;
 		margin-left: 10px;
-			span {
-				height:37px;
-				background:url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAAlCAYAAACeRZfqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJASURBVHja7N0xi1RXAIbhd7cUEhIlhUVs0ljEwsLCX2BA7SSsqQRRiIVCLAQLsbIISZGIiCIkP0FsEkQ7mwRsVEghSoKFBLSyknVdi3GJLG7YXY9kN/s8zczcmXtm+E7zcbj3zNT8/PzLJu5XN6sb1bXqRQAArNjU64I1tej4k+pC9X31TEwAAO9esBb8XZ2pLosKAGBMwaqaq36pDlVPRQYA8O4Fa8Gj6qvqltgAAJY2vYLPflpdrQ6KDQBgTMGq2tLk4vcjogMAGFOwqj6uvqtOig8AYEzBqvqwOl0dFSEAwJiCVbW5OlcdFiMAwD9WchfhUh5Xx5pcAA8AoGANKFhVD5ps4fC7SAEABWtMwaq6W+2v/hIrALCRTQ8ca0d1sclWDgAACtYge6pvG7MiBgCgYL0eb6Y6K1oAQMEaZ1N1vPpavACAgjXOR9Wpap+IAYCNZuRdhG9zrzpU3RY1ALBRTL/n8T+vzlefiRoAULDG2V39UG0VNwCgYI2zt/qxyZ9EAwAoWIMcqC5VH4gdAFCwxpmprlSfiB4AULDG+bL6qdomfgBAwRpnb3W12mUKAAAFa5yd1fXqxH/8OwAAhnrfG40u16/VN9UfpgQAWO/WysrRF012e/+52m5aAID1bK2sYC12p7pW/VY9r/6sHlZzpgwAULAAgP+TuWq2evHG4+Lnb3u9cGz2jTGWc86/fc/sKs9Z6rOL31v1wo6LywEABlOwAAAULAAABQsAQMECAEDBAgBYM14BAAD//wMAhi+crWrH/bAAAAAASUVORK5CYII=');
-
-			}
-
-			a {
-				text-align:center;
-				font-size:16px;
-				color:#343434;
-				text-decoration:none;
-				font-weight:bold;
-				line-height:37px;
-				width:170px;
-				display:block;
-				height:37px;
-				background-color:#fff;
-				border-radius:5px 0 0 0;
-			}	
+		span {
+			height:37px;
+			background:url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAAlCAYAAACeRZfqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJASURBVHja7N0xi1RXAIbhd7cUEhIlhUVs0ljEwsLCX2BA7SSsqQRRiIVCLAQLsbIISZGIiCIkP0FsEkQ7mwRsVEghSoKFBLSyknVdi3GJLG7YXY9kN/s8zczcmXtm+E7zcbj3zNT8/PzLJu5XN6sb1bXqRQAArNjU64I1tej4k+pC9X31TEwAAO9esBb8XZ2pLosKAGBMwaqaq36pDlVPRQYA8O4Fa8Gj6qvqltgAAJY2vYLPflpdrQ6KDQBgTMGq2tLk4vcjogMAGFOwqj6uvqtOig8AYEzBqvqwOl0dFSEAwJiCVbW5OlcdFiMAwD9WchfhUh5Xx5pcAA8AoGANKFhVD5ps4fC7SAEABWtMwaq6W+2v/hIrALCRTQ8ca0d1sclWDgAACtYge6pvG7MiBgCgYL0eb6Y6K1oAQMEaZ1N1vPpavACAgjXOR9Wpap+IAYCNZuRdhG9zrzpU3RY1ALBRTL/n8T+vzlefiRoAULDG2V39UG0VNwCgYI2zt/qxyZ9EAwAoWIMcqC5VH4gdAFCwxpmprlSfiB4AULDG+bL6qdomfgBAwRpnb3W12mUKAAAFa5yd1fXqxH/8OwAAhnrfG40u16/VN9UfpgQAWO/WysrRF012e/+52m5aAID1bK2sYC12p7pW/VY9r/6sHlZzpgwAULAAgP+TuWq2evHG4+Lnb3u9cGz2jTGWc86/fc/sKs9Z6rOL31v1wo6LywEABlOwAAAULAAABQsAQMECAEDBAgBYM14BAAD//wMAhi+crWrH/bAAAAAASUVORK5CYII=');
+		}
+		a {
+			text-align:center;
+			font-size:16px;
+			color:#343434;
+			text-decoration:none;
+			font-weight:bold;
+			line-height:37px;
+			width:170px;
+			display:block;
+			height:37px;
+			background-color:#fff;
+			border-radius:5px 0 0 0;
+		}	
 	}
 
 	div.product {
 		div.list-product{
 			height:386px;
 			width:170px;
-
 			ul {
 				list-style-type: none;
 				margin-top:30px;
 				margin-left:25px;
-
-
 				li {
 					height:40px;
-
 					a {
 						display:block;
 						font-size:16px;
@@ -204,7 +193,6 @@ section.product-box {
 						-o-transition:300ms;
 						-ms-transition:300ms;
 						transition:300ms;
-
 						&:hover {
 							font-size:20px;
 							color:#6DC01C;
@@ -224,7 +212,6 @@ section.product-box {
 				}
 			}	
 		}
-
 		div.view-pro {
 			width:770px;
 			overflow:hidden;
@@ -290,7 +277,6 @@ footer{
 	position : relative;
 	z-index:10;
 	section.footer-box {
-
 			background:url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAYAAABMDlehAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTEvMTcvMTDNrMwCAAAANElEQVQImX2JsQ0AIAzD3NzBi9zIX6RSGWDoxGJZNnONUjqQHcibZ63dEShNb+lAVSD44AA8fxwA4G0nnwAAAABJRU5ErkJggg==') repeat-x;
 			border-radius: 5px;
 		div.left-pic {
@@ -301,7 +287,6 @@ footer{
 		div.language {
 				background:url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAASCAYAAACaV7S8AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTEvMTcvMTDNrMwCAAAAFElEQVQImWP4//+/AxMDAwMDtQkAItsDYIgl/icAAAAASUVORK5CYII=') repeat-x 0 0;
 				border-radius: 5px;
-				
 				width:100px;
 
 			span.language-icon {
@@ -461,7 +446,6 @@ section.about-content {
 		background: url('images/about/background_page_bottom.jpg') no-repeat 0 0;
 		height : 40px;
 	}	
-
 }
 
 /* Contact Us Page Style
@@ -529,7 +513,6 @@ section.contact {
 	}
 	div.contact-info {
 		background: url('data:images/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABA7YDAREAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAYIAgMHCv/EACkQAQAAAwYDCQAAAAAAAAAAAAABAgYDBTJxgbExQ4IzNEFyssHC0fD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9DFAcnT3Bcqi8Nl07wBZencEmUPkDrV3cIZAkUnDX6BmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADXa9nNpvAENvXDP+8QcWqfDaZTemAKtVvzuoFNqx73Dzx2B//9k=') repeat-y center center;
-
 		div.info {
 			width: 650px;
 			text-align: right;
@@ -593,7 +576,6 @@ section.catalog {
 		color:#aaa;
 		font-size: 14px;
 		line-height: 20px;
-		
 	}
 	div.top-pic {
 		background: url('images/about/background_page_top.jpg') no-repeat 0 0;
@@ -609,8 +591,6 @@ section.catalog {
 			padding-right : 10px;
 			padding-bottom: 150px;
 			min-height: 470px; 
-
-
 			ul {
 				li {
 					height: 40px;
@@ -621,17 +601,13 @@ section.catalog {
 					text-align: right;
 					&:hover {
 						background: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAoCAYAAAA/tpB3AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDQvMTAvMTIg57quAAAAIUlEQVQImWN4+vTpfyYGBgYGWhP//v3DQ/z9+xePLGHjARlhJ7JT6UN6AAAAAElFTkSuQmCC') repeat-x center center;
-
 					}
-
 					a {
 						display: block;
 						padding:10px 10px 0px 0;
 						text-decoration: none;
 						height: 40px;
 						background: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsSAAALEgHS3X78AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8xMC8xMiDnuq4AAAPASURBVEhLrZVPaBRXHMe/M7uz/4xlCbYiVGNJDb30kIMoVJDSU1EPPbQgtVVCvNbSim2JtCgeNLceDKWHYFuoehAKQqglQaEHe0ggKXioREWhTbUkQdx1Z/a9edPv7/c2k5D10uKwb97OzJvP7/u+7/d+E8zOzr63vLx8IY7jKp7DUa1WW/V6/UgwOTlpCoVCsb+/H5VKBcYYOOf+U4gwDFEul5EkCebn52F5BBMTE9ng4KDebDabsEiwbP8iOEOW8cwmgVI2lzq9RsBfEGpwxxtbNvShFJTR09MDKsbMzAyK8jCKIiwuLuJJ5QGuPxxHbJ8qzKYZUuvQalmYdoo2m7Upg2SwbAwDw2BRWMXwzuN4ufGqwuXQsKI2DRL8ungBjn1UDFEohCiGAZylcgnQZqCE4Jh929/L6BjFo9Vu4pubo0jSlrJysKh77BYIjameQAHTN3nRCTRxMHGKenEz3t/1Ma+p2gicA2hNQLrA/2w8yNfHG+VtU5ioDak041RTQ287Skuuhk/eHsW+wYPYO7CfMxHP/TqsAAKJ0DlysDyXhRD/JCksoaajNMpqGHlnDNtfGtDXht78VAOL2iwn58xVK/QfB1mqaFNhIovF6ZrEos3+swPn0feihzbjJzh56ahOX7Ojw1vPX1VMsFEwYWxJzJ6+HnnjC0J35NCRH4/i3j+3uewdKjsP9TPotoJPDVNJUkpUSn9o9+fY89q+fPDXV7/EvYd/QFNYgDytWJjD13ss/hrxlXBRLh6v9083C09O1oG9PNdNpOvC/2ts7rLCMG91l3HQt9fP4Matq/nwYwdOo2/TDg0qLWW62TT1wdaZvAbsrRCoZkZAdAEY++UUp09PefRUN+Lsh+OED/hUFBFsOgNR/GyPuXhqBdUGHEQPnYQtBhi5OIy79FbhlY0Y/WDcq6UQ3UAd8NqE61K84nEq/kkucUTTNHDi+yHc+dvDz/98llOX4gQPFbhullXJOThfvM4CygsZ7fCqMzRtA19d/ghXfvsB137/ibPionFmjvte14Stywqpp5ur21jqWI8lKwTOqVKEVrCMORuwDj56uoCxyXNqDwpUqTuVG4sDy8UN6Ku/wnLgteq5VCohYj09+PoxRKiqz8b4tBM7spBwhXFwJNcS0DdRWynWcPytkygXKlrw5egq9O0swULjfr4O4poWJJf6UqlvycYjnftafN36wnaFSi2u1WqYnp5GMDU1ZRhFP01S8KWe/t9PU8qclk8Tv582mJube3dpaem7Vqv13D6mvb29h/8FyTGcLhZjaUIAAAAASUVORK5CYII=') no-repeat 620px 10px;
-
-
 						span.list {
 							color: #6DC01C;
 							padding: 2px 35px 5px 0;
@@ -639,7 +615,6 @@ section.catalog {
 							font-weight: bold;
 							display: block;
 						}
-
 						span.download {
 							background: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAVCAYAAACHUoQEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDQvMTAvMTIg57quAAAAIklEQVQImWM4c+bMf6Y/f/4wQIjfv38zIHGJEGNgYCCGAAAkDSbzu4WbmAAAAABJRU5ErkJggg==') repeat-x left center;
 							border-radius: 5px;
@@ -759,12 +734,9 @@ section.buy {
 /* Product Detail Page Style
 ---------------------------------------------------- */
 section.product-detail {
-	//outline: 1px solid red;
-
 	div.nav {
 			background: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAZCAYAAAD9jjQ4AAAACXBIWXMAAAsSAAALEgHS3X78AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABfSURBVHja3NHRCcMwDIThcyfIKB6po3SUjJQRPEI2+PLk4lDq9jU5EAj94jihgnzTIxNdAtYkLUmCsSp2PHGCCxpefTaCDevo1JsPgHnav2yngX6eMi40pNz72W8dAwDtfbnj9cFpVQAAAABJRU5ErkJggg==') no-repeat 870px center;
 			text-align: right;
-			//outline: 1px solid green;
 		a {
 			height:40px;
 			color:#fff;
@@ -772,7 +744,7 @@ section.product-detail {
 			font-size: 14px;
 			font-weight: bold;
 			text-transform: capitalize;
-			padding-right: 18px; //left
+			padding-right: 18px;
 			text-decoration: none;
 			&:hover {
 				color:#6DC01C;
@@ -833,7 +805,6 @@ section.product-detail {
 								background : url('images/product/notebook/current-product.jpg') no-repeat center bottom;
 								font-weight: bold;
 							}
-
 						}
 					}
 					div.previous {
@@ -863,7 +834,6 @@ section.product-detail {
 			div.top-pic {
 				background  : url('images/product/notebook/bg-top-right.png') no-repeat;
 				height: 41px;
-
 			}
 			div.name-desc {
 				overflow: hidden;
@@ -900,14 +870,16 @@ section.product-detail {
 					div#name5 {
 						margin-top:-40px;
 						opacity:0;
-					}div#name6 {
+					}
+					div#name6 {
 						margin-top:-40px;
 						opacity:0;
 					}
 					div#name7 {
 						margin-top:-40px;
 						opacity:0;
-					}div#name8 {
+					}
+					div#name8 {
 						margin-top:-40px;
 						opacity:0;
 					}
