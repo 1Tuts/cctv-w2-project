@@ -30,12 +30,20 @@ $(document).ready(function () {
 		</li>
 		<li><a href="#"> پشتیبانی</a>
 			<ul>
-				<li><a href="buy-index.php">خرید</a></li>
-				<li><a href="catalog-index.php">دانلود</a></li>
-				<li><a href="#">آپدیت نرم افزار ها</a></li>
+				<li><a href="buy-index.php">فروش</a></li>
+				<li><a href="catalog-index.php">دانلود دریور</a></li>
+				<li><a href="#">فرم گارانتی</a></li>
+                <li><a href="#">پرسش و پاسخ</a></li>
 			</ul>
 		</li>
-		<li><a href="contact-index.php">ارتباط با ما</a></li>
+		<li><a href="contact-index.php">مقالات تخصصی</a>
+  	        <ul>
+				<li><a href="#">مقاله 1</a></li>
+				<li><a href="#">مقاله 2</a></li>
+				<li><a href="#">مقاله 3 </a></li>
+                <li><a href="#">مقاله 4</a></li>
+			</ul>
+        </li>
 	</ul>
 </nav>
 			
