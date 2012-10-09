@@ -25,10 +25,11 @@
 	section.container{
 	
 		margin : 0 auto;
+		margin-top:100px;
 		color  : #ccc;
 	}
 	.message{
-			min-height:400px;
+			min-height:100px;
 			
 			background-image    : url('images/not-found/page_not_found.jpg');
 			background-repeat   : no-repeat;
@@ -38,11 +39,10 @@
 			
 	}
 	.txt{
-			position:absolute;
-			top:50%;
-			left:35%;	
 			text-align:center;
 			font-size:17px;
+			width:550px;
+			margin:0 auto;
 	}
 	
 	a{			
@@ -52,6 +52,7 @@
 	.copy{
 			text-align : center;
 			font-size:12px;
+			margin-top:250px;
 		}
 
     </style>
@@ -65,8 +66,9 @@
 
 	<section class="container cover">
     	<div class="message">
-        	<div class="txt">متاسفانه صفحه مورد نظر شما وجود ندارد برای رفتن به صفحه اصلی <a href="./index.php">اینجا </a>را کلیلک کنید</div>
+        	
         </div>
+        <div class="txt">متاسفانه صفحه مورد نظر شما وجود ندارد برای رفتن به صفحه اصلی <a href="./index.php">اینجا </a>را کلیلک کنید</div>
         <div class="copy">Copyright© ????? Inc. All Rights Reserved</div>
         
     </section>
