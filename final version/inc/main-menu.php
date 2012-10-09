@@ -20,7 +20,7 @@
 				<li><a href="buy-index.php">فروش</a></li>
 				<li><a href="catalog-index.php">دانلود دریور</a></li>
 				<li><a href="#">فرم گارانتی</a></li>
-                <li><a href="#">پرسش و پاسخ</a></li>
+                <li><a href="./question.php">پرسش و پاسخ</a></li>
 			</ul>
 		</li>
 		<li><a href="contact-index.php">مقالات تخصصی</a>
