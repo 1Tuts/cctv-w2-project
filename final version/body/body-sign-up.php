@@ -27,7 +27,7 @@
                       <table>
                         <tr>
                         	<td><label>نام :</label></td>
-                            <td><input type="text" name="name" id="name" placeholder="نام"/></td>
+                            <td><input type="text" name="name" id="name" class="data-tooltip" placeholder="نام"/></td>
                         </tr>
                     	<tr>
                         	<td><label>نام خانوادگی :</label></td>
