@@ -2,6 +2,7 @@ div.slide{
 	width: 820px;
 	position:relative;
 	left:5px;
+	right:15px;
 	height:410px;
 	overflow:hidden;
 }
