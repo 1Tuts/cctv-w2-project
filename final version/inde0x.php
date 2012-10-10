@@ -3,11 +3,11 @@
 ?>
 <?php
 	include "inc/header.php";
-	include "body-homepage.php";
+	include "body/body-homepage.php";
 	include "inc/footer.php";
 	/*get_header();
 	get_tamplate_part('inc/header');
-	get_tamplate_part('body-homepage');
+	get_tamplate_part('body/body-homepage');
 	get_tamplate_part('inc/footer');
 	get_footer();*/
 ?>
