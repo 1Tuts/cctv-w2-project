@@ -42,12 +42,20 @@ div.gallery-thumbs ul.button li{
 	margin:0 15px 0 0;
 	background:url('images/product/img-slide/button/shadow_preview.jpg') no-repeat 0 bottom;
 	-webkit-transition:all 1100ms;
+	-moz-transition:all 1100ms;
+	-ms-transition:all 1100ms;
+	-o-transition:all 1100ms;
+	transition:all 1100ms;
 	opacity:0.5;
 }
 
 div.gallery-thumbs ul.button li:hover,
 div.gallery-thumbs ul.button li.active{
 	-webkit-transition-duration:200ms;
+	-moz-transition-duration:200ms;
+	-ms-transition-duration:200ms;
+	-o-transition-duration:200ms;
+	transition-duration:200ms;
 	opacity:1;
 }
 

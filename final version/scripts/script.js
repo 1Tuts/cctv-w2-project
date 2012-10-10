@@ -97,7 +97,84 @@ $('#frmsign-in').submit(function(){
 
 		return !err;
 
-	});
+});
 /****************************** SIGN IN **********************/
+/****************************** SIGN UP **********************/
+$('#frmsign-up').submit(function(){
+		var target, err = false;
+		
+		target = $('#name');
+		if( validateText(target.val(),3) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
 
+		target = $('#family');
+		if( validateText(target.val(),5) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		
+		target = $('#email');
+		if( validateText(target.val(),1) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		
+		target = $('#pas');
+		if( validateText(target.val(),6) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		
+		target = $('#conpas');
+		if( validateText(target.val(),6) && ($('pas')===target) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		
+		target = $('#city');
+		if( validateText(target.val(),2) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		
+		target = $('#adrs');
+		if( validateText(target.val(),10) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		/****change function validate for number *****/
+		target = $('#phone');
+		if( validateText(target.val(),7) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		
+		target = $('#controlcode');
+		if( validateText(target.val(),6) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+		return !err;
+});
+/*************************** SIGN UP *************************/
 });

@@ -23,7 +23,7 @@
 	            </div>
                 
                 <div class="mr12">
-                	<form action="" method="post" name="frmsign-up" class="frmsign-up">
+                	<form action="signup.php" method="post" name="frmsign-up" class="frmsign-up" id="frmsign-up">
                       <table>
                         <tr>
                         	<td><label>نام :</label></td>
@@ -31,19 +31,19 @@
                         </tr>
                     	<tr>
                         	<td><label>نام خانوادگی :</label></td>
-                            <td><input type="text" name="family" id="name" placeholder="نام خانوادگی"/></td>
+                            <td><input type="text" name="family" id="family" placeholder="نام خانوادگی"/></td>
                         </tr>
                         <tr>
                         	<td><label>ایمیل :</label></td>
-                            <td><input type="text" name="email" id="name" placeholder="ایمیل"/></td>
+                            <td><input type="text" name="email" id="email" placeholder="ایمیل"/></td>
                         </tr>
                         <tr>
                         	<td><label>پسورد :</label></td>
-                            <td><input type="text" name="pas" id="name" placeholder="پسورد"/></td>
+                            <td><input type="text" name="pas" id="pas" placeholder="پسورد"/></td>
                         </tr>
                         <tr>
                         	<td><label>مجددا پسورد :</label></td>
-                            <td><input type="text" name="conpas" id="name" placeholder=" مجددا پسورد"/></td>
+                            <td><input type="text" name="conpas" id="conpas" placeholder=" مجددا پسورد"/></td>
                         </tr>
                         <tr>
                         	<td><label>استان :</label></td>
@@ -58,19 +58,19 @@
                         </tr>
                         <tr>
                         	<td><label>شهر :</label></td>
-                            <td><input type="text" name="city" id="name" placeholder="شهر"/></td>
+                            <td><input type="text" name="city" id="city" placeholder="شهر"/></td>
                         </tr>
                         <tr>
                         	<td><label>آدرس :</label></td>
-                            <td><input type="text" name="adrs" id="name" placeholder="آدرس"/></td>
+                            <td><input type="text" name="adrs" id="adrs" placeholder="آدرس"/></td>
                         </tr>
                         <tr>
                         	<td><label>تلفن :</label></td>
-                            <td><input type="text" name="phone" id="name" placeholder="تلفن"/></td>
+                            <td><input type="text" name="phone" id="phone" placeholder="تلفن"/></td>
                         </tr>
                         <tr>
                         	<td><label>کدامنیتی :</label></td>
-                            <td><input type="text" name="controlcode" id="name" placeholder="کد امنیتی"/></td>
+                            <td><input type="text" name="controlcode" id="controlcode" placeholder="کد امنیتی"/></td>
                         </tr>  
                         <tr>
                           	<td><input type="submit" name="submit" value="ارسال اطلاعات"  class="sub txc" /> </td>
