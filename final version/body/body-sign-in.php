@@ -17,8 +17,8 @@
                 <div class="mr12">
                 	<h1>ورود به سیستم</h1>
                     <P>در حال حاضر ID ایسر داشته باشد؟ ثبت نام را به حساب خود را در زیر وارد نمایید.</P>
-                    <form action="" method="post" name="sign-in" class="frmsign-in right">
-                    	<input class="inp" type="text"     name="email"  id="email" size="40px" placeholder="ایمیل" />
+                    <form action="" method="post" name="sign-in" id="frmsign-in" class="frmsign-in right">
+                    	<input type="text"     name="email"  id="email" size="40px" placeholder="ایمیل" />
                         <input type="password" name="pas"    id="pas"   size="40px" placeholder="رمز" />
                         <input type="submit"   name="submit" value="ورود به سیستم" />
                         <a href="./sign-up.php"><input type="button"   name="submit" value="ایجاد حساب جدید" /></a>

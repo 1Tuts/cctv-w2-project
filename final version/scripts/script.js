@@ -41,6 +41,18 @@
 	});
 })($)
 
+/****************************** VALIDATE INPUT *******************/
+	function validateEmail(str){
+		var emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i ;
+		return emailPattern.test(str);
+  	}
+	
+	function validateText(str,len){
+		return str.length >= len;
+	}
+
+/****************************** VALIDATE EMAIL *******************/
+
 $(function(){
 	var BgImg1 = $('.slideshow .backimg  #bgimg1'),
 		BgImg2 = $('.slideshow .backimg  #bgimg2'),
@@ -48,7 +60,8 @@ $(function(){
 		currentList = 0,
 		list = $('div.content-pr nav.content-pr-nav ul li'),
 		product='gallery';
-
+		
+/****************************** HOME PAGE *************************/
 	BgImg1.click(function(){
 		window.open("./test3.php","_self");
 	});
@@ -60,4 +73,31 @@ $(function(){
 	BgImg3.click(function(){
 		window.open("./body-detail-product.php","_self");
 	});
+/****************************** HOME PAGE *************************/
+
+/****************************** SIGN IN **************************/
+$('#frmsign-in').submit(function(){
+		var target, err = false;
+
+		target = $('#email');
+		if( validateEmail(target.val()) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#pas');
+		if( validateText(target.val(),6) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		return !err;
+
+	});
+/****************************** SIGN IN **********************/
+
 });
