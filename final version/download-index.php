@@ -10,10 +10,7 @@
 			</div>
 			<div class="top-pic"></div>
 			<div class="download-info cover">
-				<?php
-					include('inc/left-menu.php');
-				?>
-				<div class="info left cover">
+				<div class="info w22 cover mlra">
 					<div>
 						<div class="small-pic right"></div>
 						<div class="tittle"><span>دسته بندی محصولات را انتخاب کنید</span></div>

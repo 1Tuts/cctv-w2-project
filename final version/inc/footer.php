@@ -16,11 +16,8 @@
 						<ul>
 							<li><a href='./about-index.php'>درباره ما</a></li>
 							<li><a href='./sign-in.php'>همکار ما شوید</a></li>
-							<li><a href='#'>پرسش و پاسخ</a></li>
+							<li><a href='./question.php'>پرسش و پاسخ</a></li>
                             <li><a href="./contact-index.php">ارتباط با ما</a></li>
-							<!--<li><a href='#'>ثبات</a></li>
-							<li><a href='#'>مطبوعات</a></li>
-							<li><a href='#'>نرم افزار</a></li>-->
 						</ul>
 					</nav>
 				</div>

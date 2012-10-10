@@ -9,7 +9,7 @@
 	<div class="content-pr cover">
 		<nav class="content-pr-nav">
 			<ul>
-	            <li><a href="./body-detail-product.php">مزایای	</a></li>
+	            <li><a href="./index-detail-product.php">مزایای	</a></li>
 	        	<li><a href="./detail-product-gallery.php">گالری عکس	</a></li>
 	            <li class="current"><a href="./detail-product-model.php"> مدل</a></li>
 	    	</ul>
