@@ -1,6 +1,3 @@
-<?php
-	include "inc/header.php";
-?>
 <section class="product-camera-content txr cover">
 	<div class="nav cover mt2">
 		<a href="#">دوربین  </a>
@@ -9,7 +6,7 @@
 	<div class="content-pr cover">
 		<nav class="content-pr-nav">
 			<ul>
-	            <li class="current"><a href="./body-detail-product.php">مزایای	</a></li>
+	            <li class="current"><a href="./index-detail-product.php">مزایای	</a></li>
 	        	<li><a href="./detail-product-gallery.php" target="_self">گالری عکس	</a></li>
 	            <li><a href="./detail-product-model.php"> مدل</a></li>
 	    	</ul>
@@ -64,6 +61,3 @@
 			</div>
 			
 		</section>
-<?php
-	include 'inc/footer.php';
-?>
