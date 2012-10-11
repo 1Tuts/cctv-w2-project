@@ -12,7 +12,6 @@
 			background-color : #000;
 			margin:0;
 			padding:0;
-			/*position:relative;*/
 		}
 		header{
 	
@@ -65,9 +64,7 @@
 	<header class="cover"></header>
 
 	<section class="container cover">
-    	<div class="message">
-        	
-        </div>
+	   	<div class="message"></div>
         <div class="txt">متاسفانه صفحه مورد نظر شما وجود ندارد برای رفتن به صفحه اصلی <a href="./index.php">اینجا </a>را کلیلک کنید</div>
         <div class="copy">Copyright© ????? Inc. All Rights Reserved</div>
         
