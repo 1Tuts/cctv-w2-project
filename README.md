@@ -1,5 +1,5 @@
 ##CCTV website 
-The website for the **????????**
+The website for the **CCTV Company**
 Final project of CIW Programing
 
 ###Contributing
@@ -8,13 +8,14 @@ Final project of CIW Programing
 
 * Check our project's source with
 ```
-    git clone https://github.com/1schools-projects/?????.???
+    git clone https://github.com/1schools-projects/CCTV.git
 ```
 
 
 ###Buliding Technologies
 * [HTML5](http://ali.md/wiki/html5)
 * [CSS3](http://ali.md/css3ref)
+* [LESS](http://lesscss.org/)
 * [1Styles](http://ali.md/1styles)
 * [JavaScript](http://ali.md/wiki/javascript)
 * [jQuery.js](http://ali.md/jquery.js)
@@ -25,8 +26,8 @@ Final project of CIW Programing
 
 ###The Team
 * [**Ali Mihandoost**](http://github.com/alimd) Teacher  & Technical Manager
-* [**Zohreh Zahedi**](http://github.com/zohreh-z) ?????? / ????
-* [**somaye soodmand**](https://github.com/s-soodmand) ????? / ??????
+* [**Zohreh Zahedi**](http://github.com/zohreh-z) Project Manager / Developer / Data Gather
+* [**somaye soodmand**](https://github.com/s-soodmand) Designer / Developer 
 
 
 ### All rights reserved ###
