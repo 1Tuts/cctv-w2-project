@@ -1,17 +1,14 @@
 <!-- start div product -->
 <section class="product-box w24 cover mt3">
-    <div class="commerical-box">
-        <div class="commerical cover">
-            <a class="left" href="#">بازرگانی</a>
-            <span class="left last w15"></span>	
-        </div>
-    </div>
-
-
-    <div class="product">
-        <div class="list-product right cover">
-        	<?php
-				//wp_list_pages(array('title_li'=>''));
+	<div class="commerical-box">
+		<div class="commerical cover">
+			<a class="left" href="#">بازرگانی</a>
+			<span class="left last w15"></span>	
+		</div>
+	</div>
+	<div class="product cover">
+		<div class="list-product right cover">
+			<?php
 				wp_nav_menu(array(
 					'theme_location'  => 'products menu',
 					'container'       => false, 
@@ -24,52 +21,27 @@
 					'items_wrap'      => '<ul class="%2$s">%3$s</ul>'
 				));
 			?>
-           <!-- <ul>
-                <li class="active"><a href='product-detail.php'>نوت بوک</a></li>
-                <li><a href='product-detail.php'>ultrabooks</a></li>
-                <li><a href='product-detail.php'>نت بوک</a></li>
-                <li><a href='product-detail.php'>تبلت</a></li>
-                <li><a href='product-detail.php'>دسکتاپ</a></li>
-                <li><a href='product-detail.php'>مانیتور</a></li>
-                <li><a href='product-detail.php'>پروژکتور</a></li>
-                <li><a href='product-detail.php'>انتخاب</a></li>
-            </ul>-->
-        </div>
-        <div class="view-pro cover">
-            <div class="scroll">
-                <div class="pro" id="img1">
-                    <a href="product-detail.php"><img src="images\product\view\1.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-                <div class="pro" id="img2">
-                    <a href="product-detail.php"><img src="images\product\view\2.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-                <div class="pro" id="img3">
-                    <a href="product-detail.php"><img src="images\product\view\3.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-                <div class="pro" id="img4">
-                    <a href="product-detail.php"><img src="images\product\view\4.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-                <div class="pro" id="img5">
-                    <a href="product-detail.php"><img src="images\product\view\5.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-                <div class="pro" id="img6">
-                    <a href="product-detail.php"><img src="images\product\view\6.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-                <div class="pro" id="img7">
-                    <a href="product-detail.php"><img src="images\product\view\7.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-                <div class="pro" id="img8">
-                    <a href="product-detail.php"><img src="images\product\view\8.jpg" width="770" height="386" alt="" title="" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
+		</div>
+		<div class="view-pro cover">
+			<div class="scroll">
+			<?php
+				if( have_posts() ) {
+					the_post();
+					$meta = get_post_custom();	
+					if(count($meta['img'])>0){
+						foreach ($meta['img'] as $img_id) {
+							$img_large = wp_get_attachment_image($img_id,'large');
+							echo "<div class='pro'><a href='#'>$img_large'</a></div>"; 
+						}
+					}
+				}
+			?>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="box-banner w24 cover mt4">
-    <a href="#">
-        <div class="right-banner right w6"></div>
-    </a>
+	<a href="#">
+		<div class="right-banner right w6 cover"></div>
+	</a>
 </section>

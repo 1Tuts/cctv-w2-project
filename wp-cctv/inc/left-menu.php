@@ -1,9 +1,15 @@
 <nav class="left-menu right">
-	<ul>
-		<li><a href="about-index.php">درباره ما</a></li>
-		<li><a href="#">تیم اجرایی</a></li>
-		<li><a href="buy-index.php">فروش</a></li>
-		<li><a href="contact-index.php" >ارتباط با ما</a></li>
-		<li><a href="catalog-index.php">کاتالوگ</a></li>
-	</ul>
+	<?php
+		wp_nav_menu(array(
+			'theme_location'  => 'left menu',
+			'container'       => false, 
+			'container_class' => '', 
+			'menu_class'      => '', 
+			'before'          => '',
+			'after'           => '',
+			'link_before'     => '',
+			'link_after'      => '',
+			'items_wrap'      => '<ul class="%2$s">%3$s</ul>'
+		));
+	?>
 </nav>
