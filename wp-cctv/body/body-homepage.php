@@ -39,8 +39,7 @@
 							if(count($meta['img'])>0 ){
 								foreach ($meta['img'] as $img_id){
 									$img_small = wp_get_attachment_image_src($img_id,'thumbnail'); 
-									echo "<div style='background:url($img_small[0]) no-repeat;'>";
-									echo "</div>";
+									echo "<div style='background:url($img_small[0]) no-repeat;'></div>";
 									$len++;
 							  	}						
 							}

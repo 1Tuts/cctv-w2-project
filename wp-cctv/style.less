@@ -47,7 +47,6 @@ div.div-home{
 	  			right    :0;
 	  			bottom   :0;
 	  			z-index  :-2;
-	  			cursor : pointer;
 
 	  			background-position :center center;
 	  			background-repeat   :no-repeat;
@@ -323,8 +322,9 @@ section.product-camera-content {
 				background: url(images/product/detail-product/separator-beenfit.jpg) no-repeat left 173px;
 				
 				img{
+				  	margin-top : 15px;
 					width : 200px;
-					height :210px;
+					height :200px;
 		
 				}
 				
@@ -337,13 +337,15 @@ section.product-camera-content {
 				p{
 					color: #434343;
 					line-height : 20px;
-					padding :0 10px 0 4px;
+					padding :0 5px 0 15px;
+					text-align:justify;
 				}
+				
+				&:last-child{
+					background: none;
+				}			
 			}
 			
-			div.last-pr{
-				background: none;
-			}
 			
 			div.bottom-bg{
 				height:40px;
@@ -417,7 +419,6 @@ section.product-camera-content {
 				}
 			}
 			
-			
 			div.footer-note{
 				padding : 25px 25px 0 25px;
 				color : #434343;
@@ -440,6 +441,7 @@ section.product-camera-content {
 						
 						img{
 							height : 150px;
+							width : 250px;
 						}
 					}
 					

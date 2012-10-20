@@ -10,28 +10,35 @@
 	    </nav>
         <div class="info left cover">
             <div class="models">
-                <div class="snigle-product mh20">
-                    <div class="medel-left">
-                        <a href="./detail-product-attribute.php"><img src="images/product/model/P196HQL_01.jpg" /></a>
-                    </div>
-                    <div class="model-right">
-                      <h3>P238HLbd</h3>
-                      <p>
-                    23 "عریض 16:9 - وضوح 1920x1080 @ 60HZ - 5 MS - 100.000.000:1 - 250 سی دی / متر مربع - LED - VGA - DVI - 2 سال حمل - ES 5.0 - ویژه المپیک مدل
-                      </p>
-                    </div>
-                </div>
-                <div class="snigle-product mh20">
-                    <div class="medel-left">
-                        <a href="#"><img src="images/product/model/P196HQL_01.jpg" /></a>
-                    </div>
-                    <div class="model-right">
-                        <h3>P238HLbd</h3>
-                          <p>
-                            23 "عریض 16:9 - وضوح 1920x1080 @ 60HZ - 5 MS - 100.000.000:1 - 250 سی دی / متر مربع - LED - VGA - DVI - 2 سال حمل - ES 5.0 - ویژه المپیک مدل
-                          </p>
-                    </div>
-                </div>
+	            <?php
+                    if( have_posts() ) {
+                        the_post(); 	
+						$argus=array(
+				          'numberposts' =>'-1',
+				          'orderby '=> 'menu_order',   
+				          'order'=> 'ASC',  
+				          'post_mime_type' => 'image', 
+				          'post_parent' => $post->ID, 
+				          'post_status' => null, 
+				          'post_type' => 'attachment'
+				          ); 
+						$images = get_children($argus);
+						if($images){
+			          		foreach ($images as $img) {
+			                	echo "<div class='snigle-product mh20'>";
+									echo"<div class='medel-left'>";
+				                    	$img_small = wp_get_attachment_image($img->ID,'small');
+									 	echo "<a href='#'>$img_small</a>";
+									echo "</div>";
+									echo "<div class='model-right'>";
+								 		echo "<h3>$img->post_title</h3>";
+			                    		echo "<p>$img->post_content</p>";
+			                		echo "</div>";
+								echo "</div>";
+							}
+		        		}else echo '<p>اطلاعات وارد نشده است!</p>';
+		  	    	}
+            	?>
             </div>
             <div class="bottom-bg"></div>
         </div>

@@ -11,16 +11,11 @@
 	register_nav_menu('catalog menu', "Catalog Menu");
 	register_nav_menu('top product menu', "Top Product Menu");
 	
-	register_sidebar(array(
-		'name' => 'Sidebar Left',
-		'id' => 'sidebar-l',
-		'description' => 'Left panel ...',
-		'before_widget' => '<div class="pro %2$s" id="desc1">',
-		'after_widget' => "</div>\n",
-		'before_title' => '',
-		'after_title' => ''
-	));
-		
+	add_shortcode('signin','sign_in');
+
+	function sign_in(){
+		return file_get_contents( get_template_directory() . '/signin.html');
+	}
 	/****************************** ADD PLUGIN PRODUCT **********************/
 	add_theme_support('post-thumbnails');
 	
