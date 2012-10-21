@@ -1,15 +1,12 @@
 <section class="product-camera-content txr cover">
-	<div class="nav cover mt2">
-		<a href="#">محصولات</a>
-        <?php
-			if( have_posts() ) {
-				the_post(); 
-		?>
-		<a class="next-link" href="#"> <?php the_title(); ?></a>
-	</div>
-	<div class="content-pr cover">
+	
+	<div class="content-pr mt5 cover">
 		<nav class="content-pr-nav">
-        	<?php get_template_part('/inc/top-product-menu'); ?>
+        	<?php 
+				get_template_part('/inc/top-product-menu');
+				if( have_posts() ) {
+				the_post(); 
+			 ?>
 	    </nav>
         <div class="info cover"> 
             <div class="container">

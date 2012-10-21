@@ -1,8 +1,6 @@
 <section class="product-camera-content txr cover">
-	<div class="nav cover mt2">
-		<a class="next-link" href="#"> <?php the_title(); ?></a>
-	</div>
-	<div class="content-pr cover">
+	
+	<div class="content-pr mt5 cover">
 		<nav class="content-pr-nav"></nav>
 			<section class="detail-pr cover">
             	<article class="txt-detail-pr">

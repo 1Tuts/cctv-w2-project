@@ -48,10 +48,10 @@
 	  		'rewrite' => true,
 	  		'capability_type' => 'post',
 	  		'has_archive' => true,
-	  		'hierarchical' => false,
+	  		'hierarchical' => true,
 	  		'menu_position' => 5,
 	  		//'menu_icon' => get_bloginfo('template_url') . '/images/product_icon.png', // 16x16
-	  		'supports' => array('title','editor','author','thumbnail','custom-fields','excerpt','comments')
+	  		'supports' => array('title','editor','author','thumbnail','custom-fields','excerpt','comments','page-attributes')
 			
 	  	);
 	  

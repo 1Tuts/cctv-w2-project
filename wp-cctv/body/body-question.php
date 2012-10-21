@@ -1,9 +1,6 @@
 <section class="product-camera-content txr cover">
-	<div class="nav cover mt2">
-		<a href="#">پرسش و پاسخ  </a>
-		<a class="next-link" href="#"> <?php the_title(); ?></a>
-	</div>
-	<div class="content-pr cover">
+	
+	<div class="content-pr mt5 cover">
 		<nav class="content-pr-nav"></nav>
 		<div class="info left cover">
            	<div class="footer-note">در این بخش شما می توانید سوال های خود را در زمینه های زیر بپرسید</div>

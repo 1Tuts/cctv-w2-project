@@ -1,8 +1,6 @@
 <section class="product-camera-content txr cover">
-	<div class="nav cover mt2">
-		<a class="next-link" href="#"> حساب من</a>
-	</div>
-	<div class="content-pr cover">
+	
+	<div class="content-pr mt5 cover">
         <div class="img-top"></div>
         <div class="info left cover">
         	<div class="content-sign-in">

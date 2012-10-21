@@ -30,7 +30,7 @@
 					$meta = get_post_custom();	
 					if(count($meta['img'])>0){
 						foreach ($meta['img'] as $img_id) {
-							$img_large = wp_get_attachment_image($img_id,'');
+							$img_large = wp_get_attachment_image($img_id,'middle');
 							echo "<div class='pro'><a href='#'>$img_large</a></div>"; 
 						}
 					}

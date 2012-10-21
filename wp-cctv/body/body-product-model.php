@@ -1,10 +1,6 @@
 <section class="product-camera-content txr cover">
-	<div class="nav cover mt2">
-		<a href="#">دوربین  </a>
-        <span></span>
-		<a class="next-link" href="#"> ما</a>
-	</div>
-	<div class="content-pr cover">
+	
+	<div class="content-pr mt5 cover">
 		<nav class="content-pr-nav">
             <?php get_template_part('/inc/top-product-menu'); ?>
 	    </nav>

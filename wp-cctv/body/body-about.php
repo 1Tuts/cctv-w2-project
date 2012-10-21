@@ -1,18 +1,12 @@
 <!-- start About info -->
 <section class="about-content cover">
-	<div class="nav cover mt2">
-		<a href="#">درباره شرکت</a>
-        <span></span>
-        <?php
-        	if( have_posts() ) {
-        	    the_post(); 
-        ?>
-        <a class="next-link" href="#"><?php the_title(); ?></a>
-    </div>
-    <div class="top-pic"></div>
+	
+    <div class="top-pic mt5"></div>
     <div class="about-info cover">
         <?php
             get_template_part('inc/left-menu');
+			if( have_posts() ) {
+        	    the_post();
         ?>
         <div class="info left">
             <p class="mt1"><?php the_content(); ?></p>

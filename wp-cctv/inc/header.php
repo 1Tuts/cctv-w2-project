@@ -13,6 +13,8 @@
   	<link href="<?php bloginfo('template_url'); ?>/slide-gallery-product.css" rel="stylesheet" type="text/css">
 
 	<link href="<?php bloginfo('template_url'); ?>/style.less" rel="stylesheet/less" type="text/css">
+    
+    <link href="<?php bloginfo('template_url'); ?>/newstyle.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/less.js"></script>
 
@@ -31,10 +33,21 @@
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/cueslider.js"></script>
 
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/slide-gallery-product.js"></script>
+   <script type="text/javascript">
+		window.onload = function(){
+			document.getElementById('loading').style.display='none';
+		}
+	</script>
 
     
 </head>
-<body>
+<body class="preload">
+	<div id="loading">
+		<div class="con">
+			<div class="circle"></div>
+			<div class="circle1"></div>
+		</div>
+    </div>
 	<div class="container">
 		<!-- start Header -->
 		<header class="cover">

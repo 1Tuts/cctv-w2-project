@@ -1,11 +1,7 @@
 <!-- start contact info -->
 <section class="download cover">
-    <div class="nav cover mt2">
-        <a href="#">درباره شرکت</a>
-        <span></span>
-        <a class="next-link" href="#">دانلود</a>
-    </div>
-    <div class="top-pic"></div>
+   
+    <div class="top-pic mt5"></div>
     <div class="download-info cover">
         <div class="info w22 cover mlra">
             <div>

@@ -9,27 +9,26 @@
 			<div class="slider">
 				<div class="slideshow-pro">
 					<div class="scroll">
-					
 					<?php
-							$meta = get_post_custom();	
-							$i=0;
-							if(count(($meta['img'])>0 && ($meta['txt'])>0)){
-								foreach($meta['txt'] as $txt_id){
-									$ary_txt[$i] = $txt_id;
-									$i++;
-								}
-								$i=0;
-								foreach ($meta['img'] as $img_id){
-									echo "<div class='detail'>";
-									$img_small = wp_get_attachment_image($img_id,'small'); // default: thumbnail
-									echo "$img_small";
-									echo "<a href='#'>$ary_txt[$i]</a>";
-									echo "</div>";
-									$i++;
-								}
-							
+						
+						$meta = get_post_custom();	
+						$i=0;
+						if(count(($meta['img'])>0 && ($meta['txt'])>0)){
+							foreach($meta['txt'] as $txt_id){
+								$ary_txt[$i] = $txt_id;
+								$i++;
 							}
-						}
+							$i=0;
+							foreach ($meta['img'] as $img_id){
+								echo "<div class='detail'>";
+								$img_small = wp_get_attachment_image($img_id,'small'); // default: thumbnail
+								echo "$img_small";
+								echo "<a href='#'>$ary_txt[$i]</a>";
+								echo "</div>";
+								$i++;
+							}
+							}
+						
 					?>
 					</div>
 					<div class="previous"></div>
@@ -66,10 +65,12 @@
 				<div class="train">
 
 					<?php	
-						if(count($meta['desc'])>0){
-							foreach ($meta['desc'] as $desc) {
-								echo "<div class='pro'><p>$desc</p></div>";
+							if(count($meta['desc'])>0){
+								foreach ($meta['desc'] as $desc) {
+									echo "<div class='pro'><p>$desc</p></div>";
+								}
 							}
+						
 						}
 					?>
 				</div>
