@@ -24,16 +24,26 @@
 		</div>
 		<div class="view-pro cover">
 			<div class="scroll">
-			<?php
+            <?php
 				if( have_posts() ) {
-					the_post();
-					$meta = get_post_custom();	
-					if(count($meta['img'])>0){
-						foreach ($meta['img'] as $img_id) {
-							$img_large = wp_get_attachment_image($img_id,'middle');
-							echo "<div class='pro'><a href='#'>$img_large</a></div>"; 
+					the_post(); 
+					 
+					$argus=array(
+			          'numberposts' =>'-1',
+			          'orderby '=> 'menu_order',  
+			          'order'=> 'ASC',  
+			          'post_mime_type' => 'image', 
+			          'post_parent' => $post->ID, 
+			          'post_status' => null, 
+			          'post_type' => 'attachment'
+			        ); 
+					$images = get_children($argus);
+					if($images){
+		          		foreach ($images as $img) {
+		                	$img_larg = wp_get_attachment_image($img->ID,'middel');
+		                	echo "<div class='pro'><a href='#'>$img_larg</a></div>";
 						}
-					}
+	        		}else echo 'تصویر وجود ندارد';
 				}
 			?>
 			</div>

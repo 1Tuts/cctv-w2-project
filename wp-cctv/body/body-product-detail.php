@@ -9,27 +9,31 @@
 			<div class="slider">
 				<div class="slideshow-pro">
 					<div class="scroll">
-					<?php
-						
-						$meta = get_post_custom();	
-						$i=0;
-						if(count(($meta['img'])>0 && ($meta['txt'])>0)){
-							foreach($meta['txt'] as $txt_id){
-								$ary_txt[$i] = $txt_id;
-								$i++;
+                    
+                    
+                    
+                     <?php
+						$argus=array(
+				          'numberposts' =>'-1',
+				          'orderby '=> 'menu_order',   
+				          'order'=> 'ASC',  
+				          'post_mime_type' => 'image', 
+				          'post_parent' => $post->ID, 
+				          'post_status' => null, 
+				          'post_type' => 'attachment'
+				          ); 
+						$images = get_children($argus);
+						if($images){
+			          		foreach ($images as $img) {
+			                	echo "<div class='detail'>";
+				                    	$img_small = wp_get_attachment_image($img->ID,'small');
+									 	echo "$img_small";
+										echo "<a href='#'>$img->post_title</a>";
+									echo "</div>";
 							}
-							$i=0;
-							foreach ($meta['img'] as $img_id){
-								echo "<div class='detail'>";
-								$img_small = wp_get_attachment_image($img_id,'small'); // default: thumbnail
-								echo "$img_small";
-								echo "<a href='#'>$ary_txt[$i]</a>";
-								echo "</div>";
-								$i++;
-							}
-							}
-						
-					?>
+		        		}else echo '<p>اطلاعات وارد نشده است!</p>';
+		  	    	
+            	?>
 					</div>
 					<div class="previous"></div>
 					<div class="next"></div>
@@ -41,23 +45,21 @@
 			<div class="name-desc">
 				<div class="train">	
 					<?php	
-						if(count($meta['txt'])>0){
-							foreach ($meta['txt'] as $txt) {
-								echo "<div class='pro'><a href='#'>$txt</a></div>";
-							}
-						}
+						echo "<div class='pro'><a href='#'>$img->post_title</a></div>";
 					?>
 				</div>
 			</div>
 			<div class="img-desc cover">
 				<div class="train">
 				<?php	
-					if(count($meta['img'])>0){
-						foreach ($meta['img'] as $pic_id) {
-							$pic_middle = wp_get_attachment_image($pic_id,'middle');
-							echo "<div class='pro'><a href='#'>$pic_middle</a></div>"; 
-						}
-					}
+					if($images){
+			          		foreach ($images as $img) {
+			                	echo "<div class='pro txc'>";
+				                    	$img_small = wp_get_attachment_image($img->ID,'middle');
+										echo "$img_small";
+									echo "</div>";
+							}
+		        		}else echo '<p>اطلاعات وارد نشده است!</p>';
 				?>
 				</div>
 			</div>
@@ -65,13 +67,14 @@
 				<div class="train">
 
 					<?php	
-							if(count($meta['desc'])>0){
-								foreach ($meta['desc'] as $desc) {
-									echo "<div class='pro'><p>$desc</p></div>";
-								}
+					if($images){
+			          		foreach ($images as $img) {
+			                	echo "<div class='pro'>";
+									echo "<p>$img->post_content</p>";
+								echo "</div>";
 							}
-						
-						}
+		        		}else echo '<p>اطلاعات وارد نشده است!</p>';						
+					}
 					?>
 				</div>
 				<span><a class="btnlink" href="/wp-cctv/wordpress/مزایا/">برو به سوی</a></span>
