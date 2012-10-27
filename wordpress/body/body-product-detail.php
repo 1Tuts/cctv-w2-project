@@ -42,8 +42,12 @@
 			<div class="top-pic"></div>
 			<div class="name-desc">
 				<div class="train">	
-					<?php	
-						echo "<div class='pro'><a href='#'>$img->post_title</a></div>";
+					<?php
+						if($images){
+			          		foreach ($images as $img) {	
+								echo "<div class='pro'><a href='#'>$img->post_title</a></div>";
+							}
+						}
 					?>
 				</div>
 			</div>
