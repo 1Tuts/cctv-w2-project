@@ -1,6 +1,6 @@
 <fieldset>
 	<legend>فرم گارانتی</legend>
-	<form id="formgarantee" action="/sendmail.php" method="post" target='sendinfo'>
+	<form id="formgarantee" action="<?php bloginfo('template_url'); ?>/sendmail.php" method="post" target='sendinfo'>
 		<label><span>*</span> نام و نام خانوادگی:</label>
 		<input type="text" name="name" id="name" placeholder="نام و نام خانوادگی خود را وارد نمایید."/><br />
 		<label><span>*</span> ایمیل:</label> 
