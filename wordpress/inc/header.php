@@ -16,6 +16,8 @@
     
     <link href="<?php bloginfo('template_url'); ?>/newstyle.css" rel="stylesheet" type="text/css">
 
+	<link href="<?php bloginfo('template_url'); ?>/calendar.css" rel="stylesheet" type="text/css" />
+
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/less.js"></script>
 
 	<script type="text/javascript">
@@ -23,6 +25,8 @@
 	</script>
     
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/script.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/calendar.js"></script>
+
 
 	<!--[if IE]>
 		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/html5.js"></script>
@@ -33,7 +37,7 @@
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/cueslider.js"></script>
 
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/slide-gallery-product.js"></script>
-   <script type="text/javascript">
+	<script type="text/javascript">
 		window.onload = function(){
 			document.getElementById('loading').style.display='none';
 		}

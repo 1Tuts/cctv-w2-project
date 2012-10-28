@@ -16,6 +16,13 @@
 	function sign_in(){
 		return file_get_contents( get_template_directory() . '/signin.html');
 	}
+
+	add_shortcode('form','form_garantee');
+
+	function form_garantee(){
+		return file_get_contents( get_template_directory() . '/form_garantee.html');
+	}
+
 /***********************************************comment********************/
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );

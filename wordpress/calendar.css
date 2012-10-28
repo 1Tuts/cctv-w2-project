@@ -1,0 +1,361 @@
+/**************************** style garantee form ******************************/
+
+  form#formgarantee{
+    font: bold 11px tahoma;
+    text-align: right;
+    padding-bottom: 5px;
+    direction: rtl;
+    margin-top: 10px;
+    float: right;
+  }
+
+  form#formgarantee input,form#formgarantee textarea{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    background: none;
+    border:1px solid #d0d0d0;
+    background-color:#E6EEDD;
+    padding:3px 0px 3px 13px;
+    width:250px;
+    display: block;
+  }
+  form#formgarantee input.inputdata{
+    width: 140px;
+    float: left;
+  }
+
+  form#formgarantee input.searchdata{
+    text-align:center;
+    float: right;
+    width:100px;
+  }
+
+  form#formgarantee input:focus,form#formgarantee input:hover,form#formgarantee textarea:focus,form#formgarantee textarea:hover  {
+    background-color : #E0F8D3;
+
+
+  }
+  form#formgarantee label{
+    width: 120px; 
+    padding-right: 10px;
+    float: right;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 0;
+    color:black;
+  }
+
+  form#formgarantee span{
+    color: red;
+  }
+
+  fieldset{
+    width: 430px;
+    float: right;
+    margin-right: 10px;
+    background-color: #fff;
+  }
+
+  legend{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    color:black;
+    text-align: center;
+  }
+
+  form#formgarantee div.data{
+    float: right; 
+    width: 266px;
+    padding-bottom: 6px;
+  }
+
+  form#formgarantee div.btns{
+    margin:5px 150px 10px 0;
+    width: 220px;
+    background: none;
+  }
+  form#formgarantee input.submit-buttons {
+    margin:5px 10px 10px 0;
+    padding:5px 5px;
+    float: right;
+    background: none;
+    color:#333;
+    text-align: center;
+    width: 100px;
+    border:0 solid #fff;
+    border-radius:5px;
+    -webkit-box-shadow:2px 2px 3px #9ff34f;
+    display: block;
+
+  }
+  form#formgarantee input.submit-buttons:hover,form#formgarantee input.submit-buttons:focus{
+    box-shadow:1px 1px 1px #9ff34f;
+    background: none;
+  }
+
+  iframe#sendinfo{
+    width: 315px;
+    height: 0;
+    border: 0 none;
+  }
+
+  .err {
+    background-color: #FCDFD2 !important;
+  }
+
+  .ok{
+    background-color: #D5FCD2 !important;
+  }
+/**************************** style garantee form ******************************/
+/**************************** style calendar garantee form ******************************/
+
+.calendar {
+  position: relative;
+  display: none;
+  border: 1px solid;
+  border-color: #fff #000 #000 #fff;
+  font-size: 11px;
+  cursor: default;
+  background: Window;
+  color: WindowText;
+  font-family: tahoma,verdana,sans-serif;
+}
+
+.calendar table {
+  border: 1px solid;
+  border-color: #fff #000 #000 #fff;
+  font-size: 11px;
+  cursor: default;
+  background: Window;
+  color: WindowText;
+  font-family: tahoma,verdana,sans-serif;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.calendar .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;
+  padding: 1px;
+  border: 1px solid;
+  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+  background: ButtonFace;
+}
+
+.calendar .nav {
+  background: ButtonFace url(menuarrow.gif) no-repeat 100% 100%;
+}
+
+.calendar thead .title { /* This holds the current "month, year" */
+  font-weight: bold;
+  padding: 1px;
+  border: 1px solid #000;
+  background: ActiveCaption;
+  color: CaptionText;
+  text-align: center;
+}
+
+.calendar thead .headrow { /* Row <TR> containing navigation buttons */
+}
+
+.calendar thead .daynames { /* Row <TR> containing the day names */
+}
+
+.calendar thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid ButtonShadow;
+  padding: 2px;
+  text-align: center;
+  background: ButtonFace;
+  color: ButtonText;
+}
+
+.calendar thead .weekend { /* How a weekend day name shows in header */
+  color: #f00;
+}
+
+.calendar thead .hilite { /* How do the buttons in header appear when hover */
+  border: 2px solid;
+  padding: 0px;
+  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+
+.calendar thead .active { /* Active (pressed) buttons in header */
+  border-width: 1px;
+  padding: 2px 0px 0px 2px;
+  border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}
+
+/* The body part -- contains all the days in month. */
+
+.calendar tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  text-align: right;
+  padding: 2px 4px 2px 2px;
+}
+.calendar tbody .day.othermonth {
+  font-size: 80%;
+  color: #aaa;
+}
+.calendar tbody .day.othermonth.oweekend {
+  color: #faa;
+}
+
+.calendar table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid ButtonShadow;
+  background: ButtonFace;
+  color: ButtonText;
+}
+
+.calendar tbody .rowhilite td {
+  background: Highlight;
+  color: HighlightText;
+}
+
+.calendar tbody td.hilite { /* Hovered cells <TD> */
+  padding: 1px 3px 1px 1px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #fff;
+}
+
+.calendar tbody td.active { /* Active (pressed) cells <TD> */
+  padding: 2px 2px 0px 2px;
+  border: 1px solid;
+  border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}
+
+.calendar tbody td.selected { /* Cell showing selected date */
+  font-weight: bold;
+  border: 1px solid;
+  border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+  padding: 2px 2px 0px 2px;
+  background: ButtonFace;
+  color: ButtonText;
+}
+
+.calendar tbody td.weekend { /* Cells showing weekend days */
+  color: #f00;
+}
+
+.calendar tbody td.today { /* Cell showing today date */
+  font-weight: bold;
+  color: #00f;
+}
+
+.calendar tbody td.disabled { color: GrayText; }
+
+.calendar tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.calendar tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.calendar tfoot .footrow { /* The <TR> in footer (only one right now) */
+}
+
+.calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  background: ButtonFace;
+  padding: 1px;
+  border: 1px solid;
+  border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+  color: ButtonText;
+  text-align: center;
+}
+
+.calendar tfoot .hilite { /* Hover style for buttons in footer */
+  border-top: 1px solid #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #fff;
+  padding: 1px;
+  background: #e4e0d8;
+}
+
+.calendar tfoot .active { /* Active (pressed) style for buttons in footer */
+  padding: 2px 0px 0px 2px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #000;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.calendar .combo {
+  position: absolute;
+  display: none;
+  width: 4em;
+  top: 0px;
+  right: 100px;
+  cursor: default;
+  border: 1px solid;
+  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+  background: Menu;
+  color: MenuText;
+  font-size: 90%;
+  padding: 1px;
+  z-index: 100;
+}
+
+.calendar .combo .label,
+.calendar .combo .label-IEfix {
+  text-align: center;
+  padding: 1px;
+}
+
+.calendar .combo .label-IEfix {
+  width: 4em;
+}
+
+.calendar .combo .active {
+  padding: 0px;
+  border: 1px solid #000;
+}
+
+.calendar .combo .hilite {
+  background: Highlight;
+  color: HighlightText;
+}
+
+.calendar td.time {
+  border-top: 1px solid ButtonShadow;
+  padding: 1px 0px;
+  text-align: center;
+  background-color: ButtonFace;
+}
+
+.calendar td.time .hour,
+.calendar td.time .minute,
+.calendar td.time .ampm {
+  padding: 0px 3px 0px 4px;
+  border: 1px solid #889;
+  font-weight: bold;
+  background-color: Menu;
+}
+
+.calendar td.time .ampm {
+  text-align: center;
+}
+
+.calendar td.time .colon {
+  padding: 0px 2px 0px 3px;
+  font-weight: bold;
+}
+
+.calendar td.time span.hilite {
+  border-color: #000;
+  background-color: Highlight;
+  color: HighlightText;
+}
+
+.calendar td.time span.active {
+  border-color: #f00;
+  background-color: #000;
+  color: #0f0;
+}
+/**************************** style calendar garantee form ******************************/

@@ -76,7 +76,7 @@ $(function(){
 /****************************** HOME PAGE *************************/
 
 /****************************** SIGN IN **************************/
-$('#frmsign-in').submit(function(){
+	$('#frmsign-in').submit(function(){
 		var target, err = false;
 
 		target = $('#email');
@@ -97,10 +97,10 @@ $('#frmsign-in').submit(function(){
 
 		return !err;
 
-});
+	});
 /****************************** SIGN IN **********************/
 /****************************** SIGN UP **********************/
-$('#frmsign-up').submit(function(){
+	$('#frmsign-up').submit(function(){
 		var target, err = false;
 		
 		target = $('#name');
@@ -175,6 +175,83 @@ $('#frmsign-up').submit(function(){
 			err = true;
 		}
 		return !err;
-});
+	});
 /*************************** SIGN UP *************************/
+/*************************** GARANTEE FORM *************************/
+	$('#formgarantee').submit(function(){
+		var target, err = false;
+
+		target = $('#name');
+		if( validateText(target.val(),3) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#email');
+		if( validateEmail(target.val()) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#txt');
+		if( validateText(target.val(),10) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#numberfactor');
+		if( validateText(target.val(),5) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#model');
+		if( validateText(target.val(),3) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#numbergarantee');
+		if( validateText(target.val(),5) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		target = $('#tell');
+		if( validateText(target.val(),7) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
+
+		if(!err){
+			$('#sendinfo').animate({
+				height:'80px'
+			},500);
+		}
+
+		return !err;
+
+	});
+
+	$('#resetgarantee').click(function(){
+		$('#sendinfo').animate({
+			height:'0px'
+		},200);
+	});
+/*************************** GARANTEE FORM *************************/
+
 });
