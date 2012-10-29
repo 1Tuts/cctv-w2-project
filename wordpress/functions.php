@@ -20,7 +20,7 @@
 	add_shortcode('form','form_garantee');
 
 	function form_garantee(){
-		return file_get_contents( get_template_directory() . '/form_garantee.php');
+		return file_get_contents( get_template_directory() . '/formgarantee.php');
 	}
 
 /***********************************************comment********************/

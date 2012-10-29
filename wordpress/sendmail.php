@@ -37,20 +37,16 @@
 			if( @mail (
 					$admin,
 					"soudmand.ir contact : فرم گارانتی",
-					"From:$name <$email",
-					"tell : $tell",
-					"شماره گارانتی : $numbergarantee",
-					"مدل : $$model",
-					"شماره فاکتور : $numberfactor",
-					$text
+					$text,
+					"From:$name <$email '\n' مدل کالا:$model '\n' شماره گارانتی:$numbergarantee '\n' شماره فاکتور:$numberfactor '\n' تلفن:$tell '\n' <$email>"
 				)
 			){
-				echo '<h2 class="ok">Information sent</h2>';
+				echo '<h3 class="ok">اطلاعات شما با موفقیت ارسال شد</h3>';
 			}else{
-				echo '<h2 class="err">Error in sending Information.</h2>';
+				echo '<h3 class="err">ارسال اطلاعات با مشکل مواجه شده است</h3>';
 			}
 		}else{
-			echo '<h2 class="err">Access Restricted !</h2>';
+			echo '<h3 class="err">شما اجازه دسترسی مستقیم به این صفحه را ندارید</h3>';
 		}
 	?>
 </body>
