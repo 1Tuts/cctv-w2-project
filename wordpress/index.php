@@ -1,5 +1,5 @@
 ﻿<?php
-	//if(!isset($_GET['debug']))  header('Location: CCTVunder-construction.php');
+	//if(!isset($_GET['debug']))  header('Location: CCTVunder-construction.html');
 ?>
 <?php
 	/*include "inc/header.php";

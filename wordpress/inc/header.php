@@ -25,6 +25,7 @@
 	</script>
     
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/script.js"></script>
+    
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/calendar.js"></script>
 
 
