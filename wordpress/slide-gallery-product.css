@@ -61,4 +61,5 @@ div.gallery-thumbs ul.button li.active{
 
 div.gallery-thumbs ul.button li img{
 	border:1px solid #ddd;
+        width :95px;
 }

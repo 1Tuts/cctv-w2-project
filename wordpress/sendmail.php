@@ -23,7 +23,7 @@
 	<?php
 		error_reporting(E_ALL ^ E_NOTICE);
 
-		$admin          = 'somaieh.soodmand@gmail.com';
+		$admin          = 'zahedi.zohreh@gmail.com';
 		$name           = $_POST['name'];
 		$email          = $_POST['email'];
 		$text           = $_POST['txt'];
@@ -36,7 +36,7 @@
 		if( strlen($name)>=3 && strlen($email)>=7 && strlen($numberfactor)>=5 && strlen($text)>=10 && strlen($model)>=3 && strlen($numbergarantee)>=5 && strlen($tell)>=7 ){
 			if( @mail (
 					$admin,
-					"soudmand.ir contact : فرم گارانتی",
+					"zahedy.ir contact : فرم گارانتی",
 					$text,
 					"From:$name <$email '\n' مدل کالا:$model '\n' شماره گارانتی:$numbergarantee '\n' شماره فاکتور:$numberfactor '\n' تلفن:$tell '\n' <$email>"
 				)

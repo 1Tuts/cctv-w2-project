@@ -22,19 +22,7 @@
 					?>
                 </p>
             </article>
-            <!--delete-->
-            <a href="/wp-cctv/wordpress/مشخصات-محصول/">
-                <?php
-                    $meta = get_post_custom();
-                    if(count($meta['img'])>0){
-                        foreach ($meta['img'] as $img_id) {
-                            $img_small = wp_get_attachment_image($meta['img'][1],'large'); 
-                            echo "$img_small";
-                        }
-                    }
-                ?>
-            </a>
-            <!--delete-->
+           
         </section>
         <div class="info left cover">
            <?php

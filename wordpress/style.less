@@ -337,8 +337,8 @@ section.product-camera-content {
 				
 				img{
 				  	margin-top : 15px;
-					width : 200px;
-					height :200px;
+					width : 170px;
+					height :180px;
 		
 				}
 				
@@ -372,6 +372,12 @@ section.product-camera-content {
 			div.container{
 				position : relative;
 				
+				div.footer-note{
+					p{
+						color : @text-color;
+						padding : 5px 30px;
+					}
+				}
 				div.gallery-product{
 					width : 850px;
 					margin : 5px 50px;
@@ -449,8 +455,8 @@ section.product-camera-content {
 						width : 250px;
 						
 						img{
-							height : 150px;
-							width : 250px;
+							height : 120px;
+							width : 180px;
 						}
 					}
 					
@@ -681,7 +687,7 @@ header{
 			overflow  :hidden;
 			width     :180px;
 			min-height:90px;
-			background:url(images/product/acer_logo_green.png) no-repeat center center;
+			background:url(images/product/logo.png) no-repeat center center;
 		h1{
 			text-indent:1000px;
 			white-space:nowrap;
@@ -719,7 +725,7 @@ header{
 					font-weight    :bold;
 					&:hover{
 						color             :@green-color;
-						-webkit-transition:300ms;
+						-webkit-transition:all 300ms;
 						-moz-transition   :all 300ms;
 						-o-transition     :all 300ms;
 						-ms-transition    :all 300ms;
@@ -1194,6 +1200,13 @@ section.product-detail {
 						opacity   :0;
 						min-height: 250px;
 						width     : 350px;
+
+                                                img {
+							display            :block;
+							background-position: center center;
+							height             : 250px;
+							width              : 350px;
+						}
 						a {
 							display:block;
 							img {
@@ -1440,5 +1453,41 @@ nav.left-menu{
 				}
 			}
 		}
+	}
+}
+/*Form Garantee Page Style
+---------------------------------------------------- */
+section.formgarantee{
+color : red;
+	div.top-pic {
+		background: url('images/about/background_page_top.jpg') no-repeat 0 0;
+		height    : 40px;
+	}
+	div.garantee-info {
+		background: url('data:images/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABA7YDAREAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAYIAgMHCv/EACkQAQAAAwYDCQAAAAAAAAAAAAABAgYDBTJxgbExQ4IzNEFyssHC0fD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9DFAcnT3Bcqi8Nl07wBZencEmUPkDrV3cIZAkUnDX6BmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADXa9nNpvAENvXDP+8QcWqfDaZTemAKtVvzuoFNqx73Dzx2B//9k=') repeat-y center center;
+		p {
+			padding    : 40px 0 40px 0;
+			text-align : center;
+			color      : @text-color;
+			font-size  : 16px;
+			line-height: 18px;
+			margin     : 0 auto;
+			font-family: tahoma;
+		}
+		div.info {
+			width         : 800px;
+			text-align    : right;
+			padding-left  : 50px;
+			padding-right : 10px;
+			padding-bottom: 100px;
+			min-height    : 400px; 
+			fieldset{
+				margin-right: 190px;
+			}	
+		}
+	}
+	div.bottom-pic {
+		background: url('images/about/background_page_bottom.jpg') no-repeat 0 0;
+		height    : 40px;
 	}
 }

@@ -21,8 +21,8 @@
                                     $images = get_children($argus);
                                     if($images){
                                         foreach ($images as $img) {
-                                            $img_larg = wp_get_attachment_image_src($img->ID,'middel');
-                                            echo "<div style='background:url($img_larg[0]) no-repeat;'></div>";
+                                            $img_larg = wp_get_attachment_image_src($img->ID,'large');
+                                            echo "<div style='background:url($img_larg[0]) no-repeat;background-size : cover;'></div>";
                                         }
                                     }else echo 'تصویر وجود ندارد';
 								?>

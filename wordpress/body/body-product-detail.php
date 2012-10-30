@@ -57,7 +57,7 @@
 					if($images){
 			          		foreach ($images as $img) {
 			                	echo "<div class='pro txc'>";
-				                    	$img_small = wp_get_attachment_image($img->ID,'middle');
+				                    	$img_small = wp_get_attachment_image($img->ID,'small');
 										echo "$img_small";
 									echo "</div>";
 							}

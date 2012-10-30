@@ -55,7 +55,7 @@
 	<div class="container">
 		<!-- start Header -->
 		<header class="cover">
-			<a href="/wp-cctv/wordpress/">
+			<a href="/index.php">
 				<div class="logo left ">
 					<h1>LOGO</h1>
 				</div>

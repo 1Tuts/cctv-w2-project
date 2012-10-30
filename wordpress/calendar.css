@@ -61,6 +61,7 @@
     font-size: 14px;
     color:black;
     text-align: center;
+    padding : 10px;
   }
 
   form#formgarantee div.data{
@@ -85,11 +86,20 @@
     border:0 solid #fff;
     border-radius:5px;
     -webkit-box-shadow:2px 2px 3px #9ff34f;
+    -moz-box-shadow:2px 2px 3px #9ff34f;
+    -ms-box-shadow:2px 2px 3px #9ff34f;
+    -o-box-shadow:2px 2px 3px #9ff34f;
+    box-shadow:2px 2px 3px #9ff34f;
     display: block;
 
   }
   form#formgarantee input.submit-buttons:hover,form#formgarantee input.submit-buttons:focus{
     box-shadow:1px 1px 1px #9ff34f;
+    -webkit-box-shadow:1px 1px 1px #9ff34f;
+    -moz-box-shadow:1px 1px 1px #9ff34f;
+    -ms-box-shadow:1px 1px 1px #9ff34f;
+    -o-box-shadow:1px 1px 1px #9ff34f;
+
     background: none;
   }
 
