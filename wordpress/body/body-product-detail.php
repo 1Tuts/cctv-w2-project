@@ -86,7 +86,7 @@
 	</div>
 	<div class="bottom-pic"></div>
 </section>
-<div class="mazaya">
+<div class="mazaya" id="mazaya">
 <?php
 	get_template_part('/body/body-detail-product');
 ?>

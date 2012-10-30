@@ -1,13 +1,9 @@
 <section class="product-camera-content txr cover">
 	
-	<div class="content-pr mt5 cover">
-		<nav class="content-pr-nav">
-        	<?php 
-				get_template_part('/inc/top-product-menu');
-				if( have_posts() ) {
-				the_post(); 
-			 ?>
-	    </nav>
+	<div class="content-pr cover">
+<!--		<nav class="content-pr-nav">
+        	
+	    </nav>-->
         <div class="info cover"> 
             <div class="container">
                 <div class="content-slide">
@@ -53,7 +49,7 @@
                                     echo "<li><img  src='$img_small[0]'></li>";
                                 }
                             }else echo 'تصویر وجود ندارد';
-                            }                       
+            //                }                       
                         ?> 
                     </ul>        
                 </div> 
@@ -65,6 +61,6 @@
               </div>
            </div> 
 
-        </div>
+      </div>
 
     </section>

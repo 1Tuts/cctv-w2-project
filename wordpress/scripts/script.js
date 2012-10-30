@@ -59,14 +59,24 @@ $(function(){
 		BgImg3 = $('.slideshow .backimg  #bgimg3'),
 		currentList = 0,
 		list = $('div.content-pr nav.content-pr-nav ul li'),
-		product='gallery';
-		
+		product='gallery',
+		listtopmenu = $('nav.content-pr-nav ul li'),
+		gallery=$('nav.content-pr-nav div.gallery'),
 		clicka = $('section.product-detail div.info-pro div.desc-pro div.desc a.btnlink');
+		
 		clicka.click(function(){
 			$('section.product-detail').removeClass('btnlink').addClass('dispaly-none');
 			$('div.mazaya').removeClass('mazaya').addClass('dispaly-block');
 		});
 		
+		
+		listtopmenu.click(function(){
+			topclick = ($(this).index());
+			if(topclick==1){
+				$('div#mz').addClass('dispaly-none').removeClass('dispaly-block');
+				$('div.gallery').removeClass('gallery').addClass('dispaly-block');
+			}
+		});
 /****************************** HOME PAGE *************************
 	BgImg1.click(function(){
 		window.open("./test3.php","_self");

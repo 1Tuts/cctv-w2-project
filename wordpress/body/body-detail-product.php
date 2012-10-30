@@ -1,10 +1,11 @@
-<section class="product-camera-content txr cover">
+<section class="product-camera-content txr cover"> 
 	<div class="nav cover mt2">
 	
 	<div class="content-pr mt5 cover">
 		<nav class="content-pr-nav">
          	<?php get_template_part('/inc/top-product-menu'); ?>
 	    </nav>
+        <div id="mz">
         <section class="detail-pr cover">
             <article class="txt-detail-pr">
                <?php
@@ -62,5 +63,9 @@
 		  ?>
         <div class="bottom-bg"></div>
         </div>		
+        </div>
 	</div>			
+    <div  class="gallery" id="gallery"><?php get_template_part('/body/body-product-gallery'); ?></div>
+<div class="model"></div>
 </section>
+
