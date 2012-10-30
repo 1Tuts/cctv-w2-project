@@ -31,9 +31,9 @@ Final project of CIW Programing
 
 
 ### All rights reserved ###
-Please note that ??????.??? is a curated site and that we reserve the right to refuse any listing for any reason.
+Please note that zahedy.ir is a curated site and that we reserve the right to refuse any listing for any reason.
 
-The [??????.???](http://??????.???) code and website is released under a MIT License.
+The [zahedy.ir](http://zahedy.ir) code and website is released under a MIT License.
 
 Our sample for designing is this site : http://www.acer.fi/ac/fi/FI/content/home
 
