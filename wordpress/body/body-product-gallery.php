@@ -1,9 +1,5 @@
 <section class="product-camera-content txr cover">
-	
 	<div class="content-pr cover">
-<!--		<nav class="content-pr-nav">
-        	
-	    </nav>-->
         <div class="info cover"> 
             <div class="container">
                 <div class="content-slide">

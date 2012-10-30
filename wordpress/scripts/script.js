@@ -72,9 +72,20 @@ $(function(){
 		
 		listtopmenu.click(function(){
 			topclick = ($(this).index());
+			if(topclick==0){
+				$('div#mz').addClass('dispaly-block').removeClass('dispaly-none');
+				$('div#gallery').addClass('gallery').removeClass('dispaly-block');
+				$('div#model').removeClass('dispaly-block').addClass('model');
+			}
 			if(topclick==1){
 				$('div#mz').addClass('dispaly-none').removeClass('dispaly-block');
-				$('div.gallery').removeClass('gallery').addClass('dispaly-block');
+				$('div#gallery').removeClass('gallery').addClass('dispaly-block');
+				$('div#model').removeClass('dispaly-block').addClass('model');
+			}
+			if(topclick==2){
+				$('div#mz').addClass('dispaly-none').removeClass('dispaly-block');
+				$('div#gallery').addClass('gallery').removeClass('dispaly-block');
+				$('div#model').removeClass('model').addClass('dispaly-block');
 			}
 		});
 /****************************** HOME PAGE *************************

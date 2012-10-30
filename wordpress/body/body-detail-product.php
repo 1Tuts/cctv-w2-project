@@ -1,6 +1,5 @@
 <section class="product-camera-content txr cover"> 
 	<div class="nav cover mt2">
-	
 	<div class="content-pr mt5 cover">
 		<nav class="content-pr-nav">
          	<?php get_template_part('/inc/top-product-menu'); ?>
@@ -65,7 +64,7 @@
         </div>		
         </div>
 	</div>			
-    <div  class="gallery" id="gallery"><?php get_template_part('/body/body-product-gallery'); ?></div>
-<div class="model"></div>
+    
+	<div class="model" id="model"><?php get_template_part('/body/body-product-model'); ?></div>
 </section>
-
+<div  class="gallery" id="gallery"><?php get_template_part('/body/body-product-gallery'); ?></div>
