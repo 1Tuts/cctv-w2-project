@@ -90,9 +90,142 @@ endif;
  * @since Twenty Ten 1.0
  * @uses register_sidebar
  */
-/****************************** ADD PLUGIN PRODUCT **********************/
-	add_theme_support('post-thumbnails');
+ 
+ add_action('init','create_product_type');
+function create_product_type(){
+	$labels_pt=array(
+		'name' => 'محصولات',
+		'singular_name' => 'محصولات',
+		'add_new' => 'افزودن محصول',
+		'add_new_item' => 'افزودن محصول جدید',
+		'edit_item' => 'ویرایش محصول',
+		'new_item' => 'محصول جدید',
+		'view_item' => 'نمایش محصول',
+		'search_items' => 'جستجوی محصول',
+		'not_found' => 'محصول مورد نظر یافت نشد',
+		'not_found_in_trash' => 'محصول مورد نظر در زباله دان یافت نشد',
+		'parent_item_colon' => 'محصول',
+		'menu_name' => 'محصولات'
+
+		);
+	$args_pt=array(
+		'label' => 'محصولات',
+		'labels' => $labels_pt,
+		'description' =>'این پلاگین در حالت آزمایشی قرار دارد.',
+		'public' => true,
+		'exclude_from_search' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_nav_menus' => true,
+		'show_in_menu' => true,
+		'menu_position' => 25,
+		'capability_type' => 'post',
+		'hierarchical' => true,
+		'supports' => array('title','editor','author', 'page-attributes'),
+		'has_archive' => true,
+		'rewrite' => array('slug'=>'products'),
+		'query_var' => true,
+		'can_export' => true
+		);
+	register_post_type('products', $args_pt);
+
+	$labels_prdr = array(
+    'name'  => 'BRANDS',
+    'singular_name'  => 'تولیدکننده ها',
+    'search_items'  => 'جستجوی تولیدکننده',
+    'popular_items'  => 'بیشتر استفاده شده',
+    'all_items'  => 'تمام تولیدکننده‌ها',
+    'parent_item'  => 'مادر تولیدکننده',
+    'edit_item'  => 'ویرایش تولیدکننده',
+    'update_item'  => 'بروزرسانی تولیدکننده',
+    'add_new_item'  => 'افزودن تولیدکننده جدید',
+    'new_item_name'    => 'تولیدکننده جدید',
+    'separate_items_with_commas'  => 'تولید کننده ها را با کاما جدا کنید',
+    'add_or_remove_items'  => 'افزودن یا حذف تولیدکننده',
+    'choose_from_most_used'  => 'انتخاب از محبوبها'
+    );
+	$args_tg=array(
+		'label' => 'BRANDS',
+		'labels' =>$labels_prdr,
+		'public' => true,
+		'show_in_nav_menus' => true,
+		'show_ui' => true,
+		'hierarchical' => true,
+		'query_var' => true,
+		// 'rewrite' => array('slug'=>'tag'),
+		'rewrite' => array( 'slug' => 'BRANDS','hierarchical' => true),
+
+		);
+	register_taxonomy('BRANDS', 'products', $args_tg);
+}
 	
+	add_post_type_support( 'products', 'thumbnail' );
+
+
+ /**************** ADD META BOX feature*********/
+ 
+ add_action('add_meta_boxes','add_feature_meta');
+	add_action('save_post','save_feature_meta');
+
+	function  add_feature_meta(){
+		add_meta_box('feature','ویژگی های منحصربفرد','inner_feature_meta','products','advanced','default');
+	}
+	function inner_feature_meta($post){
+		$post_id = $post->ID;
+		$feature = get_post_meta($post_id, 'feature', true);
+		?>
+		<label for="feature">مزایا :</label>
+		<textarea cols="150" rows="10" name="feature" id="feature">
+        <?php 
+				echo $feature;
+			 ?>
+        </textarea>
+		<?php
+	}
+	
+
+	function save_feature_meta($post_id){
+	if ( is_admin() ) {
+		if ( isset($_POST['feature']) ) {
+			$feature = $_POST['feature'];
+			update_post_meta($post_id,'feature',$feature);
+		}
+			}
+}
+
+	
+
+ /**************** ADD META BOX MODEL*********/
+ 
+ add_action('add_meta_boxes','add_model_meta');
+	add_action('save_post','save_model_meta');
+
+	function  add_model_meta(){
+		add_meta_box('model',' مدل ','inner_model_meta','products','advanced','default');
+	}
+	function inner_model_meta($post){
+		$post_id = $post->ID;
+		$model = get_post_meta($post_id, 'model', true);
+		?>
+		<label for="model">مدل :</label>
+		<input type="text"  name="model" id="model"  value="<?php echo $model;  ?>"/>
+        
+		<?php
+	}
+	
+
+	function save_model_meta($post_id){
+	if ( is_admin() ) {
+		if ( isset($_POST['model']) ) {
+			$model = $_POST['model'];
+			update_post_meta($post_id,'model',$model);
+		}
+			}
+}
+
+ 
+/****************************** ADD PLUGIN PRODUCT **********************
+	add_theme_support('post-thumbnails');
 	
 	add_action('init', 'product_init'); // add init event
 	  
@@ -126,68 +259,15 @@ endif;
 	  		'hierarchical' => true,
 	  		'menu_position' => 5,
 	  		//'menu_icon' => get_bloginfo('template_url') . '/images/product_icon.png', // 16x16
-	  		'supports' => array('title','editor','author','thumbnail','custom-fields','excerpt','comments','page-attributes')
+	  		//'supports' => array('title','editor','author','thumbnail','custom-fields','excerpt','comments','page-attributes')
 			
 	  	);
 	  
 	  	register_post_type ('product',$args);
-		//register_taxonomy_for_object_type('category', 'product');
+		//register_taxonomy('category', 'product');
 		
 		//register_taxonomy_for_object_type('post_tag', 'product');
 		
 	  }
-	  /*********************************** AD META BOX IN PLUDIN PRODUCT ***************************/
-	add_action('add_meta_boxes', 'product_add_custom_box');
-
-	function product_add_custom_box(){
-		add_meta_box('product_priceid', 'متن پایین هر تصویر', 'product_price_box', 'product', 'side');
-	}
-
-	function product_price_box(){
-		$price = 0;
-		if ( isset($_REQUEST['post']) ) { // after first post save
-			$price = get_post_meta($_REQUEST['post'],'product_price',true);
-		}
-		echo "<label for='product_price_text'>متن عکس</label>";
-		echo "<textarea  id='product_price_text' class='widefat' name='product_price_text' rows='4' cols='30'   >$price</textarea>";
-	}
-
-	add_action('save_post','product_save_meta');
-
-	function product_save_meta($post_id){
-		if ( is_admin() ) {
-			if ( isset($_POST['product_price_text']) ) {
-				update_post_meta($post_id,'product_price',$_POST['product_price_text']);
-			}
-		}
-	}
-	
-	
-	add_shortcode('products', 'product_list');
-
-function product_list($args){
-	if(!@$args['cat']) $args['cat'] = '';
-
-	$products = new WP_Query(array(
-		'post_type' => 'product',
-		'category_name' => $args['cat']
-	));
-
-	$html = '<h3>Product List</h3>';
-
-	$html .= '<ul>';
-
-	while($products->have_posts()){
-		$products->the_post();
-
-		$title = get_the_title();
-		$url = get_permalink();
-
-		$html .= "<li><a href='$url'>$title</a></li>";
-	}
-
-	$html .= '</ul>';
-
-	return $html;
-}
+	*/  
 ?>
