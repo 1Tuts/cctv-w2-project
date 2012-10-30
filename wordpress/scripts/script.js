@@ -61,7 +61,13 @@ $(function(){
 		list = $('div.content-pr nav.content-pr-nav ul li'),
 		product='gallery';
 		
-/****************************** HOME PAGE *************************/
+		clicka = $('section.product-detail div.info-pro div.desc-pro div.desc a.btnlink');
+		clicka.click(function(){
+			$('section.product-detail').removeClass('btnlink').addClass('dispaly-none');
+			$('div.mazaya').removeClass('mazaya').addClass('dispaly-block');
+		});
+		
+/****************************** HOME PAGE *************************
 	BgImg1.click(function(){
 		window.open("./test3.php","_self");
 	});

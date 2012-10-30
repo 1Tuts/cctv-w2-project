@@ -8,22 +8,33 @@
         <section class="detail-pr cover">
             <article class="txt-detail-pr">
                <?php
-                    if( have_posts() ) {
-                        the_post(); 
+					$post_id=$_GET['post_id'];
+					$feature = get_post_meta($post_id, 'feature', true);
+
+                   // if( have_posts() ) {
+                     //   the_post(); 
                 ?>
-                <p><?php the_content(); ?></p>
+                <p>
+					<?php 
+						if(count($feature['feature']>0)) {
+							echo get_post_meta(get_the_ID(),'feature',true);
+							}
+					?>
+                </p>
             </article>
+            <!--delete-->
             <a href="/wp-cctv/wordpress/مشخصات-محصول/">
                 <?php
                     $meta = get_post_custom();
                     if(count($meta['img'])>0){
                         foreach ($meta['img'] as $img_id) {
-                            $img_small = wp_get_attachment_image($img_id,'large'); 
+                            $img_small = wp_get_attachment_image($meta['img'][1],'large'); 
                             echo "$img_small";
                         }
                     }
                 ?>
             </a>
+            <!--delete-->
         </section>
         <div class="info left cover">
            <?php
@@ -47,7 +58,7 @@
 	                	echo "</div>";
 					}
         		}else echo 'تصویر وجود ندارد';
-  	    	  }
+  	    	//  }
 		  ?>
         <div class="bottom-bg"></div>
         </div>		

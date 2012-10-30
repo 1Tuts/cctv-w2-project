@@ -79,10 +79,15 @@
 					}
 					?>
 				</div>
-				<span><a class="btnlink" href="/wp-cctv/wordpress/مزایا/">برو به سوی</a></span>
+				<span><a class="btnlink" href="#">برو به سوی</a></span>
 			</div>
 			
 		</div>
 	</div>
 	<div class="bottom-pic"></div>
 </section>
+<div class="mazaya">
+<?php
+	get_template_part('/body/body-detail-product');
+?>
+</div>

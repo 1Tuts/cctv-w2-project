@@ -25,7 +25,6 @@ if(is_post_type_archive()){
 					if($images){
 		          		foreach ($images as $img) {
 		                	$img_larg = wp_get_attachment_image($img->ID,'middel');
-		                	//echo "<div class='pro'><a href='#'>$img_larg</a></div>";
 							$arry_img[$i] =$img_larg;
 							$i++;
 						}
@@ -33,6 +32,6 @@ if(is_post_type_archive()){
 	        		}else echo 'تصویر وجود ندارد';
 				}
  		}
-		get_template_part('/inc/footer');
+get_template_part('/inc/footer');
  	
-  ?>
+ ?>
